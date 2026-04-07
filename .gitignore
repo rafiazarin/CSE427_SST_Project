@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Outputs
+outputs/
+data/raw/
+data/interim/
+data/processed/
+
+# Env / secrets
+.env
+
+# Misc
+*.log
