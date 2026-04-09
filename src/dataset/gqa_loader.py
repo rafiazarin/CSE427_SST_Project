@@ -40,6 +40,8 @@ def gqa_questions_to_list(questions_dict: Dict[str, Dict[str, Any]]) -> List[Dic
             "types": item.get("types", {}),
             "full_record": item
         }
+        if "sst" in item:
+          record["sst"] = item["sst"]
         records.append(record)
 
     return records
