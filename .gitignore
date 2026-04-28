@@ -23,3 +23,11 @@ data/processed/
 
 # Misc
 *.log
+.vscode/
+data/
+*.zip
+
+.vscode/
+data/
+*.zip
+*.json
