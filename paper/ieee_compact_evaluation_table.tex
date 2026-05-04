@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Final evaluation results on the balanced 200-sample GQA validation subset.}
+\label{tab:final_results}
+\begin{tabular}{lrrlllrr}
+\toprule
+Method & Exact Acc. (\%) & Lenient Acc. (\%) & Correct / 200 & Avg Tokens & Token Red. (\%) & Latency (s) & Δ vs Full SST \\
+\midrule
+LLaVA Image + Question & 55.500000 & 56.500000 & 111/200 & — & — & 5.740000 & 1.000000 \\
+Full SST & 54.500000 & 58.500000 & 109/200 & 441.440000 & 0.000000 & 6.620000 & 0.000000 \\
+Caption-Style SST & 53.000000 & 58.500000 & 106/200 & 443.960000 & -0.570000 & 6.770000 & -1.500000 \\
+Keyword-Aware SST & 50.000000 & 57.000000 & 100/200 & 215.530000 & 51.180000 & 2.120000 & -4.500000 \\
+Compact Keyword-Aware SST & 41.000000 & 52.000000 & 82/200 & 175.100000 & 60.330000 & 3.470000 & -13.500000 \\
+No-Relations SST & 43.000000 & 43.000000 & 86/200 & 153.790000 & 65.160000 & 2.590000 & -11.500000 \\
+No-Attributes SST & 40.000000 & 43.000000 & 80/200 & 403.840000 & 8.520000 & 5.880000 & -14.500000 \\
+Objects-Only SST & 22.500000 & 24.000000 & 45/200 & 106.240000 & 75.930000 & 2.890000 & -32.000000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,7 @@
+method,pipeline,full_sst_accuracy,method_accuracy,accuracy_difference_method_minus_full,both_correct,both_wrong,method_correct_full_wrong,full_correct_method_wrong
+Keyword-Aware SST,keyword_filtered_sst_mistral,0.545,0.5,-0.045,94,85,6,15
+Compact Keyword-Aware SST,compact_keyword_sst_mistral,0.545,0.41,-0.135,75,84,7,34
+Objects-Only SST,objects_only_sst_mistral,0.545,0.225,-0.32,38,84,7,71
+No-Relations SST,no_relations_sst_mistral,0.545,0.43,-0.115,70,75,16,39
+No-Attributes SST,no_attributes_sst_mistral,0.545,0.4,-0.145,73,84,7,36
+Caption-Style SST,caption_style_sst_mistral,0.545,0.53,-0.015,102,87,4,7

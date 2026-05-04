@@ -1,33 +1,88 @@
-# Python
+# =========================
+# CSE427 SST Project Ignore
+# =========================
+
+# Python cache / environments
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+.env
 .venv/
 venv/
-
-# Jupyter
+env/
 .ipynb_checkpoints/
 
-# macOS
+# OS / editor files
 .DS_Store
+.vscode/
+.idea/
 
-# Outputs
-outputs/
+# Raw GQA data - too large for Git
+data/gqa_raw/
+data/gqa_images_subset_200/
+
+# Other raw/intermediate data
 data/raw/
 data/interim/
-data/processed/
 
-# Env / secrets
-.env
+# Keep processed project data
+!data/processed/
+!data/processed/**
 
-# Misc
+# Archive cleanup folders - never push
+archive_cleanup/
+archive/
+
+# Compressed archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Model checkpoints / weights
+checkpoints/
+models/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+
+# Logs / temp
+tmp/
+temp/
+logs/
 *.log
-.vscode/
-data/
-*.zip
 
-.vscode/
-data/
-*.zip
-*.json
+# Large intermediate arrays/tables
+*.npy
+*.npz
+*.parquet
+*.feather
+*.hdf5
+*.h5
+
+# Keep final project outputs
+!outputs/
+!outputs/**
+!outputs/figures/
+!outputs/figures/**
+!outputs/results/
+!outputs/results/**
+
+# Keep notebooks
+!notebooks/
+!notebooks/**/*.ipynb
+
+# Keep source code
+!src/
+!src/**
+
+# Keep paper/report assets
+!paper/
+!paper/**
+!report/
+!report/**

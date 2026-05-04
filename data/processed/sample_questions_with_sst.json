@@ -1,0 +1,47 @@
+{
+  "q1": {
+    "imageId": "img1",
+    "question": "What color is the bus?",
+    "answer": "red",
+    "types": {
+      "semantic": "attribute"
+    },
+    "sst": {
+      "objects": ["bus", "person", "stop_sign"],
+      "counts": ["person: 3"],
+      "attributes": ["bus: red"],
+      "relations": ["person near bus", "stop_sign right of bus"],
+      "text": ["STOP"]
+    }
+  },
+  "q2": {
+    "imageId": "img2",
+    "question": "How many people are there?",
+    "answer": "3",
+    "types": {
+      "semantic": "count"
+    },
+    "sst": {
+      "objects": ["bus", "person", "stop_sign"],
+      "counts": ["person: 3"],
+      "attributes": ["bus: red"],
+      "relations": ["person near bus", "stop_sign right of bus"],
+      "text": ["STOP"]
+    }
+  },
+  "q3": {
+    "imageId": "img3",
+    "question": "Is the person near the car?",
+    "answer": "yes",
+    "types": {
+      "semantic": "relation"
+    },
+    "sst": {
+      "objects": ["person", "car", "tree"],
+      "counts": ["person: 1", "car: 1"],
+      "attributes": ["car: blue"],
+      "relations": ["person near car", "tree left of car"],
+      "text": []
+    }
+  }
+}

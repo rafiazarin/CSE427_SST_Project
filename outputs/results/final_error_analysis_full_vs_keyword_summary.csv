@@ -1,0 +1,5 @@
+Category,Count,Percentage
+Both correct,94,47.0
+Both wrong,85,42.5
+"Full correct, Keyword wrong - possible compression loss",15,7.5
+"Keyword correct, Full wrong - filtering may help",6,3.0

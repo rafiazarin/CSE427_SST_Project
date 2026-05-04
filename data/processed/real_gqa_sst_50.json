@@ -1,0 +1,4462 @@
+[
+  {
+    "question_id": "05515938",
+    "image_id": "2405722",
+    "question": "What is this bird called?",
+    "answer": "parrot",
+    "types": {
+      "detailed": "categoryThis",
+      "semantic": "cat",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "bird (329774)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: bird (329774)->query: name [0]",
+    "sst": {
+      "objects": [
+        "palm tree",
+        "leaves",
+        "bushes",
+        "feathers",
+        "fence",
+        "stone",
+        "wall",
+        "ladder",
+        "beak",
+        "parrot",
+        "clouds",
+        "sky",
+        "hillside",
+        "straw",
+        "rock"
+      ],
+      "counts": [
+        "palm tree: 5",
+        "leaves: 2",
+        "bushes: 2",
+        "stone: 3",
+        "wall: 2",
+        "rock: 2"
+      ],
+      "attributes": [
+        "leaves: green",
+        "bushes: tropical",
+        "feathers: white",
+        "feathers: ruffled",
+        "fence: silver",
+        "fence: chain-link",
+        "wall: stone",
+        "wall: rock",
+        "ladder: blue",
+        "ladder: metal",
+        "palm tree: tall",
+        "palm tree: green",
+        "beak: sharp",
+        "beak: curved",
+        "beak: black",
+        "beak: open",
+        "beak: pointy",
+        "parrot: white",
+        "clouds: small",
+        "clouds: white"
+      ],
+      "relations": [
+        "palm tree behind parrot",
+        "palm tree on top of hillside",
+        "palm tree to the left of leaves",
+        "palm tree to the right of feathers",
+        "palm tree to the left of bushes",
+        "palm tree to the right of parrot",
+        "leaves to the right of parrot",
+        "bushes to the right of bushes",
+        "bushes near straw",
+        "bushes to the right of palm tree",
+        "feathers to the left of palm tree",
+        "feathers to the right of rock",
+        "feathers to the right of hillside",
+        "feathers to the right of wall",
+        "fence on hillside",
+        "fence to the left of parrot",
+        "fence behind parrot",
+        "stone to the left of parrot",
+        "stone to the left of beak",
+        "stone to the left of stone",
+        "wall to the left of beak",
+        "wall to the left of parrot",
+        "stone to the right of stone",
+        "ladder to the left of parrot",
+        "palm tree to the left of palm tree"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "17197213",
+    "image_id": "2331963",
+    "question": "What color is the helmet in the middle of the image?",
+    "answer": "light blue",
+    "types": {
+      "detailed": "directWhich",
+      "semantic": "attr",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "helmet (3205899)"
+      },
+      {
+        "operation": "filter vposition",
+        "dependencies": [
+          0
+        ],
+        "argument": "middle"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "color"
+      }
+    ],
+    "semanticStr": "select: helmet (3205899)->filter vposition: middle [0]->query: color [1]",
+    "sst": {
+      "objects": [
+        "helmet",
+        "catcher",
+        "shoes",
+        "jersey",
+        "field",
+        "fence",
+        "glove",
+        "bats",
+        "uniform",
+        "home plate",
+        "batter",
+        "ground",
+        "umbrellas",
+        "crate",
+        "umpire"
+      ],
+      "counts": [
+        "fence: 2",
+        "bats: 2",
+        "umbrellas: 2",
+        "stick: 2"
+      ],
+      "attributes": [
+        "helmet: light blue",
+        "shoes: black",
+        "jersey: blue",
+        "field: baseball",
+        "fence: light",
+        "fence: metal",
+        "fence: chain-link",
+        "fence: gray",
+        "glove: brown",
+        "glove: baseball",
+        "uniform: blue",
+        "umbrellas: white",
+        "crate: red",
+        "bats: aluminum",
+        "umpire: bending",
+        "bat: aluminum"
+      ],
+      "relations": [
+        "helmet to the right of stick",
+        "helmet to the right of bats",
+        "catcher to the right of umpire",
+        "catcher to the left of glove",
+        "catcher to the left of batter",
+        "jersey to the right of bats",
+        "jersey to the right of crate",
+        "jersey to the right of umbrellas",
+        "jersey to the right of stick",
+        "jersey to the left of bat",
+        "jersey to the left of ball",
+        "fence around field",
+        "fence to the left of bats",
+        "fence to the left of fence",
+        "fence to the left of umbrellas",
+        "fence to the left of crate",
+        "glove to the left of uniform",
+        "glove to the left of batter",
+        "glove to the right of umpire",
+        "glove to the right of catcher",
+        "bats to the left of stick",
+        "bats to the right of fence",
+        "bats to the left of jersey",
+        "bats to the left of helmet",
+        "bats to the right of crate"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08223573",
+    "image_id": "2400861",
+    "question": "Is it an indoors or outdoors scene?",
+    "answer": "indoors",
+    "types": {
+      "detailed": "locationChoose",
+      "semantic": "global",
+      "structural": "choose"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "scene"
+      },
+      {
+        "operation": "choose location",
+        "dependencies": [
+          0
+        ],
+        "argument": "indoors|outdoors"
+      }
+    ],
+    "semanticStr": "select: scene->choose location: indoors|outdoors [0]",
+    "sst": {
+      "objects": [
+        "bowl",
+        "shelf",
+        "lid",
+        "room",
+        "seat",
+        "bathtub",
+        "window",
+        "radiator",
+        "wall",
+        "toilet",
+        "floor",
+        "frame",
+        "trash can"
+      ],
+      "counts": [],
+      "attributes": [
+        "bowl: white",
+        "lid: black",
+        "room: empty",
+        "bathtub: white",
+        "window: large",
+        "window: tall",
+        "window: sunny",
+        "radiator: black",
+        "wall: tan",
+        "wall: blank",
+        "toilet: porcelain",
+        "toilet: white",
+        "floor: dusty",
+        "floor: brown",
+        "floor: wood",
+        "floor: dirty",
+        "frame: white",
+        "frame: wood",
+        "trash can: blue"
+      ],
+      "relations": [
+        "bowl to the left of trash can",
+        "bowl to the right of shelf",
+        "bowl to the left of radiator",
+        "shelf to the left of bowl",
+        "shelf to the left of toilet",
+        "shelf to the left of seat",
+        "shelf to the left of trash can",
+        "lid to the right of toilet",
+        "lid to the left of radiator",
+        "seat to the left of trash can",
+        "seat to the right of shelf",
+        "bathtub to the right of radiator",
+        "window near radiator",
+        "window above radiator",
+        "radiator to the right of bowl",
+        "radiator to the right of trash can",
+        "radiator below window",
+        "radiator to the right of lid",
+        "radiator near window",
+        "radiator to the left of bathtub",
+        "wall above toilet",
+        "toilet near trash can",
+        "toilet to the left of lid",
+        "toilet to the right of shelf",
+        "toilet to the left of trash can"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "14778715",
+    "image_id": "1339",
+    "question": "Are there napkins under the utensil to the left of the rice?",
+    "answer": "yes",
+    "types": {
+      "detailed": "existRelS",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "rice (1066932)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "utensil,to the left of,s (1066923)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "napkin,under,s (1066926)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      }
+    ],
+    "semanticStr": "select: rice (1066932)->relate: utensil,to the left of,s (1066923) [0]->relate: napkin,under,s (1066926) [1]->exist: ? [2]",
+    "sst": {
+      "objects": [
+        "garnish",
+        "rice",
+        "liquid",
+        "meat",
+        "utensil",
+        "plate",
+        "glass",
+        "napkin"
+      ],
+      "counts": [
+        "utensil: 2"
+      ],
+      "attributes": [
+        "garnish: green",
+        "utensil: silver",
+        "plate: black",
+        "napkin: white"
+      ],
+      "relations": [
+        "garnish on rice",
+        "garnish to the right of napkin",
+        "garnish to the right of utensil",
+        "rice on plate",
+        "rice to the right of utensil",
+        "rice to the right of napkin",
+        "rice to the left of utensil",
+        "liquid in glass",
+        "meat on plate",
+        "meat to the left of utensil",
+        "meat to the right of utensil",
+        "meat to the right of napkin",
+        "utensil to the left of plate",
+        "utensil to the left of garnish",
+        "utensil to the left of rice",
+        "utensil to the left of meat",
+        "utensil above napkin",
+        "utensil on top of napkin",
+        "utensil to the right of rice",
+        "utensil to the right of meat",
+        "utensil to the right of plate",
+        "plate to the left of utensil",
+        "plate near glass",
+        "plate to the right of utensil",
+        "plate to the right of napkin"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "14778714",
+    "image_id": "1339",
+    "question": "What is under the utensil on the left?",
+    "answer": "napkin",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "utensil (1066923)"
+      },
+      {
+        "operation": "filter hposition",
+        "dependencies": [
+          0
+        ],
+        "argument": "left"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "_,under,s (1066926)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          2
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: utensil (1066923)->filter hposition: left [0]->relate: _,under,s (1066926) [1]->query: name [2]",
+    "sst": {
+      "objects": [
+        "garnish",
+        "rice",
+        "liquid",
+        "meat",
+        "utensil",
+        "plate",
+        "glass",
+        "napkin"
+      ],
+      "counts": [
+        "utensil: 2"
+      ],
+      "attributes": [
+        "garnish: green",
+        "utensil: silver",
+        "plate: black",
+        "napkin: white"
+      ],
+      "relations": [
+        "garnish on rice",
+        "garnish to the right of napkin",
+        "garnish to the right of utensil",
+        "rice on plate",
+        "rice to the right of utensil",
+        "rice to the right of napkin",
+        "rice to the left of utensil",
+        "liquid in glass",
+        "meat on plate",
+        "meat to the left of utensil",
+        "meat to the right of utensil",
+        "meat to the right of napkin",
+        "utensil to the left of plate",
+        "utensil to the left of garnish",
+        "utensil to the left of rice",
+        "utensil to the left of meat",
+        "utensil above napkin",
+        "utensil on top of napkin",
+        "utensil to the right of rice",
+        "utensil to the right of meat",
+        "utensil to the right of plate",
+        "plate to the left of utensil",
+        "plate near glass",
+        "plate to the right of utensil",
+        "plate to the right of napkin"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "1231468",
+    "image_id": "2402467",
+    "question": "Which side of the photo is the knife on?",
+    "answer": "left",
+    "types": {
+      "detailed": "positionQuery",
+      "semantic": "attr",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "knife (1135762)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "hposition"
+      }
+    ],
+    "semanticStr": "select: knife (1135762)->query: hposition [0]",
+    "sst": {
+      "objects": [
+        "vegetables",
+        "tomatoes",
+        "plate",
+        "spoon",
+        "table",
+        "butter",
+        "knife",
+        "rice",
+        "basket",
+        "peppers",
+        "napkin",
+        "onions",
+        "bowl",
+        "pepper",
+        "fork"
+      ],
+      "counts": [
+        "napkin: 2"
+      ],
+      "attributes": [
+        "plate: white",
+        "spoon: silver",
+        "table: brown",
+        "table: wood",
+        "basket: chrome",
+        "peppers: green",
+        "napkin: white",
+        "bowl: small",
+        "bowl: trimmed",
+        "bowl: white",
+        "pepper: black",
+        "fork: silver",
+        "eggs: scrambled"
+      ],
+      "relations": [
+        "vegetables to the left of onions",
+        "vegetables to the right of peppers",
+        "vegetables to the left of tomatoes",
+        "tomatoes to the right of peppers",
+        "tomatoes to the right of vegetables",
+        "plate near napkin",
+        "plate near knife",
+        "plate near fork",
+        "spoon lying on plate",
+        "spoon in plate",
+        "spoon on plate",
+        "spoon resting on plate",
+        "table to the right of basket",
+        "table to the right of pepper",
+        "table to the left of water",
+        "knife to the right of napkin",
+        "knife to the right of fork",
+        "knife next to plate",
+        "knife near plate",
+        "basket to the left of table",
+        "basket to the left of water",
+        "peppers to the left of tomatoes",
+        "peppers to the left of vegetables",
+        "napkin under bowl",
+        "napkin on plate"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "12143164",
+    "image_id": "2352110",
+    "question": "What place is pictured?",
+    "answer": "shore",
+    "types": {
+      "detailed": "place",
+      "semantic": "global",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "scene"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "place"
+      }
+    ],
+    "semanticStr": "select: scene->query: place [0]",
+    "sst": {
+      "objects": [
+        "elephant",
+        "trees",
+        "trunk",
+        "brush",
+        "shore",
+        "sticks",
+        "water",
+        "mud",
+        "dirt",
+        "ground"
+      ],
+      "counts": [
+        "elephant: 4",
+        "trunk: 2"
+      ],
+      "attributes": [
+        "elephant: baby"
+      ],
+      "relations": [
+        "elephant to the left of mud",
+        "trees to the left of elephant",
+        "trees near elephant",
+        "trees to the left of brush",
+        "trunk to the left of elephant",
+        "trunk to the left of trunk",
+        "brush to the right of elephant",
+        "brush to the right of sticks",
+        "brush to the right of trees",
+        "brush to the left of elephant",
+        "shore near water",
+        "elephant to the right of trunk",
+        "sticks to the left of elephant",
+        "sticks to the left of brush",
+        "trunk to the right of trunk",
+        "trunk to the left of mud",
+        "water near shore",
+        "mud to the right of elephant",
+        "mud to the right of trunk",
+        "elephant to the right of trees",
+        "elephant near trees",
+        "elephant to the left of brush",
+        "elephant to the left of elephant",
+        "elephant to the right of elephant",
+        "elephant to the right of sticks"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "12143165",
+    "image_id": "2352110",
+    "question": "Which place is it?",
+    "answer": "shore",
+    "types": {
+      "detailed": "place",
+      "semantic": "global",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "scene"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "place"
+      }
+    ],
+    "semanticStr": "select: scene->query: place [0]",
+    "sst": {
+      "objects": [
+        "elephant",
+        "trees",
+        "trunk",
+        "brush",
+        "shore",
+        "sticks",
+        "water",
+        "mud",
+        "dirt",
+        "ground"
+      ],
+      "counts": [
+        "elephant: 4",
+        "trunk: 2"
+      ],
+      "attributes": [
+        "elephant: baby"
+      ],
+      "relations": [
+        "elephant to the left of mud",
+        "trees to the left of elephant",
+        "trees near elephant",
+        "trees to the left of brush",
+        "trunk to the left of elephant",
+        "trunk to the left of trunk",
+        "brush to the right of elephant",
+        "brush to the right of sticks",
+        "brush to the right of trees",
+        "brush to the left of elephant",
+        "shore near water",
+        "elephant to the right of trunk",
+        "sticks to the left of elephant",
+        "sticks to the left of brush",
+        "trunk to the right of trunk",
+        "trunk to the left of mud",
+        "water near shore",
+        "mud to the right of elephant",
+        "mud to the right of trunk",
+        "elephant to the right of trees",
+        "elephant near trees",
+        "elephant to the left of brush",
+        "elephant to the left of elephant",
+        "elephant to the right of elephant",
+        "elephant to the right of sticks"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "19486857",
+    "image_id": "2385322",
+    "question": "What is the woman in front of?",
+    "answer": "statue",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "woman (521697)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,in front of,o (521700)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: woman (521697)->relate: _,in front of,o (521700) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "phone",
+        "shirt",
+        "woman",
+        "collar",
+        "lips",
+        "bracelets",
+        "pocket",
+        "statue"
+      ],
+      "counts": [
+        "shirt: 2"
+      ],
+      "attributes": [
+        "phone: white",
+        "woman: talking",
+        "woman: sitting",
+        "collar: white",
+        "shirt: white",
+        "lips: pink",
+        "pocket: white"
+      ],
+      "relations": [
+        "phone to the left of lips",
+        "woman wearing shirt",
+        "woman to the left of collar",
+        "woman in front of statue",
+        "woman to the left of pocket",
+        "woman by statue",
+        "woman wearing bracelets",
+        "woman using phone",
+        "collar to the right of woman",
+        "shirt to the left of pocket",
+        "lips to the right of phone",
+        "pocket to the right of woman",
+        "pocket to the right of shirt",
+        "statue behind woman"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "17284200",
+    "image_id": "2363419",
+    "question": "Do all these people have the same gender?",
+    "answer": "no",
+    "types": {
+      "detailed": "sameGenderC",
+      "semantic": "attr",
+      "structural": "compare"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "person (2675266,1804573,1900358,2400959,1900360)"
+      },
+      {
+        "operation": "same",
+        "dependencies": [
+          0
+        ],
+        "argument": "gender"
+      }
+    ],
+    "semanticStr": "select: person (2675266,1804573,1900358,2400959,1900360)->same: gender [0]",
+    "sst": {
+      "objects": [
+        "man",
+        "sneakers",
+        "frisbee",
+        "umbrella",
+        "ground",
+        "cap",
+        "horns",
+        "bag",
+        "bottle",
+        "building",
+        "swan",
+        "women",
+        "sign",
+        "shirt",
+        "symbol"
+      ],
+      "counts": [
+        "man: 2",
+        "sneakers: 5",
+        "bag: 3",
+        "women: 2"
+      ],
+      "attributes": [
+        "sneakers: nike",
+        "frisbee: yellow",
+        "umbrella: green",
+        "cap: baseball",
+        "cap: black",
+        "horns: yellow",
+        "sign: black",
+        "label: white"
+      ],
+      "relations": [
+        "man with frisbee",
+        "man to the left of bag",
+        "man to the left of man",
+        "man to the right of women",
+        "man to the right of bag",
+        "man to the right of woman",
+        "sneakers to the right of sneakers",
+        "sneakers to the right of women",
+        "sneakers to the left of bag",
+        "sneakers to the right of woman",
+        "sneakers to the left of woman",
+        "sneakers to the left of building",
+        "sneakers to the left of sneakers",
+        "sneakers to the left of women",
+        "sneakers to the right of bag",
+        "frisbee to the right of women",
+        "frisbee to the right of woman",
+        "umbrella to the left of bag",
+        "umbrella to the left of man",
+        "man to the right of shirt",
+        "man to the right of horns",
+        "man to the right of label",
+        "man to the right of cap",
+        "man to the right of umbrella",
+        "man to the right of man"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08369253",
+    "image_id": "2372640",
+    "question": "Who is wearing pants?",
+    "answer": "man",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "pants (1796037)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "person,wearing,s (2527953)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: pants (1796037)->relate: person,wearing,s (2527953) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "cap",
+        "pants",
+        "man",
+        "ski",
+        "ground",
+        "flag",
+        "sky",
+        "pole",
+        "backpack",
+        "shoe",
+        "coat",
+        "cloud"
+      ],
+      "counts": [
+        "pole: 2"
+      ],
+      "attributes": [
+        "cap: blue",
+        "pants: black",
+        "ski: green",
+        "ski: long",
+        "sky: blue",
+        "sky: beautiful",
+        "pole: white",
+        "backpack: large",
+        "coat: red",
+        "cloud: white",
+        "cloud: low"
+      ],
+      "relations": [
+        "pants to the right of pole",
+        "pants to the left of pole",
+        "man wearing cap",
+        "man wearing coat",
+        "man to the left of pole",
+        "man wearing backpack",
+        "man wearing pants",
+        "man to the right of pole",
+        "flag attached to backpack",
+        "pole to the right of pole",
+        "pole to the right of man",
+        "pole to the right of pants",
+        "shoe to the right of pole",
+        "pole to the left of man",
+        "pole to the left of pants",
+        "pole to the left of shoe",
+        "pole to the left of pole"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "05515937",
+    "image_id": "2405722",
+    "question": "What bird is it?",
+    "answer": "parrot",
+    "types": {
+      "detailed": "category",
+      "semantic": "cat",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "bird (329774)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: bird (329774)->query: name [0]",
+    "sst": {
+      "objects": [
+        "palm tree",
+        "leaves",
+        "bushes",
+        "feathers",
+        "fence",
+        "stone",
+        "wall",
+        "ladder",
+        "beak",
+        "parrot",
+        "clouds",
+        "sky",
+        "hillside",
+        "straw",
+        "rock"
+      ],
+      "counts": [
+        "palm tree: 5",
+        "leaves: 2",
+        "bushes: 2",
+        "stone: 3",
+        "wall: 2",
+        "rock: 2"
+      ],
+      "attributes": [
+        "leaves: green",
+        "bushes: tropical",
+        "feathers: white",
+        "feathers: ruffled",
+        "fence: silver",
+        "fence: chain-link",
+        "wall: stone",
+        "wall: rock",
+        "ladder: blue",
+        "ladder: metal",
+        "palm tree: tall",
+        "palm tree: green",
+        "beak: sharp",
+        "beak: curved",
+        "beak: black",
+        "beak: open",
+        "beak: pointy",
+        "parrot: white",
+        "clouds: small",
+        "clouds: white"
+      ],
+      "relations": [
+        "palm tree behind parrot",
+        "palm tree on top of hillside",
+        "palm tree to the left of leaves",
+        "palm tree to the right of feathers",
+        "palm tree to the left of bushes",
+        "palm tree to the right of parrot",
+        "leaves to the right of parrot",
+        "bushes to the right of bushes",
+        "bushes near straw",
+        "bushes to the right of palm tree",
+        "feathers to the left of palm tree",
+        "feathers to the right of rock",
+        "feathers to the right of hillside",
+        "feathers to the right of wall",
+        "fence on hillside",
+        "fence to the left of parrot",
+        "fence behind parrot",
+        "stone to the left of parrot",
+        "stone to the left of beak",
+        "stone to the left of stone",
+        "wall to the left of beak",
+        "wall to the left of parrot",
+        "stone to the right of stone",
+        "ladder to the left of parrot",
+        "palm tree to the left of palm tree"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "15962275",
+    "image_id": "2337344",
+    "question": "Are there both plates and forks in this picture?",
+    "answer": "yes",
+    "types": {
+      "detailed": "existAnd",
+      "semantic": "obj",
+      "structural": "logical"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "fork (958012)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          0
+        ],
+        "argument": "?"
+      },
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "plate (958006) "
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      },
+      {
+        "operation": "and",
+        "dependencies": [
+          1,
+          3
+        ],
+        "argument": ""
+      }
+    ],
+    "semanticStr": "select: fork (958012)->exist: ? [0]->select: plate (958006) ->exist: ? [2]->and:  [1, 3]",
+    "sst": {
+      "objects": [
+        "napkin",
+        "floor",
+        "girl",
+        "food",
+        "boy",
+        "container",
+        "spices",
+        "glass",
+        "shirt",
+        "salt shaker",
+        "fork",
+        "straw",
+        "drink",
+        "spoon",
+        "plate"
+      ],
+      "counts": [
+        "glass: 2"
+      ],
+      "attributes": [
+        "floor: wood",
+        "container: clear",
+        "shirt: orange",
+        "salt shaker: glass",
+        "fork: silver",
+        "straw: plastic",
+        "drink: red",
+        "glass: clear",
+        "glass: empty",
+        "plate: white",
+        "table: brown",
+        "chair: wood"
+      ],
+      "relations": [
+        "napkin on table",
+        "napkin to the right of container",
+        "floor to the left of boy",
+        "floor to the right of girl",
+        "floor to the right of chair",
+        "girl at table",
+        "girl to the left of straw",
+        "girl to the left of salt shaker",
+        "girl to the left of floor",
+        "girl to the left of drink",
+        "girl to the left of glass",
+        "girl to the left of boy",
+        "food on plate",
+        "food to the left of boy",
+        "food to the left of glass",
+        "food to the left of shirt",
+        "boy holding salt shaker",
+        "boy at table",
+        "boy to the right of chair",
+        "boy to the right of fork",
+        "boy to the right of straw",
+        "boy to the right of drink",
+        "boy to the right of spoon",
+        "boy to the right of plate",
+        "boy sitting at table"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "09229761",
+    "image_id": "2372693",
+    "question": "Does the man ride a horse?",
+    "answer": "no",
+    "types": {
+      "detailed": "relVerifyCo",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "man (1927215)"
+      },
+      {
+        "operation": "verify rel",
+        "dependencies": [
+          0
+        ],
+        "argument": "horse,riding,o (-)"
+      }
+    ],
+    "semanticStr": "select: man (1927215)->verify rel: horse,riding,o (-) [0]",
+    "sst": {
+      "objects": [
+        "bike",
+        "man",
+        "license plate",
+        "car",
+        "road",
+        "bicycle",
+        "person",
+        "tape",
+        "sidewalk",
+        "minivan",
+        "helmet",
+        "buildings",
+        "bus",
+        "graffiti",
+        "wheel"
+      ],
+      "counts": [
+        "bike: 3",
+        "car: 5",
+        "sidewalk: 4",
+        "graffiti: 2"
+      ],
+      "attributes": [
+        "license plate: white",
+        "tape: yellow",
+        "minivan: dark",
+        "car: driving",
+        "buildings: brown",
+        "dumpster: green"
+      ],
+      "relations": [
+        "bike to the right of car",
+        "bike to the right of sidewalk",
+        "man to the left of dumpster",
+        "man to the right of sidewalk",
+        "man to the left of car",
+        "man to the left of minivan",
+        "man to the right of car",
+        "man riding bike",
+        "man to the right of license plate",
+        "license plate to the left of man",
+        "license plate to the left of minivan",
+        "license plate to the left of car",
+        "license plate to the right of buildings",
+        "license plate to the left of person",
+        "car to the left of bike",
+        "car to the left of person",
+        "car to the left of bicycle",
+        "car to the left of man",
+        "road to the right of car",
+        "bicycle to the left of car",
+        "bicycle to the right of car",
+        "bicycle to the left of dumpster",
+        "bicycle to the right of sidewalk",
+        "bicycle to the left of minivan",
+        "bicycle to the right of wheel"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "13663260",
+    "image_id": "2333016",
+    "question": "Is the curtain on the right side or on the left of the picture?",
+    "answer": "right",
+    "types": {
+      "detailed": "positionChoose",
+      "semantic": "attr",
+      "structural": "choose"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "curtain (968238)"
+      },
+      {
+        "operation": "choose hposition",
+        "dependencies": [
+          0
+        ],
+        "argument": "right|left"
+      }
+    ],
+    "semanticStr": "select: curtain (968238)->choose hposition: right|left [0]",
+    "sst": {
+      "objects": [
+        "wall",
+        "screen",
+        "office",
+        "cup",
+        "book",
+        "computer mouse",
+        "curtain",
+        "window",
+        "monitor",
+        "desk",
+        "rug",
+        "chair",
+        "pen",
+        "tablet",
+        "glass"
+      ],
+      "counts": [],
+      "attributes": [
+        "wall: white",
+        "screen: lit",
+        "book: open",
+        "curtain: patterned",
+        "monitor: gray",
+        "desk: rectangular",
+        "rug: dark",
+        "tablet: black",
+        "keyboard: white"
+      ],
+      "relations": [
+        "wall to the left of window",
+        "wall to the right of screen",
+        "wall to the right of monitor",
+        "screen to the left of curtain",
+        "screen on desk",
+        "screen to the left of wall",
+        "cup to the right of keyboard",
+        "cup to the left of window",
+        "cup on desk",
+        "book on desk",
+        "book to the left of keyboard",
+        "book to the left of tablet",
+        "computer mouse to the right of keyboard",
+        "computer mouse on desk",
+        "computer mouse to the right of tablet",
+        "computer mouse to the left of curtain",
+        "curtain to the right of screen",
+        "curtain on window",
+        "curtain to the right of keyboard",
+        "curtain to the right of monitor",
+        "curtain to the right of computer mouse",
+        "window to the right of desk",
+        "window to the right of cup",
+        "window to the right of wall",
+        "monitor to the left of wall"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08321209",
+    "image_id": "2349976",
+    "question": "What color is the jersey the boy is wearing?",
+    "answer": "black",
+    "types": {
+      "detailed": "directOf",
+      "semantic": "attr",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "boy (3247888)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "jersey,wearing,o (2729725)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "color"
+      }
+    ],
+    "semanticStr": "select: boy (3247888)->relate: jersey,wearing,o (2729725) [0]->query: color [1]",
+    "sst": {
+      "objects": [
+        "man",
+        "shoe",
+        "jersey",
+        "shorts",
+        "shirt",
+        "ball",
+        "boy",
+        "wall",
+        "field",
+        "grass",
+        "socks",
+        "fence",
+        "letter"
+      ],
+      "counts": [
+        "shoe: 4",
+        "shorts: 2",
+        "socks: 3",
+        "fence: 2"
+      ],
+      "attributes": [
+        "shoe: orange",
+        "jersey: black",
+        "shorts: black",
+        "shirt: white",
+        "wall: blue",
+        "field: green",
+        "shorts: white",
+        "socks: white",
+        "fence: blue",
+        "letter: red",
+        "socks: black"
+      ],
+      "relations": [
+        "man standing on field",
+        "man in grass",
+        "man wearing shorts",
+        "man wearing shoe",
+        "man wearing socks",
+        "shoe to the right of shoe",
+        "shoe to the left of socks",
+        "shoe to the left of shoe",
+        "boy wearing shoe",
+        "boy wearing shorts",
+        "boy standing on field",
+        "boy wearing jersey",
+        "wall behind field",
+        "socks to the right of shoe",
+        "socks to the left of socks",
+        "socks to the right of socks"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "16130590",
+    "image_id": "2317756",
+    "question": "Does the person to the left of the man appear to be sitting?",
+    "answer": "yes",
+    "types": {
+      "detailed": "verifyAttrK",
+      "semantic": "attr",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "man (1017651)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "person,to the left of,s (1017653)"
+      },
+      {
+        "operation": "verify pose",
+        "dependencies": [
+          1
+        ],
+        "argument": "sitting"
+      }
+    ],
+    "semanticStr": "select: man (1017651)->relate: person,to the left of,s (1017653) [0]->verify pose: sitting [1]",
+    "sst": {
+      "objects": [
+        "hill",
+        "flowers",
+        "couple",
+        "woman",
+        "bench",
+        "man",
+        "tree",
+        "walkway",
+        "branch",
+        "dress",
+        "shoes",
+        "shirt"
+      ],
+      "counts": [
+        "bench: 2",
+        "tree: 3"
+      ],
+      "attributes": [
+        "hill: grassy",
+        "flowers: tall",
+        "couple: sitting",
+        "woman: sitting",
+        "bench: broken",
+        "man: sitting",
+        "walkway: patterned",
+        "walkway: brick",
+        "walkway: paved",
+        "shirt: white"
+      ],
+      "relations": [
+        "hill behind bench",
+        "couple to the right of bench",
+        "couple on bench",
+        "couple to the left of bench",
+        "woman on bench",
+        "woman sitting on bench",
+        "woman looking at man",
+        "woman to the left of shirt",
+        "woman wearing dress",
+        "woman to the left of bench",
+        "woman to the left of shoes",
+        "woman to the left of man",
+        "bench on walkway",
+        "bench near bench",
+        "bench next to bench",
+        "bench to the right of woman",
+        "bench to the right of couple",
+        "bench to the right of man",
+        "bench to the right of dress",
+        "bench to the right of bench",
+        "man wearing shoes",
+        "man sitting on bench",
+        "man on bench",
+        "man wearing shirt",
+        "man to the right of woman"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "11615428",
+    "image_id": "2366513",
+    "question": "Is there any surfboard to the right of the man the people are standing by?",
+    "answer": "yes",
+    "types": {
+      "detailed": "existRelS",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "people (2230961)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "man,standing near,o (2318107)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "surfboard,to the right of,s (1970781)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      }
+    ],
+    "semanticStr": "select: people (2230961)->relate: man,standing near,o (2318107) [0]->relate: surfboard,to the right of,s (1970781) [1]->exist: ? [2]",
+    "sst": {
+      "objects": [
+        "surfboards",
+        "beach",
+        "people",
+        "mountains",
+        "cars",
+        "wetsuit",
+        "man",
+        "water",
+        "hills",
+        "surfboard",
+        "buildings"
+      ],
+      "counts": [
+        "surfboards: 2",
+        "people: 3",
+        "cars: 5",
+        "wetsuit: 5",
+        "man: 2",
+        "water: 2",
+        "surfboard: 4",
+        "buildings: 2"
+      ],
+      "attributes": [
+        "wetsuit: black",
+        "surfboard: light blue",
+        "water: calm",
+        "water: ocean",
+        "surfboard: white",
+        "surfboard: blue"
+      ],
+      "relations": [
+        "surfboards to the right of wetsuit",
+        "surfboards to the left of surfboard",
+        "surfboards to the right of people",
+        "surfboards to the left of man",
+        "people wearing wetsuit",
+        "people on beach",
+        "people to the left of wetsuit",
+        "people to the left of people",
+        "people to the left of surfboards",
+        "people to the right of wetsuit",
+        "people to the right of people",
+        "people to the left of man",
+        "people to the left of surfboard",
+        "people to the right of buildings",
+        "people standing near man",
+        "people to the right of surfboards",
+        "mountains to the left of cars",
+        "cars to the right of mountains",
+        "cars to the right of cars",
+        "wetsuit to the left of people",
+        "wetsuit to the left of wetsuit",
+        "wetsuit to the right of people",
+        "wetsuit to the right of surfboards",
+        "wetsuit to the left of surfboard",
+        "wetsuit to the left of man"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08185113",
+    "image_id": "2397948",
+    "question": "What is she holding?",
+    "answer": "skis",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "she (1184716)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,holding,o (1184714)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: she (1184716)->relate: _,holding,o (1184714) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "pole",
+        "skis",
+        "goggles",
+        "woman",
+        "fence",
+        "sky",
+        "ground",
+        "backpack",
+        "gloves",
+        "hat",
+        "glove"
+      ],
+      "counts": [
+        "pole: 3"
+      ],
+      "attributes": [
+        "pole: black",
+        "goggles: large",
+        "goggles: black",
+        "fence: orange",
+        "sky: blue",
+        "sky: cloudy",
+        "backpack: gray",
+        "pole: red",
+        "gloves: black",
+        "hat: white",
+        "glove: white"
+      ],
+      "relations": [
+        "pole to the right of backpack",
+        "pole to the right of pole",
+        "pole to the right of woman",
+        "pole to the right of gloves",
+        "skis to the left of glove",
+        "skis to the left of goggles",
+        "skis to the left of backpack",
+        "goggles to the right of skis",
+        "woman to the left of pole",
+        "woman holding skis",
+        "woman wearing goggles",
+        "woman to the left of gloves",
+        "backpack to the left of gloves",
+        "backpack to the left of pole",
+        "backpack to the right of skis",
+        "gloves to the right of backpack",
+        "gloves on pole",
+        "gloves to the right of woman",
+        "gloves to the left of pole",
+        "pole to the left of pole",
+        "glove to the right of skis"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "03916612",
+    "image_id": "2368045",
+    "question": "Are there nuts or vegetables?",
+    "answer": "no",
+    "types": {
+      "detailed": "existOrC",
+      "semantic": "obj",
+      "structural": "logical"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "vegetables (-)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          0
+        ],
+        "argument": "?"
+      },
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "nuts (-) "
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      },
+      {
+        "operation": "or",
+        "dependencies": [
+          1,
+          3
+        ],
+        "argument": ""
+      }
+    ],
+    "semanticStr": "select: vegetables (-)->exist: ? [0]->select: nuts (-) ->exist: ? [2]->or:  [1, 3]",
+    "sst": {
+      "objects": [
+        "pencils",
+        "candy",
+        "brownies",
+        "frosting",
+        "cake",
+        "ground",
+        "marshmallow",
+        "fudge",
+        "train tracks",
+        "placemat",
+        "candies",
+        "wheels",
+        "foil",
+        "cookies",
+        "train"
+      ],
+      "counts": [
+        "candy: 5",
+        "cake: 2",
+        "marshmallow: 7"
+      ],
+      "attributes": [
+        "frosting: yellow",
+        "cake: frosted",
+        "cake: yellow",
+        "cake: pink",
+        "marshmallow: pink",
+        "candy: black",
+        "foil: aluminum",
+        "cookies: chocolate",
+        "marshmallow: white"
+      ],
+      "relations": [
+        "pencils to the right of candy",
+        "candy to the left of candy",
+        "candy to the right of candies",
+        "candy to the left of cake",
+        "brownies to the left of cake",
+        "frosting to the left of cookies",
+        "cake to the right of fudge",
+        "cake to the right of brownies",
+        "cake to the right of cake",
+        "cake to the right of candy",
+        "cake to the left of cake",
+        "cake to the left of marshmallow",
+        "marshmallow to the right of marshmallow",
+        "candy on top of frosting",
+        "candy to the left of wheels",
+        "candy to the right of candy",
+        "candy to the left of fudge",
+        "fudge to the left of marshmallow",
+        "fudge to the left of cake",
+        "fudge to the right of candy",
+        "candies to the left of candy",
+        "wheels to the right of candy",
+        "candy to the left of pencils",
+        "cookies to the right of frosting",
+        "marshmallow to the left of marshmallow"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08185117",
+    "image_id": "2397948",
+    "question": "Who is wearing goggles?",
+    "answer": "woman",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "goggles (1184717)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "person,wearing,s (1184716)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: goggles (1184717)->relate: person,wearing,s (1184716) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "pole",
+        "skis",
+        "goggles",
+        "woman",
+        "fence",
+        "sky",
+        "ground",
+        "backpack",
+        "gloves",
+        "hat",
+        "glove"
+      ],
+      "counts": [
+        "pole: 3"
+      ],
+      "attributes": [
+        "pole: black",
+        "goggles: large",
+        "goggles: black",
+        "fence: orange",
+        "sky: blue",
+        "sky: cloudy",
+        "backpack: gray",
+        "pole: red",
+        "gloves: black",
+        "hat: white",
+        "glove: white"
+      ],
+      "relations": [
+        "pole to the right of backpack",
+        "pole to the right of pole",
+        "pole to the right of woman",
+        "pole to the right of gloves",
+        "skis to the left of glove",
+        "skis to the left of goggles",
+        "skis to the left of backpack",
+        "goggles to the right of skis",
+        "woman to the left of pole",
+        "woman holding skis",
+        "woman wearing goggles",
+        "woman to the left of gloves",
+        "backpack to the left of gloves",
+        "backpack to the left of pole",
+        "backpack to the right of skis",
+        "gloves to the right of backpack",
+        "gloves on pole",
+        "gloves to the right of woman",
+        "gloves to the left of pole",
+        "pole to the left of pole",
+        "glove to the right of skis"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08185114",
+    "image_id": "2397948",
+    "question": "What is the woman holding?",
+    "answer": "skis",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "woman (1184716)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,holding,o (1184714)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: woman (1184716)->relate: _,holding,o (1184714) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "pole",
+        "skis",
+        "goggles",
+        "woman",
+        "fence",
+        "sky",
+        "ground",
+        "backpack",
+        "gloves",
+        "hat",
+        "glove"
+      ],
+      "counts": [
+        "pole: 3"
+      ],
+      "attributes": [
+        "pole: black",
+        "goggles: large",
+        "goggles: black",
+        "fence: orange",
+        "sky: blue",
+        "sky: cloudy",
+        "backpack: gray",
+        "pole: red",
+        "gloves: black",
+        "hat: white",
+        "glove: white"
+      ],
+      "relations": [
+        "pole to the right of backpack",
+        "pole to the right of pole",
+        "pole to the right of woman",
+        "pole to the right of gloves",
+        "skis to the left of glove",
+        "skis to the left of goggles",
+        "skis to the left of backpack",
+        "goggles to the right of skis",
+        "woman to the left of pole",
+        "woman holding skis",
+        "woman wearing goggles",
+        "woman to the left of gloves",
+        "backpack to the left of gloves",
+        "backpack to the left of pole",
+        "backpack to the right of skis",
+        "gloves to the right of backpack",
+        "gloves on pole",
+        "gloves to the right of woman",
+        "gloves to the left of pole",
+        "pole to the left of pole",
+        "glove to the right of skis"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "17267240",
+    "image_id": "930",
+    "question": "Are there shelves to the left of the books behind the man?",
+    "answer": "yes",
+    "types": {
+      "detailed": "existRelS",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "man (1030580)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "books,behind,s (1030581)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "shelf,to the left of,s (1030582)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      }
+    ],
+    "semanticStr": "select: man (1030580)->relate: books,behind,s (1030581) [0]->relate: shelf,to the left of,s (1030582) [1]->exist: ? [2]",
+    "sst": {
+      "objects": [
+        "lips",
+        "books",
+        "shelf",
+        "computer",
+        "monitor",
+        "shirt",
+        "wires",
+        "necklace",
+        "umbrella",
+        "box",
+        "book",
+        "desk",
+        "umbrellas",
+        "man"
+      ],
+      "counts": [
+        "shelf: 2",
+        "monitor: 2",
+        "box: 2",
+        "book: 2"
+      ],
+      "attributes": [
+        "computer: tan",
+        "monitor: white",
+        "monitor: off",
+        "shirt: blue",
+        "necklace: brown",
+        "umbrella: white",
+        "umbrella: torn",
+        "box: green",
+        "book: blue",
+        "book: purple",
+        "box: small",
+        "box: open"
+      ],
+      "relations": [
+        "lips to the right of desk",
+        "lips to the right of umbrellas",
+        "lips to the right of monitor",
+        "lips to the left of computer",
+        "lips to the right of umbrella",
+        "books behind man",
+        "books to the right of shelf",
+        "books on shelf",
+        "shelf behind man",
+        "shelf to the left of books",
+        "shelf to the right of box",
+        "computer to the right of monitor",
+        "computer to the right of lips",
+        "shelf to the left of man",
+        "monitor to the right of monitor",
+        "monitor to the left of lips",
+        "monitor to the right of umbrella",
+        "monitor to the left of monitor",
+        "monitor to the left of computer",
+        "monitor to the right of umbrellas",
+        "shirt to the right of wires",
+        "shirt to the right of umbrellas",
+        "shirt to the right of desk",
+        "wires to the left of shirt",
+        "wires to the left of man"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "101024942",
+    "image_id": "2371845",
+    "question": "What vegetable is to the right of the tomato?",
+    "answer": "lettuce",
+    "types": {
+      "detailed": "categoryRelS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "tomato (595634)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "vegetable,to the right of,s (595636)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: tomato (595634)->relate: vegetable,to the right of,s (595636) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "cucumber",
+        "peppers",
+        "plate",
+        "sauce",
+        "sofa",
+        "meat",
+        "bread",
+        "sandwich",
+        "salad",
+        "onion",
+        "tomato",
+        "cheese",
+        "lettuce"
+      ],
+      "counts": [
+        "plate: 2"
+      ],
+      "attributes": [
+        "sofa: purple",
+        "meat: brown"
+      ],
+      "relations": [
+        "cucumber in salad",
+        "cucumber to the left of onion",
+        "cucumber on salad",
+        "peppers in sandwich",
+        "peppers on sandwich",
+        "sauce on plate",
+        "sofa to the right of lettuce",
+        "sofa to the right of salad",
+        "meat with cheese",
+        "meat in sandwich",
+        "meat on sandwich",
+        "bread to the right of lettuce",
+        "bread with sandwich",
+        "sandwich with meat",
+        "sandwich with cheese",
+        "sandwich on plate",
+        "salad on plate",
+        "salad with onion",
+        "salad with tomato",
+        "salad to the left of sofa",
+        "onion to the left of lettuce",
+        "onion on lettuce",
+        "onion in salad",
+        "onion to the right of cucumber",
+        "onion on salad"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08185118",
+    "image_id": "2397948",
+    "question": "Who is wearing the goggles?",
+    "answer": "woman",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "goggles (1184717)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "person,wearing,s (1184716)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: goggles (1184717)->relate: person,wearing,s (1184716) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "pole",
+        "skis",
+        "goggles",
+        "woman",
+        "fence",
+        "sky",
+        "ground",
+        "backpack",
+        "gloves",
+        "hat",
+        "glove"
+      ],
+      "counts": [
+        "pole: 3"
+      ],
+      "attributes": [
+        "pole: black",
+        "goggles: large",
+        "goggles: black",
+        "fence: orange",
+        "sky: blue",
+        "sky: cloudy",
+        "backpack: gray",
+        "pole: red",
+        "gloves: black",
+        "hat: white",
+        "glove: white"
+      ],
+      "relations": [
+        "pole to the right of backpack",
+        "pole to the right of pole",
+        "pole to the right of woman",
+        "pole to the right of gloves",
+        "skis to the left of glove",
+        "skis to the left of goggles",
+        "skis to the left of backpack",
+        "goggles to the right of skis",
+        "woman to the left of pole",
+        "woman holding skis",
+        "woman wearing goggles",
+        "woman to the left of gloves",
+        "backpack to the left of gloves",
+        "backpack to the left of pole",
+        "backpack to the right of skis",
+        "gloves to the right of backpack",
+        "gloves on pole",
+        "gloves to the right of woman",
+        "gloves to the left of pole",
+        "pole to the left of pole",
+        "glove to the right of skis"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "06895964",
+    "image_id": "2385910",
+    "question": "How tall is the grass?",
+    "answer": "short",
+    "types": {
+      "detailed": "how",
+      "semantic": "attr",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "grass (520339)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "height"
+      }
+    ],
+    "semanticStr": "select: grass (520339)->query: height [0]",
+    "sst": {
+      "objects": [
+        "beak",
+        "number",
+        "tail",
+        "sheep",
+        "grass",
+        "paint",
+        "bird",
+        "post",
+        "fence",
+        "rock",
+        "flowers",
+        "field"
+      ],
+      "counts": [
+        "beak: 2",
+        "tail: 2",
+        "sheep: 3",
+        "bird: 2"
+      ],
+      "attributes": [
+        "beak: orange",
+        "beak: small",
+        "sheep: standing",
+        "sheep: white",
+        "sheep: old",
+        "sheep: fluffy",
+        "sheep: sitting",
+        "grass: short",
+        "grass: green",
+        "sheep: baby",
+        "sheep: young",
+        "paint: blue",
+        "bird: gray",
+        "post: small",
+        "post: wood",
+        "fence: mesh",
+        "fence: wire"
+      ],
+      "relations": [
+        "beak to the right of bird",
+        "beak to the left of sheep",
+        "number to the left of post",
+        "sheep to the left of post",
+        "sheep to the right of beak",
+        "sheep in field",
+        "sheep lying on grass",
+        "sheep to the right of flowers",
+        "sheep to the right of bird",
+        "paint to the left of post",
+        "bird on grass",
+        "bird to the right of bird",
+        "bird to the right of tail",
+        "bird to the left of beak",
+        "bird to the left of bird",
+        "bird to the left of sheep",
+        "post to the right of sheep",
+        "post to the right of paint",
+        "post to the right of number",
+        "flowers in field",
+        "flowers to the left of sheep",
+        "tail to the left of bird"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "09821879",
+    "image_id": "2410762",
+    "question": "Are there any dragonflies or frogs?",
+    "answer": "no",
+    "types": {
+      "detailed": "existOrC",
+      "semantic": "obj",
+      "structural": "logical"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "dragonfly (-)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          0
+        ],
+        "argument": "?"
+      },
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "frog (-) "
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      },
+      {
+        "operation": "or",
+        "dependencies": [
+          1,
+          3
+        ],
+        "argument": ""
+      }
+    ],
+    "semanticStr": "select: dragonfly (-)->exist: ? [0]->select: frog (-) ->exist: ? [2]->or:  [1, 3]",
+    "sst": {
+      "objects": [
+        "sheep",
+        "wool",
+        "horns",
+        "horn",
+        "rock",
+        "hilltop",
+        "grass",
+        "sky",
+        "mountain"
+      ],
+      "counts": [
+        "sheep: 10",
+        "wool: 6",
+        "horns: 4",
+        "horn: 2"
+      ],
+      "attributes": [
+        "horns: curved",
+        "horns: brown",
+        "grass: green",
+        "grass: thick",
+        "sky: blue",
+        "sky: clear",
+        "sky: cloudless"
+      ],
+      "relations": [
+        "sheep to the left of sheep",
+        "sheep to the right of sheep",
+        "sheep to the right of wool",
+        "wool to the left of sheep",
+        "wool to the right of sheep",
+        "wool to the right of wool",
+        "wool to the left of wool",
+        "wool to the right of horn",
+        "horns to the right of sheep",
+        "horns to the right of wool",
+        "wool to the left of horns",
+        "sheep to the left of horn",
+        "sheep to the left of wool",
+        "sheep to the right of horn",
+        "horn to the left of sheep",
+        "horn to the right of horn",
+        "horn to the left of wool",
+        "horn to the right of sheep",
+        "horn to the left of horn",
+        "sheep to the right of horns",
+        "sheep to the left of horns",
+        "wool to the right of horns",
+        "horns to the left of sheep",
+        "horns to the left of wool"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "13571728",
+    "image_id": "2330230",
+    "question": "The woman to the left of the man is wearing what?",
+    "answer": "dress",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "man (3503789)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "woman,to the left of,s (3328117)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "_,wearing,o (3328116)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          2
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: man (3503789)->relate: woman,to the left of,s (3328117) [0]->relate: _,wearing,o (3328116) [1]->query: name [2]",
+    "sst": {
+      "objects": [
+        "wheels",
+        "luggage",
+        "windows",
+        "hallway",
+        "dress",
+        "shirt",
+        "man",
+        "woman"
+      ],
+      "counts": [
+        "wheels: 2",
+        "luggage: 2",
+        "windows: 2",
+        "man: 2",
+        "woman: 2"
+      ],
+      "attributes": [
+        "luggage: brown",
+        "dress: green",
+        "shirt: blue",
+        "luggage: black"
+      ],
+      "relations": [
+        "shirt to the right of woman",
+        "man wearing shirt",
+        "man to the right of woman",
+        "woman wearing dress",
+        "woman to the left of man",
+        "woman to the left of shirt"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "00355883",
+    "image_id": "2319473",
+    "question": "Who is wearing a dress?",
+    "answer": "child",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "dress (2916739)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "person,wearing,s (3033723)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: dress (2916739)->relate: person,wearing,s (3033723) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "bedroom",
+        "dress",
+        "child",
+        "blanket",
+        "bed",
+        "sheet",
+        "plant",
+        "pot",
+        "flower",
+        "wall",
+        "table",
+        "frame",
+        "window",
+        "chair",
+        "pillow"
+      ],
+      "counts": [
+        "dress: 2",
+        "child: 2",
+        "frame: 2"
+      ],
+      "attributes": [
+        "dress: gray",
+        "sheet: white",
+        "wall: white",
+        "dress: black"
+      ],
+      "relations": [
+        "dress to the left of table",
+        "dress to the left of pillow",
+        "dress to the left of child",
+        "dress to the right of chair",
+        "dress to the left of flower",
+        "dress to the left of sheet",
+        "dress to the left of bed",
+        "dress to the left of plant",
+        "dress to the left of blanket",
+        "dress to the left of dress",
+        "child wearing dress",
+        "child to the right of child",
+        "child to the left of plant",
+        "child to the left of blanket",
+        "child to the right of dress",
+        "child to the left of flower",
+        "child to the left of pot",
+        "child to the left of sheet",
+        "child to the left of table",
+        "blanket to the right of child",
+        "blanket to the right of dress",
+        "bed in bedroom",
+        "bed to the right of dress",
+        "bed to the right of child",
+        "sheet to the right of dress"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "14676445",
+    "image_id": "2323095",
+    "question": "Which place is it?",
+    "answer": "harbor",
+    "types": {
+      "detailed": "place",
+      "semantic": "global",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "scene"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          0
+        ],
+        "argument": "place"
+      }
+    ],
+    "semanticStr": "select: scene->query: place [0]",
+    "sst": {
+      "objects": [
+        "clouds",
+        "ship",
+        "bracelet",
+        "boat",
+        "dock",
+        "building",
+        "sky",
+        "windows",
+        "buildings",
+        "buoy",
+        "water",
+        "harbor",
+        "cabin",
+        "city",
+        "roof"
+      ],
+      "counts": [
+        "boat: 11",
+        "sky: 2"
+      ],
+      "attributes": [
+        "dock: concrete",
+        "boat: small",
+        "building: white",
+        "boat: white",
+        "sky: blue",
+        "boat: blue",
+        "buildings: tall",
+        "roof: white"
+      ],
+      "relations": [
+        "ship to the right of crown",
+        "bracelet to the right of crown",
+        "bracelet to the right of boat",
+        "bracelet to the right of city",
+        "bracelet to the right of buildings",
+        "dock to the right of boat",
+        "dock to the right of buoy",
+        "boat to the right of buoy",
+        "building to the left of buildings",
+        "building to the left of boat",
+        "building to the left of city",
+        "boat to the left of dock",
+        "boat to the right of building",
+        "boat to the left of boat",
+        "boat to the right of boat",
+        "boat to the right of crown",
+        "boat to the right of city",
+        "boat to the right of buildings",
+        "boat in harbor",
+        "boat close to boat",
+        "boat to the left of bracelet",
+        "buildings to the left of boat",
+        "buildings to the right of building",
+        "buildings to the left of roof",
+        "buildings to the left of bracelet"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "14676447",
+    "image_id": "2323095",
+    "question": "Is this place a harbor or a beach?",
+    "answer": "harbor",
+    "types": {
+      "detailed": "placeChoose",
+      "semantic": "global",
+      "structural": "choose"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "scene"
+      },
+      {
+        "operation": "choose place",
+        "dependencies": [
+          0
+        ],
+        "argument": "harbor|beach"
+      }
+    ],
+    "semanticStr": "select: scene->choose place: harbor|beach [0]",
+    "sst": {
+      "objects": [
+        "clouds",
+        "ship",
+        "bracelet",
+        "boat",
+        "dock",
+        "building",
+        "sky",
+        "windows",
+        "buildings",
+        "buoy",
+        "water",
+        "harbor",
+        "cabin",
+        "city",
+        "roof"
+      ],
+      "counts": [
+        "boat: 11",
+        "sky: 2"
+      ],
+      "attributes": [
+        "dock: concrete",
+        "boat: small",
+        "building: white",
+        "boat: white",
+        "sky: blue",
+        "boat: blue",
+        "buildings: tall",
+        "roof: white"
+      ],
+      "relations": [
+        "ship to the right of crown",
+        "bracelet to the right of crown",
+        "bracelet to the right of boat",
+        "bracelet to the right of city",
+        "bracelet to the right of buildings",
+        "dock to the right of boat",
+        "dock to the right of buoy",
+        "boat to the right of buoy",
+        "building to the left of buildings",
+        "building to the left of boat",
+        "building to the left of city",
+        "boat to the left of dock",
+        "boat to the right of building",
+        "boat to the left of boat",
+        "boat to the right of boat",
+        "boat to the right of crown",
+        "boat to the right of city",
+        "boat to the right of buildings",
+        "boat in harbor",
+        "boat close to boat",
+        "boat to the left of bracelet",
+        "buildings to the left of boat",
+        "buildings to the right of building",
+        "buildings to the left of roof",
+        "buildings to the left of bracelet"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "0328071",
+    "image_id": "2339443",
+    "question": "Does the boat to the left of the flag look small or large?",
+    "answer": "small",
+    "types": {
+      "detailed": "chooseAttr",
+      "semantic": "attr",
+      "structural": "choose"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "flag (2328930)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "boat,to the left of,s (3151228)"
+      },
+      {
+        "operation": "choose size",
+        "dependencies": [
+          1
+        ],
+        "argument": "small|large"
+      }
+    ],
+    "semanticStr": "select: flag (2328930)->relate: boat,to the left of,s (3151228) [0]->choose size: small|large [1]",
+    "sst": {
+      "objects": [
+        "people",
+        "roof",
+        "wall",
+        "shore",
+        "boat",
+        "water",
+        "tree",
+        "person",
+        "flag",
+        "building"
+      ],
+      "counts": [
+        "roof: 2",
+        "boat: 2",
+        "person: 2"
+      ],
+      "attributes": [
+        "roof: white",
+        "shore: grassy",
+        "shore: rocky",
+        "tree: large",
+        "boat: small",
+        "boat: white",
+        "flag: blue",
+        "building: green"
+      ],
+      "relations": [
+        "people to the left of wall",
+        "wall to the right of people",
+        "shore to the right of person",
+        "shore to the right of boat",
+        "boat to the right of boat",
+        "boat to the right of person",
+        "boat on water",
+        "person to the left of person",
+        "person to the left of boat",
+        "person to the left of shore",
+        "boat to the left of flag",
+        "boat to the left of shore",
+        "boat to the left of boat",
+        "flag to the right of boat",
+        "person to the right of person"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "03739128",
+    "image_id": "2359844",
+    "question": "Which kind of furniture is right of the drawers?",
+    "answer": "shelves",
+    "types": {
+      "detailed": "categoryRelS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "drawers (3222133)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "furniture,to the right of,s (3763657)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: drawers (3222133)->relate: furniture,to the right of,s (3763657) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "vegetables",
+        "lamp",
+        "step",
+        "vegetable",
+        "table",
+        "basket",
+        "drawers",
+        "shelf",
+        "wall",
+        "water",
+        "ground",
+        "window",
+        "onion",
+        "onions",
+        "container"
+      ],
+      "counts": [
+        "vegetables: 3",
+        "step: 3",
+        "vegetable: 10",
+        "table: 2",
+        "wall: 2",
+        "onion: 5"
+      ],
+      "attributes": [
+        "vegetables: fresh",
+        "vegetables: green",
+        "lamp: clear",
+        "table: brown",
+        "table: wood",
+        "drawers: wood",
+        "wall: gray",
+        "wall: brick",
+        "onion: stacked",
+        "onions: white",
+        "container: brown",
+        "shelves: wood",
+        "moss: green",
+        "floor: gray",
+        "floor: brick",
+        "stove: wood"
+      ],
+      "relations": [
+        "vegetables to the right of vegetable",
+        "vegetables to the left of wall",
+        "vegetables to the left of shelves",
+        "vegetables to the right of vegetables",
+        "vegetables to the left of drawers",
+        "vegetables to the left of vegetable",
+        "vegetables to the left of vegetables",
+        "lamp to the right of wall",
+        "lamp to the right of pot",
+        "step to the left of ground",
+        "step to the left of floor",
+        "step to the left of table",
+        "step to the right of moss",
+        "vegetable to the right of vegetable",
+        "vegetable to the left of stove",
+        "vegetable to the right of onion",
+        "vegetable to the left of vegetable",
+        "vegetable to the left of vegetables",
+        "vegetable to the left of drawers",
+        "table to the right of wall",
+        "table to the right of stove",
+        "table to the right of pan",
+        "basket to the right of shelf",
+        "basket to the right of window",
+        "drawers to the right of vegetable"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "06645355",
+    "image_id": "2372224",
+    "question": "Who is in front of the gray building?",
+    "answer": "passengers",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "building (593133)"
+      },
+      {
+        "operation": "filter color",
+        "dependencies": [
+          0
+        ],
+        "argument": "gray"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "person,in front of,s (593131)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          2
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: building (593133)->filter color: gray [0]->relate: person,in front of,s (593131) [1]->query: name [2]",
+    "sst": {
+      "objects": [
+        "tire",
+        "windows",
+        "wheel",
+        "wing",
+        "person",
+        "window",
+        "passengers",
+        "logo",
+        "building",
+        "sun",
+        "airplane"
+      ],
+      "counts": [
+        "person: 2"
+      ],
+      "attributes": [
+        "windows: tiny",
+        "wing: large",
+        "wing: long",
+        "logo: blue",
+        "logo: large",
+        "building: gray",
+        "airplane: waiting",
+        "airplane: parked"
+      ],
+      "relations": [
+        "tire below wing",
+        "tire to the right of wing",
+        "tire to the right of building",
+        "tire to the right of passengers",
+        "windows to the right of building",
+        "windows on the side of airplane",
+        "wheel to the right of building",
+        "wheel below wing",
+        "wheel to the right of passengers",
+        "wing to the left of tire",
+        "window on the side of airplane",
+        "passengers to the left of tire",
+        "passengers to the left of wheel",
+        "passengers boarding airplane",
+        "passengers in front of building",
+        "building to the left of wheel",
+        "building behind passengers",
+        "building to the left of tire",
+        "building to the left of windows"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "06645358",
+    "image_id": "2372224",
+    "question": "What are the passengers in front of?",
+    "answer": "building",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "passengers (593131)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,in front of,o (593133)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: passengers (593131)->relate: _,in front of,o (593133) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "tire",
+        "windows",
+        "wheel",
+        "wing",
+        "person",
+        "window",
+        "passengers",
+        "logo",
+        "building",
+        "sun",
+        "airplane"
+      ],
+      "counts": [
+        "person: 2"
+      ],
+      "attributes": [
+        "windows: tiny",
+        "wing: large",
+        "wing: long",
+        "logo: blue",
+        "logo: large",
+        "building: gray",
+        "airplane: waiting",
+        "airplane: parked"
+      ],
+      "relations": [
+        "tire below wing",
+        "tire to the right of wing",
+        "tire to the right of building",
+        "tire to the right of passengers",
+        "windows to the right of building",
+        "windows on the side of airplane",
+        "wheel to the right of building",
+        "wheel below wing",
+        "wheel to the right of passengers",
+        "wing to the left of tire",
+        "window on the side of airplane",
+        "passengers to the left of tire",
+        "passengers to the left of wheel",
+        "passengers boarding airplane",
+        "passengers in front of building",
+        "building to the left of wheel",
+        "building behind passengers",
+        "building to the left of tire",
+        "building to the left of windows"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "04285321",
+    "image_id": "2374871",
+    "question": "What is the color of the fence made of metal?",
+    "answer": "green",
+    "types": {
+      "detailed": "directOf",
+      "semantic": "attr",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "fence (1886583)"
+      },
+      {
+        "operation": "filter material",
+        "dependencies": [
+          0
+        ],
+        "argument": "metal"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "color"
+      }
+    ],
+    "semanticStr": "select: fence (1886583)->filter material: metal [0]->query: color [1]",
+    "sst": {
+      "objects": [
+        "cow",
+        "wall",
+        "floor",
+        "food",
+        "goat",
+        "sheep",
+        "fence",
+        "ground",
+        "tag",
+        "tail"
+      ],
+      "counts": [
+        "goat: 6"
+      ],
+      "attributes": [
+        "cow: small",
+        "sheep: black",
+        "fence: metal",
+        "fence: green",
+        "tag: yellow",
+        "tail: small",
+        "tail: gray"
+      ],
+      "relations": [
+        "cow to the right of goat",
+        "cow to the right of sheep",
+        "wall to the left of goat",
+        "goat to the left of goat",
+        "sheep to the left of cow",
+        "goat to the left of cow",
+        "goat to the right of goat",
+        "goat to the right of wall"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "13112324",
+    "image_id": "2408005",
+    "question": "Is the person to the left of the frisbee wearing a glove?",
+    "answer": "no",
+    "types": {
+      "detailed": "relVerifyCo",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "frisbee (269863)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "person,to the left of,s (269862)"
+      },
+      {
+        "operation": "verify rel",
+        "dependencies": [
+          1
+        ],
+        "argument": "glove,wearing,o (-)"
+      }
+    ],
+    "semanticStr": "select: frisbee (269863)->relate: person,to the left of,s (269862) [0]->verify rel: glove,wearing,o (-) [1]",
+    "sst": {
+      "objects": [
+        "shoe",
+        "sidewalk",
+        "ground",
+        "leaf",
+        "earring",
+        "tree",
+        "house",
+        "tire",
+        "trunk",
+        "shirt",
+        "sneakers",
+        "license plate",
+        "shorts",
+        "door",
+        "street"
+      ],
+      "counts": [
+        "tree: 2",
+        "house: 2"
+      ],
+      "attributes": [
+        "shoe: black",
+        "leaf: green",
+        "shirt: gray",
+        "sneakers: white",
+        "house: gray",
+        "shorts: beige",
+        "frisbee: red",
+        "truck: red",
+        "cap: dark"
+      ],
+      "relations": [
+        "shoe to the right of sidewalk",
+        "shoe to the right of sneakers",
+        "sidewalk below frisbee",
+        "sidewalk below man",
+        "sidewalk to the left of shoe",
+        "leaf to the left of cap",
+        "leaf to the left of man",
+        "earring to the right of tree",
+        "tree to the right of shirt",
+        "tree to the right of man",
+        "house to the right of shirt",
+        "house to the right of man",
+        "house to the right of shorts",
+        "tire to the left of man",
+        "tire to the left of shorts",
+        "trunk to the left of truck",
+        "shirt to the left of tree",
+        "shirt to the left of house",
+        "shirt to the right of house",
+        "shirt to the right of door",
+        "shirt to the right of tree",
+        "shirt to the right of mirror",
+        "shirt to the left of frisbee",
+        "sneakers to the left of shoe",
+        "license plate to the right of shorts"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "13598462",
+    "image_id": "2399127",
+    "question": "What device is not on?",
+    "answer": "remote control",
+    "types": {
+      "detailed": "categoryThat",
+      "semantic": "cat",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "device (418896)"
+      },
+      {
+        "operation": "filter",
+        "dependencies": [
+          0
+        ],
+        "argument": "not(on)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: device (418896)->filter: not(on) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "thumb",
+        "television",
+        "wrist",
+        "person",
+        "remote control"
+      ],
+      "counts": [],
+      "attributes": [
+        "television: on",
+        "remote control: gray"
+      ],
+      "relations": [
+        "wrist to the right of remote control",
+        "remote control to the left of wrist"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "0364186",
+    "image_id": "2334847",
+    "question": "Is the chair to the left of a pillow?",
+    "answer": "no",
+    "types": {
+      "detailed": "relVerifyCo",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "chair (2287510)"
+      },
+      {
+        "operation": "verify rel",
+        "dependencies": [
+          0
+        ],
+        "argument": "pillow,to the left of,o (-)"
+      }
+    ],
+    "semanticStr": "select: chair (2287510)->verify rel: pillow,to the left of,o (-) [0]",
+    "sst": {
+      "objects": [
+        "cat",
+        "books",
+        "book",
+        "shelf",
+        "blanket",
+        "paws",
+        "chair",
+        "bookshelf",
+        "bed"
+      ],
+      "counts": [
+        "books: 13",
+        "book: 14",
+        "shelf: 2",
+        "bookshelf: 2"
+      ],
+      "attributes": [
+        "shelf: wood",
+        "blanket: purple",
+        "paws: black",
+        "chair: red"
+      ],
+      "relations": [
+        "cat to the left of blanket",
+        "books to the right of books",
+        "books to the left of books",
+        "books to the left of shelf",
+        "books to the left of book",
+        "book to the left of book",
+        "book to the right of books",
+        "book to the left of books",
+        "book to the right of book",
+        "book to the left of shelf",
+        "shelf to the right of bookshelf",
+        "shelf to the right of blanket",
+        "books on shelf",
+        "books to the right of book",
+        "shelf to the right of book",
+        "shelf to the right of books",
+        "book to the right of chair",
+        "blanket to the left of shelf",
+        "blanket to the right of cat",
+        "books to the left of chair",
+        "chair near bookshelf",
+        "chair to the right of books",
+        "chair to the right of book",
+        "chair to the left of book",
+        "bookshelf near chair"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "18555171",
+    "image_id": "2384623",
+    "question": "What is located on top of the coffee table?",
+    "answer": "book",
+    "types": {
+      "detailed": "relS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "coffee table (1307023)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,on top of,s (1307028)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: coffee table (1307023)->relate: _,on top of,s (1307028) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "floor",
+        "dining table",
+        "vase",
+        "coffee table",
+        "chandelier",
+        "dining room",
+        "windows",
+        "couch",
+        "book",
+        "floor lamp",
+        "pillows",
+        "living room",
+        "wall",
+        "door",
+        "picture"
+      ],
+      "counts": [],
+      "attributes": [
+        "floor: hardwood",
+        "dining table: wood",
+        "coffee table: wood",
+        "coffee table: round",
+        "chandelier: antique",
+        "chandelier: hanging",
+        "windows: framed",
+        "couch: wood",
+        "book: old",
+        "floor lamp: antique",
+        "floor lamp: black",
+        "pillows: brown",
+        "door: open"
+      ],
+      "relations": [
+        "dining table to the left of living room",
+        "vase to the left of living room",
+        "coffee table to the left of floor lamp",
+        "chandelier in living room",
+        "dining room to the left of door",
+        "dining room to the left of wall",
+        "dining room to the left of living room",
+        "windows to the right of door",
+        "windows to the left of picture",
+        "windows to the left of floor lamp",
+        "couch to the left of floor lamp",
+        "book on top of coffee table",
+        "floor lamp to the right of couch",
+        "floor lamp to the right of windows",
+        "floor lamp to the right of picture",
+        "floor lamp to the right of coffee table",
+        "living room to the right of flowers",
+        "living room to the right of dining table",
+        "living room to the right of dining room",
+        "living room to the right of vase",
+        "wall to the right of dining room",
+        "door to the left of windows",
+        "door to the right of dining room",
+        "picture to the right of windows",
+        "picture on wall"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "0364188",
+    "image_id": "2334847",
+    "question": "Is there a computer in this photo?",
+    "answer": "no",
+    "types": {
+      "detailed": "existC",
+      "semantic": "obj",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "computer (-)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          0
+        ],
+        "argument": "?"
+      }
+    ],
+    "semanticStr": "select: computer (-)->exist: ? [0]",
+    "sst": {
+      "objects": [
+        "cat",
+        "books",
+        "book",
+        "shelf",
+        "blanket",
+        "paws",
+        "chair",
+        "bookshelf",
+        "bed"
+      ],
+      "counts": [
+        "books: 13",
+        "book: 14",
+        "shelf: 2",
+        "bookshelf: 2"
+      ],
+      "attributes": [
+        "shelf: wood",
+        "blanket: purple",
+        "paws: black",
+        "chair: red"
+      ],
+      "relations": [
+        "cat to the left of blanket",
+        "books to the right of books",
+        "books to the left of books",
+        "books to the left of shelf",
+        "books to the left of book",
+        "book to the left of book",
+        "book to the right of books",
+        "book to the left of books",
+        "book to the right of book",
+        "book to the left of shelf",
+        "shelf to the right of bookshelf",
+        "shelf to the right of blanket",
+        "books on shelf",
+        "books to the right of book",
+        "shelf to the right of book",
+        "shelf to the right of books",
+        "book to the right of chair",
+        "blanket to the left of shelf",
+        "blanket to the right of cat",
+        "books to the left of chair",
+        "chair near bookshelf",
+        "chair to the right of books",
+        "chair to the right of book",
+        "chair to the left of book",
+        "bookshelf near chair"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "08164591",
+    "image_id": "2356747",
+    "question": "On which side of the photo is the towel, the left or the right?",
+    "answer": "left",
+    "types": {
+      "detailed": "positionChoose",
+      "semantic": "attr",
+      "structural": "choose"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "towel (817695)"
+      },
+      {
+        "operation": "choose hposition",
+        "dependencies": [
+          0
+        ],
+        "argument": "left|right"
+      }
+    ],
+    "semanticStr": "select: towel (817695)->choose hposition: left|right [0]",
+    "sst": {
+      "objects": [
+        "cup",
+        "toothbrush",
+        "picture",
+        "shirt",
+        "wall",
+        "beard",
+        "liquid",
+        "mustache",
+        "door",
+        "hat",
+        "towel",
+        "teeth",
+        "man"
+      ],
+      "counts": [],
+      "attributes": [
+        "shirt: blue",
+        "wall: white",
+        "door: open"
+      ],
+      "relations": [
+        "toothbrush to the left of door",
+        "picture to the left of wall",
+        "wall to the right of picture",
+        "wall to the right of beard",
+        "wall to the right of hat",
+        "wall to the right of door",
+        "beard to the left of door",
+        "beard to the right of towel",
+        "beard to the left of wall",
+        "mustache to the right of towel",
+        "door behind man",
+        "door to the right of teeth",
+        "door to the left of wall",
+        "door to the right of beard",
+        "door to the right of toothbrush",
+        "hat to the left of wall",
+        "hat to the right of towel",
+        "towel to the left of mustache",
+        "towel to the left of beard",
+        "towel to the left of hat",
+        "towel to the left of teeth",
+        "teeth to the right of towel",
+        "teeth to the left of door",
+        "man with mustache",
+        "man wearing shirt"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "1942734",
+    "image_id": "2371012",
+    "question": "What type of vehicle is to the left of the boy that is wearing a shirt?",
+    "answer": "van",
+    "types": {
+      "detailed": "categoryRelS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "shirt (600371)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "boy,wearing,s (600365)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "vehicle,to the left of,s (600387)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          2
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: shirt (600371)->relate: boy,wearing,s (600365) [0]->relate: vehicle,to the left of,s (600387) [1]->query: name [2]",
+    "sst": {
+      "objects": [
+        "van",
+        "shirt",
+        "stroller",
+        "child",
+        "leaves",
+        "tree",
+        "tail",
+        "shorts",
+        "boy",
+        "power lines",
+        "air",
+        "grass",
+        "sky",
+        "kite",
+        "man"
+      ],
+      "counts": [
+        "shirt: 2"
+      ],
+      "attributes": [
+        "van: red",
+        "shirt: brown",
+        "leaves: green",
+        "tree: small",
+        "tree: green",
+        "tail: black",
+        "shorts: khaki",
+        "shirt: blue",
+        "boy: smiling",
+        "boy: happy",
+        "grass: brown",
+        "grass: short",
+        "sky: blue",
+        "kite: colorful",
+        "kite: rainbow colored",
+        "man: smiling",
+        "man: happy",
+        "bull: white"
+      ],
+      "relations": [
+        "van to the right of tree",
+        "van to the right of stroller",
+        "van to the left of man",
+        "van to the left of boy",
+        "van to the left of shirt",
+        "shirt to the right of van",
+        "shirt to the right of grass",
+        "shirt to the right of child",
+        "shirt to the right of stroller",
+        "shirt to the left of bull",
+        "shirt to the right of tree",
+        "stroller to the left of van",
+        "stroller to the left of shirt",
+        "stroller to the left of child",
+        "stroller to the right of tree",
+        "stroller to the left of boy",
+        "stroller to the left of man",
+        "child to the right of tree",
+        "child to the left of boy",
+        "child in stroller",
+        "child to the left of man",
+        "child to the left of shirt",
+        "child to the right of stroller",
+        "leaves to the left of kite",
+        "leaves to the left of tail"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "0464559",
+    "image_id": "2383984",
+    "question": "What's the book on?",
+    "answer": "coffee table",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "book (1314652)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,on,o (1314641)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: book (1314652)->relate: _,on,o (1314641) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "rug",
+        "coffee table",
+        "wheel",
+        "candle",
+        "flower",
+        "blanket",
+        "vase",
+        "shelf",
+        "stone",
+        "bowl",
+        "curtain",
+        "book",
+        "side table",
+        "living room",
+        "window"
+      ],
+      "counts": [
+        "wheel: 2",
+        "flower: 5",
+        "vase: 2",
+        "shelf: 2",
+        "curtain: 2"
+      ],
+      "attributes": [
+        "rug: white",
+        "coffee table: glass",
+        "coffee table: square",
+        "candle: white",
+        "flower: red",
+        "blanket: brown",
+        "vase: tall",
+        "vase: gray",
+        "bowl: orange",
+        "vase: white",
+        "curtain: brown",
+        "curtain: transparent",
+        "side table: brown",
+        "living room: large",
+        "living room: clean",
+        "window: large",
+        "window: white",
+        "window: bright",
+        "chair: white",
+        "lamp: large"
+      ],
+      "relations": [
+        "rug to the right of sofa",
+        "rug to the left of chair",
+        "rug to the right of side table",
+        "rug to the left of wheel",
+        "coffee table to the left of chair",
+        "coffee table to the right of sofa",
+        "wheel to the right of rug",
+        "candle to the right of sofa",
+        "candle to the right of curtain",
+        "candle on shelf",
+        "candle to the left of stone",
+        "candle to the left of fireplace",
+        "flower to the left of fireplace",
+        "flower to the right of flower",
+        "flower to the right of blanket",
+        "flower to the left of stone",
+        "flower to the right of vase",
+        "flower to the right of sofa",
+        "flower to the left of flower",
+        "flower to the left of vase",
+        "flower to the left of shelf",
+        "blanket to the left of shelf",
+        "blanket on sofa",
+        "blanket to the left of vase",
+        "blanket to the left of flower"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "0464558",
+    "image_id": "2383984",
+    "question": "What is the book on?",
+    "answer": "coffee table",
+    "types": {
+      "detailed": "relO",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "book (1314652)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "_,on,o (1314641)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          1
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: book (1314652)->relate: _,on,o (1314641) [0]->query: name [1]",
+    "sst": {
+      "objects": [
+        "rug",
+        "coffee table",
+        "wheel",
+        "candle",
+        "flower",
+        "blanket",
+        "vase",
+        "shelf",
+        "stone",
+        "bowl",
+        "curtain",
+        "book",
+        "side table",
+        "living room",
+        "window"
+      ],
+      "counts": [
+        "wheel: 2",
+        "flower: 5",
+        "vase: 2",
+        "shelf: 2",
+        "curtain: 2"
+      ],
+      "attributes": [
+        "rug: white",
+        "coffee table: glass",
+        "coffee table: square",
+        "candle: white",
+        "flower: red",
+        "blanket: brown",
+        "vase: tall",
+        "vase: gray",
+        "bowl: orange",
+        "vase: white",
+        "curtain: brown",
+        "curtain: transparent",
+        "side table: brown",
+        "living room: large",
+        "living room: clean",
+        "window: large",
+        "window: white",
+        "window: bright",
+        "chair: white",
+        "lamp: large"
+      ],
+      "relations": [
+        "rug to the right of sofa",
+        "rug to the left of chair",
+        "rug to the right of side table",
+        "rug to the left of wheel",
+        "coffee table to the left of chair",
+        "coffee table to the right of sofa",
+        "wheel to the right of rug",
+        "candle to the right of sofa",
+        "candle to the right of curtain",
+        "candle on shelf",
+        "candle to the left of stone",
+        "candle to the left of fireplace",
+        "flower to the left of fireplace",
+        "flower to the right of flower",
+        "flower to the right of blanket",
+        "flower to the left of stone",
+        "flower to the right of vase",
+        "flower to the right of sofa",
+        "flower to the left of flower",
+        "flower to the left of vase",
+        "flower to the left of shelf",
+        "blanket to the left of shelf",
+        "blanket on sofa",
+        "blanket to the left of vase",
+        "blanket to the left of flower"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "031007945",
+    "image_id": "2320373",
+    "question": "What is the fruit that is covered by the fruit that the banana is to the left of called?",
+    "answer": "apple",
+    "types": {
+      "detailed": "categoryRelS",
+      "semantic": "rel",
+      "structural": "query"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "banana (993819)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "fruit,to the left of,o (3943215)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "fruit,covered by,s (3943218)"
+      },
+      {
+        "operation": "query",
+        "dependencies": [
+          2
+        ],
+        "argument": "name"
+      }
+    ],
+    "semanticStr": "select: banana (993819)->relate: fruit,to the left of,o (3943215) [0]->relate: fruit,covered by,s (3943218) [1]->query: name [2]",
+    "sst": {
+      "objects": [
+        "banana",
+        "table",
+        "fruit",
+        "apples",
+        "bowl",
+        "apple",
+        "sticker"
+      ],
+      "counts": [
+        "fruit: 3",
+        "apple: 2"
+      ],
+      "attributes": [
+        "banana: ripe",
+        "table: granite",
+        "table: gray",
+        "bowl: blue",
+        "sticker: blue"
+      ],
+      "relations": [
+        "banana inside bowl",
+        "banana in bowl",
+        "banana to the left of fruit",
+        "banana to the left of sticker",
+        "fruit to the right of apples",
+        "fruit to the right of apple",
+        "fruit in bowl",
+        "apples inside bowl",
+        "apples in bowl",
+        "apples covered by fruit",
+        "apples to the left of fruit",
+        "bowl on table",
+        "bowl contain apples",
+        "apple to the left of fruit",
+        "apple covered by fruit",
+        "fruit covering apple",
+        "fruit inside bowl",
+        "fruit covering apples",
+        "fruit to the left of fruit",
+        "fruit to the right of fruit",
+        "fruit to the right of banana",
+        "sticker to the right of banana"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "13515212",
+    "image_id": "2397985",
+    "question": "Is the surfer to the left or to the right of the surfboard?",
+    "answer": "right",
+    "types": {
+      "detailed": "relChooser",
+      "semantic": "rel",
+      "structural": "choose"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "surfboard (429134)"
+      },
+      {
+        "operation": "choose rel",
+        "dependencies": [
+          0
+        ],
+        "argument": "surfer,to the right of|to the left of,s (429128)"
+      }
+    ],
+    "semanticStr": "select: surfboard (429134)->choose rel: surfer,to the right of|to the left of,s (429128) [0]",
+    "sst": {
+      "objects": [
+        "surfer",
+        "surfboard",
+        "water",
+        "wetsuit"
+      ],
+      "counts": [],
+      "attributes": [
+        "surfer: surfing",
+        "surfboard: black",
+        "water: blue",
+        "water: splashing",
+        "wetsuit: black"
+      ],
+      "relations": [
+        "surfer on top of surfboard",
+        "surfer to the right of surfboard",
+        "surfboard to the left of surfer"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "17728948",
+    "image_id": "2391600",
+    "question": "Is the bread on top of a table?",
+    "answer": "yes",
+    "types": {
+      "detailed": "relVerify",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "bread (1239631)"
+      },
+      {
+        "operation": "verify rel",
+        "dependencies": [
+          0
+        ],
+        "argument": "table,on top of,o (1239641)"
+      }
+    ],
+    "semanticStr": "select: bread (1239631)->verify rel: table,on top of,o (1239641) [0]",
+    "sst": {
+      "objects": [
+        "plate",
+        "man",
+        "cream",
+        "cheese",
+        "pepper",
+        "sauce",
+        "bowl",
+        "topping",
+        "table",
+        "meat",
+        "shirt",
+        "soup",
+        "spoon",
+        "bread"
+      ],
+      "counts": [
+        "cheese: 2",
+        "meat: 2"
+      ],
+      "attributes": [
+        "plate: white",
+        "plate: long",
+        "cheese: melted",
+        "pepper: green",
+        "sauce: white",
+        "bowl: white",
+        "table: wood",
+        "shirt: collared",
+        "shirt: long sleeved",
+        "spoon: steel",
+        "spoon: metal",
+        "spoon: silver",
+        "bread: white"
+      ],
+      "relations": [
+        "plate to the left of cream",
+        "plate to the left of sauce",
+        "man holding spoon",
+        "cream on top of bread",
+        "cream to the right of plate",
+        "cream to the right of meat",
+        "cheese inside bread",
+        "cheese to the right of pepper",
+        "cheese on top of bread",
+        "pepper to the left of cheese",
+        "sauce to the right of plate",
+        "sauce on top of bread",
+        "sauce to the right of meat",
+        "bowl on top of table",
+        "topping on top of bread",
+        "meat on top of bread",
+        "spoon inside bowl",
+        "meat to the left of sauce",
+        "meat to the left of cream",
+        "bread on top of table",
+        "bread on top of plate",
+        "bread contain meat",
+        "bread on top of bread",
+        "bread with meat",
+        "bread with bread"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "10889906",
+    "image_id": "2378087",
+    "question": "Does the knife next to the fork look black?",
+    "answer": "no",
+    "types": {
+      "detailed": "verifyAttrKC",
+      "semantic": "attr",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "fork (715246)"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          0
+        ],
+        "argument": "knife,next to,s (715248)"
+      },
+      {
+        "operation": "verify color",
+        "dependencies": [
+          1
+        ],
+        "argument": "black"
+      }
+    ],
+    "semanticStr": "select: fork (715246)->relate: knife,next to,s (715248) [0]->verify color: black [1]",
+    "sst": {
+      "objects": [
+        "plate",
+        "bubbles",
+        "table",
+        "shirt",
+        "napkin",
+        "floor",
+        "placemat",
+        "basil",
+        "cheese",
+        "pizza",
+        "ice cubes",
+        "person",
+        "glass",
+        "knife",
+        "leaves"
+      ],
+      "counts": [
+        "plate: 3",
+        "pizza: 2",
+        "fork: 2"
+      ],
+      "attributes": [
+        "napkin: white",
+        "floor: wood",
+        "plate: white",
+        "glass: clear",
+        "knife: silver",
+        "leaves: green",
+        "plate: round",
+        "pepperoni: large",
+        "fork: silver"
+      ],
+      "relations": [
+        "plate to the left of fork",
+        "plate near fork",
+        "plate to the left of bread",
+        "plate to the left of knife",
+        "plate to the left of plate",
+        "bubbles to the left of cheese",
+        "shirt to the left of floor",
+        "shirt to the left of glass",
+        "shirt to the left of ice cubes",
+        "floor to the right of glass",
+        "floor to the right of shirt",
+        "floor to the right of person",
+        "floor to the right of ice cubes",
+        "placemat to the right of pepperoni",
+        "placemat under plate",
+        "placemat below plate",
+        "basil on pizza",
+        "cheese to the right of bubbles",
+        "cheese to the left of bread",
+        "cheese to the left of plate",
+        "cheese on pizza",
+        "pizza on table",
+        "pizza with pepperoni",
+        "pizza on plate",
+        "plate above placemat"
+      ],
+      "text": []
+    }
+  },
+  {
+    "question_id": "13368729",
+    "image_id": "2411178",
+    "question": "Are there any books near the device on the right?",
+    "answer": "yes",
+    "types": {
+      "detailed": "existRelS",
+      "semantic": "rel",
+      "structural": "verify"
+    },
+    "semantic_program": [
+      {
+        "operation": "select",
+        "dependencies": [],
+        "argument": "device (1081991)"
+      },
+      {
+        "operation": "filter hposition",
+        "dependencies": [
+          0
+        ],
+        "argument": "right"
+      },
+      {
+        "operation": "relate",
+        "dependencies": [
+          1
+        ],
+        "argument": "books,near,s (1081992)"
+      },
+      {
+        "operation": "exist",
+        "dependencies": [
+          2
+        ],
+        "argument": "?"
+      }
+    ],
+    "semanticStr": "select: device (1081991)->filter hposition: right [0]->relate: books,near,s (1081992) [1]->exist: ? [2]",
+    "sst": {
+      "objects": [
+        "person",
+        "tie",
+        "bracelet",
+        "coat",
+        "poster",
+        "books",
+        "screen",
+        "chain"
+      ],
+      "counts": [],
+      "attributes": [
+        "person: rolled",
+        "person: messy",
+        "person: smiling",
+        "person: happy",
+        "tie: blue",
+        "tie: designed",
+        "books: stacked"
+      ],
+      "relations": [
+        "person near books",
+        "person in front of books",
+        "person near screen",
+        "person in front of screen",
+        "person wearing tie",
+        "tie to the left of bracelet",
+        "bracelet to the right of coat",
+        "bracelet to the right of tie",
+        "coat to the left of screen",
+        "coat to the left of bracelet",
+        "poster above books",
+        "poster on top of books",
+        "books behind person",
+        "books near screen",
+        "books below poster",
+        "books near person",
+        "screen behind person",
+        "screen near books",
+        "screen near person",
+        "screen to the right of coat"
+      ],
+      "text": []
+    }
+  }
+]

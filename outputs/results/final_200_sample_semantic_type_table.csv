@@ -1,0 +1,36 @@
+pipeline,method_name,semantic_type,exact_accuracy,lenient_accuracy,average_tokens,n
+caption_style_sst_mistral,Caption-Style SST,attr,0.55,0.575,491.25,40
+caption_style_sst_mistral,Caption-Style SST,cat,0.75,0.8,391.4,40
+caption_style_sst_mistral,Caption-Style SST,global,0.4,0.5,378.92,40
+caption_style_sst_mistral,Caption-Style SST,obj,0.3,0.3,478.25,40
+caption_style_sst_mistral,Caption-Style SST,rel,0.65,0.75,480.0,40
+compact_keyword_sst_mistral,Compact Keyword-Aware SST,attr,0.45,0.5,141.6,40
+compact_keyword_sst_mistral,Compact Keyword-Aware SST,cat,0.7,0.775,194.22,40
+compact_keyword_sst_mistral,Compact Keyword-Aware SST,global,0.275,0.375,216.18,40
+compact_keyword_sst_mistral,Compact Keyword-Aware SST,obj,0.2,0.225,177.62,40
+compact_keyword_sst_mistral,Compact Keyword-Aware SST,rel,0.425,0.725,145.9,40
+full_sst_mistral,Full SST,attr,0.525,0.55,488.75,40
+full_sst_mistral,Full SST,cat,0.775,0.85,389.15,40
+full_sst_mistral,Full SST,global,0.425,0.45,376.55,40
+full_sst_mistral,Full SST,obj,0.325,0.325,475.88,40
+full_sst_mistral,Full SST,rel,0.675,0.75,476.88,40
+keyword_filtered_sst_mistral,Keyword-Aware SST,attr,0.55,0.575,182.4,40
+keyword_filtered_sst_mistral,Keyword-Aware SST,cat,0.7,0.825,234.42,40
+keyword_filtered_sst_mistral,Keyword-Aware SST,global,0.4,0.425,256.15,40
+keyword_filtered_sst_mistral,Keyword-Aware SST,obj,0.275,0.275,218.2,40
+keyword_filtered_sst_mistral,Keyword-Aware SST,rel,0.575,0.75,186.48,40
+no_attributes_sst_mistral,No-Attributes SST,attr,0.25,0.275,442.9,40
+no_attributes_sst_mistral,No-Attributes SST,cat,0.525,0.525,352.55,40
+no_attributes_sst_mistral,No-Attributes SST,global,0.275,0.325,341.12,40
+no_attributes_sst_mistral,No-Attributes SST,obj,0.25,0.25,441.32,40
+no_attributes_sst_mistral,No-Attributes SST,rel,0.7,0.775,441.3,40
+no_relations_sst_mistral,No-Relations SST,attr,0.3,0.3,164.42,40
+no_relations_sst_mistral,No-Relations SST,cat,0.8,0.8,147.48,40
+no_relations_sst_mistral,No-Relations SST,global,0.425,0.425,147.85,40
+no_relations_sst_mistral,No-Relations SST,obj,0.325,0.325,154.75,40
+no_relations_sst_mistral,No-Relations SST,rel,0.3,0.3,154.48,40
+objects_only_sst_mistral,Objects-Only SST,attr,0.05,0.05,110.98,40
+objects_only_sst_mistral,Objects-Only SST,cat,0.475,0.475,101.8,40
+objects_only_sst_mistral,Objects-Only SST,global,0.25,0.275,101.92,40
+objects_only_sst_mistral,Objects-Only SST,obj,0.1,0.125,108.08,40
+objects_only_sst_mistral,Objects-Only SST,rel,0.25,0.275,108.42,40
