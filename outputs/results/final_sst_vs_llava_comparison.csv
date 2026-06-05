@@ -1,9 +1,0 @@
-method,input_type,reasoning_model,n,exact_accuracy_pct,lenient_accuracy_pct,avg_input_tokens,token_reduction_vs_full_sst_pct,avg_latency_sec,notes
-LLaVA Image + Question,Raw image + question,LLaVA via Ollama,200,55.5,56.5,,,5.74,Direct image-based VLM baseline
-Full SST,Oracle SST text,Mistral via Ollama,200,54.5,58.5,441.44,0.0,6.62,Oracle scene-graph SST
-Caption-Style SST,Oracle SST text,Mistral via Ollama,200,53.0,58.5,443.96,-0.57,6.77,Oracle scene-graph SST
-Keyword-Aware SST,Oracle SST text,Mistral via Ollama,200,50.0,57.0,215.53,51.18,2.12,Oracle scene-graph SST
-Compact Keyword-Aware SST,Oracle SST text,Mistral via Ollama,200,41.0,52.0,175.1,60.33,3.47,Oracle scene-graph SST
-No-Relations SST,Oracle SST text,Mistral via Ollama,200,43.0,43.0,153.79,65.16,2.59,Oracle scene-graph SST
-No-Attributes SST,Oracle SST text,Mistral via Ollama,200,40.0,43.0,403.84,8.52,5.88,Oracle scene-graph SST
-Objects-Only SST,Oracle SST text,Mistral via Ollama,200,22.5,24.0,106.24,75.93,2.89,Oracle scene-graph SST

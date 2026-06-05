@@ -1,0 +1,317 @@
+question_id,question,true_answer,semantic_type,sst_type,prediction,prediction_norm,exact_correct,lenient_correct,latency_ms,n_objects,n_relations,n_tokens
+19909115,On which side of the picture is the chimney?,right,attr,oracle,,,0,0,,15,25,337
+19909115,On which side of the picture is the chimney?,right,attr,detected,,,0,0,,2,1,93
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,,,0,0,,14,25,352
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,,,0,0,,2,2,98
+121029493,Is the camera in the bottom part or in the top of the photo?,top,attr,oracle,,,0,0,,15,25,336
+121029493,Is the camera in the bottom part or in the top of the photo?,top,attr,detected,,,0,0,,3,3,107
+12649138,Is that bus teal and long?,yes,attr,oracle,,,0,0,,15,25,322
+12649138,Is that bus teal and long?,yes,attr,detected,,,0,0,,4,5,112
+18524347,On which side of the image is the toilet paper?,right,attr,oracle,,,0,0,,11,24,302
+18524347,On which side of the image is the toilet paper?,right,attr,detected,,,0,0,,2,3,106
+19757827,Does this plane look white and huge?,no,attr,oracle,,,0,0,,15,25,332
+19757827,Does this plane look white and huge?,no,attr,detected,,,0,0,,4,15,160
+18237157,Which color is the floor?,brown,attr,oracle,,,0,0,,6,5,153
+18237157,Which color is the floor?,brown,attr,detected,,,0,0,,1,0,78
+1575844,On which side of the photo is the full boat?,right,attr,oracle,,,0,0,,15,25,314
+1575844,On which side of the photo is the full boat?,right,attr,detected,,,0,0,,3,6,118
+366809,Is the color of the boat the same as the sky?,yes,attr,oracle,,,0,0,,15,25,351
+366809,Is the color of the boat the same as the sky?,yes,attr,detected,,,0,0,,1,0,84
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,,,0,0,,14,25,378
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,,,0,0,,3,20,213
+15471805,Is the catcher on the left side?,no,attr,oracle,,,0,0,,15,25,347
+15471805,Is the catcher on the left side?,no,attr,detected,,,0,0,,3,10,153
+111037813,On which side of the photo is the American flag?,left,attr,oracle,,,0,0,,15,25,373
+111037813,On which side of the photo is the American flag?,left,attr,detected,,,0,0,,2,2,102
+1066276,Is that a blue airplane?,yes,attr,oracle,,,0,0,,9,2,132
+1066276,Is that a blue airplane?,yes,attr,detected,,,0,0,,2,1,84
+4174158,On which side of the photo is the little doll?,left,attr,oracle,,,0,0,,15,25,363
+4174158,On which side of the photo is the little doll?,left,attr,detected,,,0,0,,4,6,127
+598443,On which side of the photo is the picture?,left,attr,oracle,,,0,0,,12,25,311
+598443,On which side of the photo is the picture?,left,attr,detected,,,0,0,,2,1,88
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,,,0,0,,11,25,295
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,,,0,0,,1,0,88
+3365348,Does the blue sky look full and clear?,no,attr,oracle,,,0,0,,7,1,115
+3365348,Does the blue sky look full and clear?,no,attr,detected,,,0,0,,1,0,81
+7470215,On which side of the picture is the gas stove?,left,attr,oracle,,,0,0,,15,25,367
+7470215,On which side of the picture is the gas stove?,left,attr,detected,,,0,0,,2,3,103
+14803739,Is the shirt short sleeved or long sleeved?,short sleeved,attr,oracle,,,0,0,,15,25,377
+14803739,Is the shirt short sleeved or long sleeved?,short sleeved,attr,detected,,,0,0,,3,3,107
+8114762,Does the clock look white and large?,no,attr,oracle,,,0,0,,9,23,282
+8114762,Does the clock look white and large?,no,attr,detected,,,0,0,,1,2,95
+16985776,Is the truck on the right?,yes,attr,oracle,,,0,0,,15,25,318
+16985776,Is the truck on the right?,yes,attr,detected,,,0,0,,4,14,157
+1882998,Do the fan and the box have a different colors?,no,attr,oracle,,,0,0,,15,25,345
+1882998,Do the fan and the box have a different colors?,no,attr,detected,,,0,0,,7,20,218
+14974957,Which side of the image is the house on?,left,attr,oracle,,,0,0,,15,25,341
+14974957,Which side of the image is the house on?,left,attr,detected,,,0,0,,3,9,132
+17400921,Which color are the trousers?,tan,attr,oracle,,,0,0,,8,4,145
+17400921,Which color are the trousers?,tan,attr,detected,,,0,0,,1,0,78
+372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,,,0,0,,13,25,357
+372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,,,0,0,,2,3,100
+15834069,Are the flags on the left side?,no,attr,oracle,,,0,0,,15,25,340
+15834069,Are the flags on the left side?,no,attr,detected,,,0,0,,1,0,80
+155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,,,0,0,,15,25,375
+155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,,,0,0,,3,4,111
+12900698,Which part of the photo is the zebra in?,left,attr,oracle,,,0,0,,15,25,323
+12900698,Which part of the photo is the zebra in?,left,attr,detected,,,0,0,,6,15,179
+12975037,On which side of the photo is the salad?,right,attr,oracle,,,0,0,,15,25,381
+12975037,On which side of the photo is the salad?,right,attr,detected,,,0,0,,4,9,147
+18934678,Is the man in the bottom part of the picture?,yes,attr,oracle,,,0,0,,15,25,350
+18934678,Is the man in the bottom part of the picture?,yes,attr,detected,,,0,0,,2,8,130
+15974537,Do the tennis racket and the shirt have a different colors?,yes,attr,oracle,,,0,0,,7,15,233
+15974537,Do the tennis racket and the shirt have a different colors?,yes,attr,detected,,,0,0,,1,0,84
+12962486,Which side is the chair on?,right,attr,oracle,,,0,0,,15,25,330
+12962486,Which side is the chair on?,right,attr,detected,,,0,0,,3,6,115
+13514980,Does the cow in front of the path look young and black and white?,yes,attr,oracle,,,0,0,,6,8,181
+13514980,Does the cow in front of the path look young and black and white?,yes,attr,detected,,,0,0,,2,3,117
+6898979,Does the helmet appear to be green or white?,green,attr,oracle,,,0,0,,15,25,325
+6898979,Does the helmet appear to be green or white?,green,attr,detected,,,0,0,,2,3,103
+2454662,On which side are the glasses?,left,attr,oracle,,,0,0,,15,25,275
+2454662,On which side are the glasses?,left,attr,detected,,,0,0,,2,5,108
+1928925,Does the end table that is to the right of the CDs have brown color?,no,attr,oracle,,,0,0,,15,25,345
+1928925,Does the end table that is to the right of the CDs have brown color?,no,attr,detected,,,0,0,,5,12,171
+1476398,Does the bird look brown?,no,attr,oracle,,,0,0,,5,2,122
+1476398,Does the bird look brown?,no,attr,detected,,,0,0,,1,0,78
+15198505,Is the fresh fruit in the top part of the picture?,no,attr,oracle,,,0,0,,15,25,288
+15198505,Is the fresh fruit in the top part of the picture?,no,attr,detected,,,0,0,,4,12,147
+10519313,Of which color is that hair?,gray,attr,oracle,,,0,0,,10,16,239
+10519313,Of which color is that hair?,gray,attr,detected,,,0,0,,2,1,84
+3534125,Is the vase on the right side or on the left?,right,attr,oracle,,,0,0,,15,25,322
+3534125,Is the vase on the right side or on the left?,right,attr,detected,,,0,0,,3,9,138
+11486375,"How does the tall grass look, green or brown?",brown,attr,oracle,,,0,0,,15,25,359
+11486375,"How does the tall grass look, green or brown?",brown,attr,detected,,,0,0,,2,15,161
+553483,On which side of the photo is the cabinet?,right,attr,oracle,,,0,0,,14,25,324
+553483,On which side of the photo is the cabinet?,right,attr,detected,,,0,0,,4,5,109
+2468206,What is the color of the cat's fur?,orange,attr,oracle,,,0,0,,5,5,131
+2468206,What is the color of the cat's fur?,orange,attr,detected,,,0,0,,2,1,87
+11198865,"In which part of the photo are the wood chairs, the top or the bottom?",top,attr,oracle,,,0,0,,15,25,386
+11198865,"In which part of the photo are the wood chairs, the top or the bottom?",top,attr,detected,,,0,0,,3,12,164
+17233908,What color do you think the jacket that the woman is wearing is?,red,attr,oracle,,,0,0,,15,25,381
+17233908,What color do you think the jacket that the woman is wearing is?,red,attr,detected,,,0,0,,1,5,111
+1928697,What color is the chair made of plastic?,blue,attr,oracle,,,0,0,,15,25,338
+1928697,What color is the chair made of plastic?,blue,attr,detected,,,0,0,,5,12,164
+165367,What is the boy doing?,jumping,attr,oracle,,,0,0,,15,25,371
+165367,What is the boy doing?,jumping,attr,detected,,,0,0,,3,8,123
+19417775,Does the necktie look metallic and brown?,yes,attr,oracle,,,0,0,,15,25,329
+19417775,Does the necktie look metallic and brown?,yes,attr,detected,,,0,0,,4,9,130
+15667944,On which side of the photo is the curtain?,left,attr,oracle,,,0,0,,13,19,286
+15667944,On which side of the photo is the curtain?,left,attr,detected,,,0,0,,2,1,88
+13507892,On which side is the bottle?,right,attr,oracle,,,0,0,,13,25,300
+13507892,On which side is the bottle?,right,attr,detected,,,0,0,,3,2,92
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,rubber,rubber,1,1,7259.915791000822,14,25,352
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,Unknown,unknown,0,0,831.0954170010518,2,2,98
+1575844,On which side of the photo is the full boat?,right,attr,oracle,Right,right,1,1,2579.7065420047147,15,25,314
+1575844,On which side of the photo is the full boat?,right,attr,detected,left,left,0,0,965.233167007682,3,6,118
+366809,Is the color of the boat the same as the sky?,yes,attr,oracle,No,no,0,0,2806.690166995395,15,25,351
+366809,Is the color of the boat the same as the sky?,yes,attr,detected,Unknown,unknown,0,0,817.9640419984935,1,0,84
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,Unknown,unknown,0,0,3314.6176659938646,14,25,378
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,Unknown,unknown,0,0,1915.1545000058832,3,20,213
+4174158,On which side of the photo is the little doll?,left,attr,oracle,left,left,1,1,2749.8983749974286,15,25,363
+4174158,On which side of the photo is the little doll?,left,attr,detected,right,right,0,0,964.1260409989628,4,6,127
+598443,On which side of the photo is the picture?,left,attr,oracle,Left,left,1,1,2299.9515419942327,12,25,311
+598443,On which side of the photo is the picture?,left,attr,detected,"Unknown (The question asks about a picture, but there's no mention of any picture in",unknown,0,0,1682.2164590121247,2,1,88
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,bottom,bottom,1,1,2300.539834002848,11,25,295
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,Unknown,unknown,0,0,793.2552919955924,1,0,88
+3365348,Does the blue sky look full and clear?,no,attr,oracle,Unknown (The structured scene does not provide information about the fullness of the sky.),unknown,0,0,1843.8876250002068,7,1,115
+3365348,Does the blue sky look full and clear?,no,attr,detected,Unknown,unknown,0,0,806.1672909971094,1,0,81
+7470215,On which side of the picture is the gas stove?,left,attr,oracle,Left,left,1,1,2976.2954589969013,15,25,367
+7470215,On which side of the picture is the gas stove?,left,attr,detected,left,left,1,1,953.9943330019014,2,3,103
+8114762,Does the clock look white and large?,no,attr,oracle,No,no,1,1,2083.472250000341,9,23,282
+8114762,Does the clock look white and large?,no,attr,detected,Unknown,unknown,0,0,792.6103749923641,1,2,95
+372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,Unknown,unknown,0,0,2792.0971249986906,13,25,357
+372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,Unknown,unknown,0,0,794.32241700124,2,3,100
+155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,Unknown,unknown,0,0,3018.005375008215,15,25,375
+155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,Unknown,unknown,0,0,1014.079208005569,3,4,111
+6898979,Does the helmet appear to be green or white?,green,attr,oracle,Green,green,1,1,2520.7157080003526,15,25,325
+6898979,Does the helmet appear to be green or white?,green,attr,detected,Unknown,unknown,0,0,1005.9104170068168,2,3,103
+2454662,On which side are the glasses?,left,attr,oracle,Left,left,1,1,2070.814541002619,15,25,275
+2454662,On which side are the glasses?,left,attr,detected,Unknown (The structured scene does not provide information about any 'glasses'.),unknown,0,0,1978.124959001434,2,5,108
+1476398,Does the bird look brown?,no,attr,oracle,unknown,unknown,0,0,998.436624999158,5,2,122
+1476398,Does the bird look brown?,no,attr,detected,Unknown,unknown,0,0,813.4374999935972,1,0,78
+3534125,Is the vase on the right side or on the left?,right,attr,oracle,Right,right,1,1,2544.336332997773,15,25,322
+3534125,Is the vase on the right side or on the left?,right,attr,detected,Unknown (vase is not present in the structured scene),unknown,0,0,1804.8718749923864,3,9,138
+553483,On which side of the photo is the cabinet?,right,attr,oracle,Left,left,0,0,2526.3462089933455,14,25,324
+553483,On which side of the photo is the cabinet?,right,attr,detected,Unknown (The structured scene does not contain any information about a cabinet.),unknown,0,0,1827.901665994432,4,5,109
+2468206,What is the color of the cat's fur?,orange,attr,oracle,orange,orange,1,1,1015.6984579953132,5,5,131
+2468206,What is the color of the cat's fur?,orange,attr,detected,Unknown,unknown,0,0,868.8426669978071,2,1,87
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,,,0,0,,14,25,256
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,,,0,0,,2,2,82
+1575844,On which side of the photo is the full boat?,right,attr,oracle,,,0,0,,15,25,239
+1575844,On which side of the photo is the full boat?,right,attr,detected,,,0,0,,3,6,102
+366809,Is the color of the boat the same as the sky?,yes,attr,oracle,,,0,0,,15,25,246
+366809,Is the color of the boat the same as the sky?,yes,attr,detected,,,0,0,,1,0,67
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,,,0,0,,14,25,268
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,,,0,0,,3,20,170
+4174158,On which side of the photo is the little doll?,left,attr,oracle,,,0,0,,15,25,250
+4174158,On which side of the photo is the little doll?,left,attr,detected,,,0,0,,4,6,107
+598443,On which side of the photo is the picture?,left,attr,oracle,,,0,0,,12,25,235
+598443,On which side of the photo is the picture?,left,attr,detected,,,0,0,,2,1,74
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,,,0,0,,11,25,227
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,,,0,0,,1,0,70
+3365348,Does the blue sky look full and clear?,no,attr,oracle,,,0,0,,7,1,79
+3365348,Does the blue sky look full and clear?,no,attr,detected,,,0,0,,1,0,64
+7470215,On which side of the picture is the gas stove?,left,attr,oracle,,,0,0,,15,25,263
+7470215,On which side of the picture is the gas stove?,left,attr,detected,,,0,0,,2,3,87
+8114762,Does the clock look white and large?,no,attr,oracle,,,0,0,,9,23,214
+8114762,Does the clock look white and large?,no,attr,detected,,,0,0,,1,2,74
+372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,,,0,0,,13,25,261
+372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,,,0,0,,2,3,84
+155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,,,0,0,,15,25,264
+155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,,,0,0,,3,4,97
+6898979,Does the helmet appear to be green or white?,green,attr,oracle,,,0,0,,15,25,243
+6898979,Does the helmet appear to be green or white?,green,attr,detected,,,0,0,,2,3,85
+2454662,On which side are the glasses?,left,attr,oracle,,,0,0,,15,25,216
+2454662,On which side are the glasses?,left,attr,detected,,,0,0,,2,5,92
+1476398,Does the bird look brown?,no,attr,oracle,,,0,0,,5,2,81
+1476398,Does the bird look brown?,no,attr,detected,,,0,0,,1,0,61
+3534125,Is the vase on the right side or on the left?,right,attr,oracle,,,0,0,,15,25,238
+3534125,Is the vase on the right side or on the left?,right,attr,detected,,,0,0,,3,9,118
+553483,On which side of the photo is the cabinet?,right,attr,oracle,,,0,0,,14,25,252
+553483,On which side of the photo is the cabinet?,right,attr,detected,,,0,0,,4,5,97
+2468206,What is the color of the cat's fur?,orange,attr,oracle,,,0,0,,5,5,92
+2468206,What is the color of the cat's fur?,orange,attr,detected,,,0,0,,2,1,72
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,,,0,0,,14,25,256
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,,,0,0,,2,2,82
+1575844,On which side of the photo is the full boat?,right,attr,oracle,,,0,0,,15,25,239
+1575844,On which side of the photo is the full boat?,right,attr,detected,,,0,0,,3,6,102
+366809,Is the color of the boat the same as the sky?,yes,attr,oracle,,,0,0,,15,25,246
+366809,Is the color of the boat the same as the sky?,yes,attr,detected,,,0,0,,1,0,67
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,,,0,0,,14,25,268
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,,,0,0,,3,20,170
+4174158,On which side of the photo is the little doll?,left,attr,oracle,,,0,0,,15,25,250
+4174158,On which side of the photo is the little doll?,left,attr,detected,,,0,0,,4,6,107
+598443,On which side of the photo is the picture?,left,attr,oracle,,,0,0,,12,25,235
+598443,On which side of the photo is the picture?,left,attr,detected,,,0,0,,2,1,74
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,,,0,0,,11,25,227
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,,,0,0,,1,0,70
+3365348,Does the blue sky look full and clear?,no,attr,oracle,,,0,0,,7,1,79
+3365348,Does the blue sky look full and clear?,no,attr,detected,,,0,0,,1,0,64
+7470215,On which side of the picture is the gas stove?,left,attr,oracle,,,0,0,,15,25,263
+7470215,On which side of the picture is the gas stove?,left,attr,detected,,,0,0,,2,3,87
+8114762,Does the clock look white and large?,no,attr,oracle,,,0,0,,9,23,214
+8114762,Does the clock look white and large?,no,attr,detected,,,0,0,,1,2,74
+372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,,,0,0,,13,25,261
+372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,,,0,0,,2,3,84
+155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,,,0,0,,15,25,264
+155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,,,0,0,,3,4,97
+6898979,Does the helmet appear to be green or white?,green,attr,oracle,,,0,0,,15,25,243
+6898979,Does the helmet appear to be green or white?,green,attr,detected,,,0,0,,2,3,85
+2454662,On which side are the glasses?,left,attr,oracle,,,0,0,,15,25,216
+2454662,On which side are the glasses?,left,attr,detected,,,0,0,,2,5,92
+1476398,Does the bird look brown?,no,attr,oracle,,,0,0,,5,2,81
+1476398,Does the bird look brown?,no,attr,detected,,,0,0,,1,0,61
+3534125,Is the vase on the right side or on the left?,right,attr,oracle,,,0,0,,15,25,238
+3534125,Is the vase on the right side or on the left?,right,attr,detected,,,0,0,,3,9,118
+553483,On which side of the photo is the cabinet?,right,attr,oracle,,,0,0,,14,25,252
+553483,On which side of the photo is the cabinet?,right,attr,detected,,,0,0,,4,5,97
+2468206,What is the color of the cat's fur?,orange,attr,oracle,,,0,0,,5,5,92
+2468206,What is the color of the cat's fur?,orange,attr,detected,,,0,0,,2,1,72
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,,,0,0,,14,25,256
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,,,0,0,,2,2,82
+1575844,On which side of the photo is the full boat?,right,attr,oracle,,,0,0,,15,25,239
+1575844,On which side of the photo is the full boat?,right,attr,detected,,,0,0,,3,6,102
+366809,Is the color of the boat the same as the sky?,yes,attr,oracle,,,0,0,,15,25,246
+366809,Is the color of the boat the same as the sky?,yes,attr,detected,,,0,0,,1,0,67
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,,,0,0,,14,25,268
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,,,0,0,,3,20,170
+4174158,On which side of the photo is the little doll?,left,attr,oracle,,,0,0,,15,25,250
+4174158,On which side of the photo is the little doll?,left,attr,detected,,,0,0,,4,6,107
+598443,On which side of the photo is the picture?,left,attr,oracle,,,0,0,,12,25,235
+598443,On which side of the photo is the picture?,left,attr,detected,,,0,0,,2,1,74
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,,,0,0,,11,25,227
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,,,0,0,,1,0,70
+3365348,Does the blue sky look full and clear?,no,attr,oracle,,,0,0,,7,1,79
+3365348,Does the blue sky look full and clear?,no,attr,detected,,,0,0,,1,0,64
+7470215,On which side of the picture is the gas stove?,left,attr,oracle,,,0,0,,15,25,263
+7470215,On which side of the picture is the gas stove?,left,attr,detected,,,0,0,,2,3,87
+8114762,Does the clock look white and large?,no,attr,oracle,,,0,0,,9,23,214
+8114762,Does the clock look white and large?,no,attr,detected,,,0,0,,1,2,74
+372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,,,0,0,,13,25,261
+372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,,,0,0,,2,3,84
+155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,,,0,0,,15,25,264
+155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,,,0,0,,3,4,97
+6898979,Does the helmet appear to be green or white?,green,attr,oracle,,,0,0,,15,25,243
+6898979,Does the helmet appear to be green or white?,green,attr,detected,,,0,0,,2,3,85
+2454662,On which side are the glasses?,left,attr,oracle,,,0,0,,15,25,216
+2454662,On which side are the glasses?,left,attr,detected,,,0,0,,2,5,92
+1476398,Does the bird look brown?,no,attr,oracle,,,0,0,,5,2,81
+1476398,Does the bird look brown?,no,attr,detected,,,0,0,,1,0,61
+3534125,Is the vase on the right side or on the left?,right,attr,oracle,,,0,0,,15,25,238
+3534125,Is the vase on the right side or on the left?,right,attr,detected,,,0,0,,3,9,118
+553483,On which side of the photo is the cabinet?,right,attr,oracle,,,0,0,,14,25,252
+553483,On which side of the photo is the cabinet?,right,attr,detected,,,0,0,,4,5,97
+2468206,What is the color of the cat's fur?,orange,attr,oracle,,,0,0,,5,5,92
+2468206,What is the color of the cat's fur?,orange,attr,detected,,,0,0,,2,1,72
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,,,0,0,,14,25,256
+9245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,,,0,0,,2,2,82
+1575844,On which side of the photo is the full boat?,right,attr,oracle,,,0,0,,15,25,239
+1575844,On which side of the photo is the full boat?,right,attr,detected,,,0,0,,3,6,102
+366809,Is the color of the boat the same as the sky?,yes,attr,oracle,,,0,0,,15,25,246
+366809,Is the color of the boat the same as the sky?,yes,attr,detected,,,0,0,,1,0,67
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,,,0,0,,14,25,268
+2895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,,,0,0,,3,20,170
+4174158,On which side of the photo is the little doll?,left,attr,oracle,,,0,0,,15,25,250
+4174158,On which side of the photo is the little doll?,left,attr,detected,,,0,0,,4,6,107
+598443,On which side of the photo is the picture?,left,attr,oracle,,,0,0,,12,25,235
+598443,On which side of the photo is the picture?,left,attr,detected,,,0,0,,2,1,74
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,,,0,0,,11,25,227
+8435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,,,0,0,,1,0,70
+3365348,Does the blue sky look full and clear?,no,attr,oracle,,,0,0,,7,1,79
+3365348,Does the blue sky look full and clear?,no,attr,detected,,,0,0,,1,0,64
+7470215,On which side of the picture is the gas stove?,left,attr,oracle,,,0,0,,15,25,263
+7470215,On which side of the picture is the gas stove?,left,attr,detected,,,0,0,,2,3,87
+8114762,Does the clock look white and large?,no,attr,oracle,,,0,0,,9,23,214
+8114762,Does the clock look white and large?,no,attr,detected,,,0,0,,1,2,74
+372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,,,0,0,,13,25,261
+372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,,,0,0,,2,3,84
+155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,,,0,0,,15,25,264
+155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,,,0,0,,3,4,97
+6898979,Does the helmet appear to be green or white?,green,attr,oracle,,,0,0,,15,25,243
+6898979,Does the helmet appear to be green or white?,green,attr,detected,,,0,0,,2,3,85
+2454662,On which side are the glasses?,left,attr,oracle,,,0,0,,15,25,216
+2454662,On which side are the glasses?,left,attr,detected,,,0,0,,2,5,92
+1476398,Does the bird look brown?,no,attr,oracle,,,0,0,,5,2,81
+1476398,Does the bird look brown?,no,attr,detected,,,0,0,,1,0,61
+3534125,Is the vase on the right side or on the left?,right,attr,oracle,,,0,0,,15,25,238
+3534125,Is the vase on the right side or on the left?,right,attr,detected,,,0,0,,3,9,118
+553483,On which side of the photo is the cabinet?,right,attr,oracle,,,0,0,,14,25,252
+553483,On which side of the photo is the cabinet?,right,attr,detected,,,0,0,,4,5,97
+2468206,What is the color of the cat's fur?,orange,attr,oracle,,,0,0,,5,5,92
+2468206,What is the color of the cat's fur?,orange,attr,detected,,,0,0,,2,1,72
+09245326,"What material do you think is the boot, rubber or leather?",rubber,attr,oracle,rubber,rubber,1,1,7224.938374999965,14,25,256
+09245326,"What material do you think is the boot, rubber or leather?",rubber,attr,detected,Unknown,unknown,0,0,1013.4935000000951,2,2,82
+01575844,On which side of the photo is the full boat?,right,attr,oracle,Right,right,1,1,2508.7314580000566,15,25,239
+01575844,On which side of the photo is the full boat?,right,attr,detected,left,left,0,0,1180.434041999888,3,6,102
+00366809,Is the color of the boat the same as the sky?,yes,attr,oracle,No,no,0,0,2741.838459000064,15,25,246
+00366809,Is the color of the boat the same as the sky?,yes,attr,detected,No,no,0,0,737.7944580002804,1,0,67
+02895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,oracle,Unknown,unknown,0,0,3232.297459000165,14,25,268
+02895353,Is the umbrella that is to the right of the glasses light blue or pink?,pink,attr,detected,Unknown,unknown,0,0,2337.2224999998252,3,20,170
+04174158,On which side of the photo is the little doll?,left,attr,oracle,left,left,1,1,2740.997625000091,15,25,250
+04174158,On which side of the photo is the little doll?,left,attr,detected,left,left,1,1,1180.1700000000892,4,6,107
+0598443,On which side of the photo is the picture?,left,attr,oracle,Left,left,1,1,2293.1564159998743,12,25,235
+0598443,On which side of the photo is the picture?,left,attr,detected,"Unknown (The question asks about a picture, but there's no mention of any picture in",unknown,0,0,1881.3437499998145,2,1,74
+08435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,oracle,bottom,bottom,1,1,2286.0755420001624,11,25,227
+08435271,"Where in the photo is the cat, in the top or in the bottom?",bottom,attr,detected,Unknown,unknown,0,0,792.4995830003354,1,0,70
+03365348,Does the blue sky look full and clear?,no,attr,oracle,Unknown (The structured scene does not provide information about the fullness of the sky.),unknown,0,0,1834.6607910002604,7,1,79
+03365348,Does the blue sky look full and clear?,no,attr,detected,Unknown,unknown,0,0,797.3406249998334,1,0,64
+07470215,On which side of the picture is the gas stove?,left,attr,oracle,Left,left,1,1,2966.388165999888,15,25,263
+07470215,On which side of the picture is the gas stove?,left,attr,detected,left,left,1,1,963.4937920000084,2,3,87
+08114762,Does the clock look white and large?,no,attr,oracle,No,no,1,1,2067.904749999798,9,23,214
+08114762,Does the clock look white and large?,no,attr,detected,No,no,1,1,736.2069999999221,1,2,74
+00372905,Does the lamp on the ceiling look colorful?,yes,attr,oracle,Unknown,unknown,0,0,2791.953082999953,13,25,261
+00372905,Does the lamp on the ceiling look colorful?,yes,attr,detected,Unknown,unknown,0,0,1010.4105410000557,2,3,84
+00155957,Are the vase and the pitcher made of the same material?,yes,attr,oracle,Unknown,unknown,0,0,3008.3939579999424,15,25,264
+00155957,Are the vase and the pitcher made of the same material?,yes,attr,detected,Unknown,unknown,0,0,1229.6485410001878,3,4,97
+06898979,Does the helmet appear to be green or white?,green,attr,oracle,Green,green,1,1,2516.3212500001464,15,25,243
+06898979,Does the helmet appear to be green or white?,green,attr,detected,Unknown,unknown,0,0,1012.0688749998408,2,3,85
+02454662,On which side are the glasses?,left,attr,oracle,Left,left,1,1,2068.2026670001505,15,25,216
+02454662,On which side are the glasses?,left,attr,detected,Unknown,unknown,0,0,1015.6791250001334,2,5,92
+01476398,Does the bird look brown?,no,attr,oracle,unknown,unknown,0,0,961.139374999675,5,2,81
+01476398,Does the bird look brown?,no,attr,detected,No,no,1,1,738.9358340001309,1,0,61
+03534125,Is the vase on the right side or on the left?,right,attr,oracle,Right,right,1,1,2512.57004099989,15,25,238
+03534125,Is the vase on the right side or on the left?,right,attr,detected,Unknown (vase is not present in the given structured scene),unknown,0,0,2071.3339999997515,3,9,118
+00553483,On which side of the photo is the cabinet?,right,attr,oracle,Left,left,0,0,2510.042375000012,14,25,252
+00553483,On which side of the photo is the cabinet?,right,attr,detected,Unknown (The structured scene does not contain any information about a cabinet.),unknown,0,0,1901.1397499998566,4,5,97
+02468206,What is the color of the cat's fur?,orange,attr,oracle,orange,orange,1,1,953.7955420000799,5,5,92
+02468206,What is the color of the cat's fur?,orange,attr,detected,red,red,0,0,955.1187910001318,2,1,72

@@ -1,0 +1,10 @@
+Method,Input type,Avg input tokens,vs LLaVA reduction,Exact accuracy
+LLaVA (image baseline),Visual tokens (CLIP patches),576.0,0.0,59.8
+Full SST,Structured text (SST),27.1,95.3,3.6
+Caption-Style SST,Structured text (SST),26.9,95.3,3.6
+Keyword-Aware SST,Structured text (SST),18.5,96.8,3.7
+Compact Keyword SST,Structured text (SST),15.9,97.2,2.9
+No-Relations SST,Structured text (SST),18.4,96.8,2.8
+No-Attributes SST,Structured text (SST),24.5,95.8,1.0
+Objects-Only SST,Structured text (SST),15.2,97.4,0.2
+Question-Only (no scene),Structured text (SST),9.0,98.4,0.0

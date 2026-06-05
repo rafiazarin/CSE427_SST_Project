@@ -1,0 +1,4 @@
+question_id,llava_exact,lenient,llava_pred,kw_exact,lenient_correct,kw_pred,semantic_type,category
+30,1,1,Yes,0,0,,global,llava_only
+31,1,1,Right,0,0,,global,llava_only
+999,0,0,Black,0,0,,global,both_wrong

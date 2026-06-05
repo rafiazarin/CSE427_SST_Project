@@ -1,0 +1,51 @@
+image_id,question,oracle_n_objects,detected_n_objects,object_overlap,object_recall,object_precision,oracle_n_relations,detected_n_relations,oracle_n_attrs,detected_n_attrs,ocr_text_found,oracle_has_text
+2409655,On which side of the picture is the chimney?,15,2,0,0.0,0.0,25,1,14,0,True,False
+2352072,"What material do you think is the boot, rubber or leather?",14,2,2,0.143,1.0,25,2,15,0,False,False
+2388049,Is the camera in the bottom part or in the top of the photo?,15,3,2,0.133,0.667,25,3,11,0,False,False
+2392384,Is that bus teal and long?,15,4,1,0.067,0.25,25,5,12,0,False,False
+2352021,On which side of the image is the toilet paper?,11,2,1,0.091,0.5,24,3,9,0,False,False
+2385218,Does this plane look white and huge?,15,4,3,0.2,0.75,25,15,10,0,False,False
+2382242,Which color is the floor?,6,1,1,0.167,1.0,5,0,10,0,False,False
+2340293,On which side of the photo is the full boat?,15,3,2,0.133,0.667,25,6,6,0,False,False
+2381600,Is the color of the boat the same as the sky?,15,1,1,0.067,1.0,25,0,20,0,False,False
+2393484,Is the umbrella that is to the right of the glasses light blue or pink?,14,3,1,0.071,0.333,25,20,20,0,False,False
+2367852,Is the catcher on the left side?,15,3,0,0.0,0.0,25,10,10,0,False,False
+2399683,On which side of the photo is the American flag?,15,2,2,0.133,1.0,25,2,17,0,False,False
+2334664,Is that a blue airplane?,9,2,2,0.222,1.0,2,1,7,0,False,False
+2411136,On which side of the photo is the little doll?,15,4,2,0.133,0.5,25,6,20,0,True,False
+2362150,On which side of the photo is the picture?,12,2,1,0.083,0.5,25,1,5,0,False,False
+2336923,"Where in the photo is the cat, in the top or in the bottom?",11,1,0,0.0,0.0,25,0,5,0,False,False
+2400422,Does the blue sky look full and clear?,7,1,0,0.0,0.0,1,0,5,0,False,False
+2385432,On which side of the picture is the gas stove?,15,2,1,0.067,0.5,25,3,17,0,False,False
+2318376,Is the shirt short sleeved or long sleeved?,15,3,1,0.067,0.333,25,3,20,0,False,False
+2344540,Does the clock look white and large?,9,1,1,0.111,1.0,23,2,8,0,True,False
+2409579,Is the truck on the right?,15,4,0,0.0,0.0,25,14,9,0,False,False
+370,Do the fan and the box have a different colors?,15,7,3,0.2,0.429,25,20,13,0,False,False
+2338671,Which side of the image is the house on?,15,3,1,0.067,0.333,25,9,6,0,False,False
+2374816,Which color are the trousers?,8,1,0,0.0,0.0,4,0,5,0,False,False
+2346104,Does the lamp on the ceiling look colorful?,13,2,1,0.077,0.5,25,3,17,0,False,False
+2319140,Are the flags on the left side?,15,1,0,0.0,0.0,25,0,11,0,False,False
+2370134,Are the vase and the pitcher made of the same material?,15,3,2,0.133,0.667,25,4,15,0,False,False
+2340446,Which part of the photo is the zebra in?,15,6,2,0.133,0.333,25,15,7,0,False,False
+2404130,On which side of the photo is the salad?,15,4,1,0.067,0.25,25,9,17,0,False,False
+2410613,Is the man in the bottom part of the picture?,15,2,2,0.133,1.0,25,8,9,0,False,False
+2398351,Do the tennis racket and the shirt have a different colors?,7,1,0,0.0,0.0,15,0,10,0,False,False
+2407481,Which side is the chair on?,15,3,1,0.067,0.333,25,6,15,0,False,False
+2397982,Does the cow in front of the path look young and black and white?,6,2,1,0.167,0.5,8,3,9,0,True,False
+2396386,Does the helmet appear to be green or white?,15,2,1,0.067,0.5,25,3,12,0,True,False
+2388904,On which side are the glasses?,15,2,1,0.067,0.5,25,5,0,0,False,False
+2365742,Does the end table that is to the right of the CDs have brown color?,15,5,1,0.067,0.2,25,12,15,0,False,False
+2377465,Does the bird look brown?,5,1,1,0.2,1.0,2,0,6,0,False,False
+2390473,Is the fresh fruit in the top part of the picture?,15,4,1,0.067,0.25,25,12,4,0,False,False
+2389362,Of which color is that hair?,10,2,1,0.1,0.5,16,1,9,0,False,False
+2355364,Is the vase on the right side or on the left?,15,3,3,0.2,1.0,25,9,12,0,False,False
+2352253,"How does the tall grass look, green or brown?",15,2,2,0.133,1.0,25,15,16,0,False,False
+2368249,On which side of the photo is the cabinet?,14,4,4,0.286,1.0,25,5,5,0,False,False
+2345391,What is the color of the cat's fur?,5,2,1,0.2,0.5,5,1,4,0,False,False
+2382178,"In which part of the photo are the wood chairs, the top or the bottom?",15,3,2,0.133,0.667,25,12,17,0,False,False
+2394369,What color do you think the jacket that the woman is wearing is?,15,1,1,0.067,1.0,25,5,14,0,False,False
+2365742,What color is the chair made of plastic?,15,5,1,0.067,0.2,25,12,15,0,False,False
+2396174,What is the boy doing?,15,3,3,0.2,1.0,25,8,20,0,False,False
+2390215,Does the necktie look metallic and brown?,15,4,2,0.133,0.5,25,9,13,0,False,False
+2391999,On which side of the photo is the curtain?,13,2,2,0.154,1.0,19,1,16,0,False,False
+2391468,On which side is the bottle?,13,3,3,0.231,1.0,25,2,6,0,False,False

@@ -1,8 +1,0 @@
-Method,Exact Accuracy,Lenient Accuracy,Avg Tokens,Median Tokens,Token Reduction vs Full SST (%),Accuracy Drop vs Full SST (points),Avg Latency (ms),N
-Full SST,0.545,0.585,441.44,406.5,0.0,0.0,6624.88,200
-Caption-Style SST,0.53,0.585,443.96,405.5,-0.57,1.5,6770.17,200
-Keyword-Aware SST,0.5,0.57,215.53,203.0,51.18,4.5,2118.99,200
-Compact Keyword-Aware SST,0.41,0.52,175.1,162.5,60.33,13.5,3474.82,200
-No-Relations SST,0.43,0.43,153.79,153.0,65.16,11.5,2592.45,200
-No-Attributes SST,0.4,0.43,403.84,373.5,8.52,14.5,5877.05,200
-Objects-Only SST,0.225,0.24,106.24,106.0,75.93,32.0,2887.83,200

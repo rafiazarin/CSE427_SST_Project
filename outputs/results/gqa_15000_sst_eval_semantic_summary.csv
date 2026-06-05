@@ -1,0 +1,41 @@
+method_name,semantic_type,exact_accuracy,lenient_accuracy,avg_tokens,n
+Caption-Style SST,attr,0.16,0.168,88.31,3509
+Caption-Style SST,cat,0.0,0.0,9.0,3000
+Caption-Style SST,global,0.0,0.0,9.0,3000
+Caption-Style SST,obj,0.0,0.0,9.0,3000
+Caption-Style SST,rel,0.0,0.0,9.0,3000
+Compact Keyword SST,attr,0.13,0.147,39.47,3509
+Compact Keyword SST,cat,0.0,0.0,9.0,3000
+Compact Keyword SST,global,0.0,0.0,9.0,3000
+Compact Keyword SST,obj,0.0,0.0,9.0,3000
+Compact Keyword SST,rel,0.0,0.0,9.0,3000
+Full SST,attr,0.161,0.167,88.897,3509
+Full SST,cat,0.0,0.0,9.0,3000
+Full SST,global,0.0,0.0,9.0,3000
+Full SST,obj,0.0,0.0,9.0,3000
+Full SST,rel,0.0,0.0,9.0,3000
+Keyword-Aware SST,attr,0.162,0.172,51.147,3509
+Keyword-Aware SST,cat,0.0,0.0,9.0,3000
+Keyword-Aware SST,global,0.0,0.0,9.0,3000
+Keyword-Aware SST,obj,0.0,0.0,9.0,3000
+Keyword-Aware SST,rel,0.0,0.0,9.0,3000
+No-Attributes SST,attr,0.043,0.047,77.409,3509
+No-Attributes SST,cat,0.0,0.0,9.0,3000
+No-Attributes SST,global,0.0,0.0,9.0,3000
+No-Attributes SST,obj,0.0,0.0,9.0,3000
+No-Attributes SST,rel,0.0,0.0,9.0,3000
+No-Relations SST,attr,0.126,0.131,50.539,3509
+No-Relations SST,cat,0.0,0.0,9.0,3000
+No-Relations SST,global,0.0,0.0,9.0,3000
+No-Relations SST,obj,0.0,0.0,9.0,3000
+No-Relations SST,rel,0.0,0.0,9.0,3000
+Objects-Only SST,attr,0.007,0.008,36.278,3509
+Objects-Only SST,cat,0.0,0.0,9.0,3000
+Objects-Only SST,global,0.0,0.0,9.0,3000
+Objects-Only SST,obj,0.0,0.0,9.0,3000
+Objects-Only SST,rel,0.0,0.0,9.0,3000
+Question-Only (no scene),attr,0.0,0.0,9.0,3000
+Question-Only (no scene),cat,0.0,0.0,9.0,3000
+Question-Only (no scene),global,0.0,0.0,9.0,3000
+Question-Only (no scene),obj,0.0,0.0,9.0,3000
+Question-Only (no scene),rel,0.0,0.0,9.0,3000

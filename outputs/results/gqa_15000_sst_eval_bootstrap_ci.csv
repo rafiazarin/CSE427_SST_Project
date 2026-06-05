@@ -1,0 +1,9 @@
+method,exact_accuracy,ci_lower_95,ci_upper_95,n
+Full SST,0.036,0.034,0.039,15509
+Caption-Style SST,0.036,0.033,0.039,15509
+Keyword-Aware SST,0.037,0.034,0.04,15509
+Compact Keyword SST,0.029,0.027,0.032,15509
+No-Relations SST,0.028,0.026,0.031,15509
+No-Attributes SST,0.01,0.008,0.011,15509
+Objects-Only SST,0.002,0.001,0.002,15509
+Question-Only (no scene),0.0,0.0,0.0,15000

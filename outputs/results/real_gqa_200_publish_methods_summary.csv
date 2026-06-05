@@ -1,8 +1,0 @@
-pipeline,exact_accuracy,lenient_accuracy,average_tokens,median_tokens,average_latency_ms,total_questions,token_reduction_vs_full_sst_percent
-full_sst_mistral,0.545,0.585,441.44,406.5,6624.88498812012,200,0.0
-caption_style_sst_mistral,0.53,0.585,443.965,405.5,6770.172919220076,200,-0.5719916636462435
-keyword_filtered_sst_mistral,0.5,0.57,215.53,203.0,2118.9854843501416,200,51.175697716563974
-no_relations_sst_mistral,0.43,0.43,153.795,153.0,2592.4515495750347,200,65.16061072852483
-compact_keyword_sst_mistral,0.41,0.52,175.105,162.5,3474.8218248049125,200,60.33322761870244
-no_attributes_sst_mistral,0.4,0.43,403.84,373.5,5877.046312074999,200,8.51757883291048
-objects_only_sst_mistral,0.225,0.24,106.24,106.0,2887.833570469811,200,75.93330916998913

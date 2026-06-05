@@ -1,88 +1,75 @@
-# =========================
-# CSE427 SST Project Ignore
-# =========================
+# ── Large data files ──────────────────────────────────────────────────────
+data/gqa_raw/
+data/gqa_images_subset/
+data/coco_images_val2014/
+data/vqav2/
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
 
-# Python cache / environments
+# Keep processed samples and detected SST cache
+!data/processed/
+!data/vqav2/detected_ssts.json
+
+# ── Model weights and caches ──────────────────────────────────────────────
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+runs/
+.cache/
+
+# ── Notebook checkpoints and outputs ─────────────────────────────────────
+# Keep result CSVs and figures — they are small and useful for readers
+# Exclude raw checkpoint files (large, regenerable)
+outputs/results/*_checkpoint.csv
+outputs/results/*_llava_results.csv
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── Python ────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-.env
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# ── Virtual environments ──────────────────────────────────────────────────
 .venv/
+.venv-1/
 venv/
 env/
-.ipynb_checkpoints/
+ENV/
 
-# OS / editor files
+# ── OS files ──────────────────────────────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Raw GQA data - too large for Git
-data/gqa_raw/
-data/gqa_images_subset_200/
-
-# Other raw/intermediate data
-data/raw/
-data/interim/
-
-# Keep processed project data
-!data/processed/
-!data/processed/**
-
-# Archive cleanup folders - never push
-archive_cleanup/
-archive/
-
-# Compressed archives
-*.zip
-*.tar
-*.tar.gz
-*.rar
-*.7z
-
-# Model checkpoints / weights
-checkpoints/
-models/
-weights/
-*.pt
-*.pth
-*.ckpt
-*.pkl
-*.joblib
-
-# Logs / temp
-tmp/
-temp/
-logs/
-*.log
-
-# Large intermediate arrays/tables
-*.npy
-*.npz
-*.parquet
-*.feather
-*.hdf5
-*.h5
-
-# Keep final project outputs
-!outputs/
-!outputs/**
-!outputs/figures/
-!outputs/figures/**
-!outputs/results/
-!outputs/results/**
-
-# Keep notebooks
-!notebooks/
-!notebooks/**/*.ipynb
-
-# Keep source code
-!src/
-!src/**
-
-# Keep paper/report assets
-!paper/
-!paper/**
-!report/
-!report/**
+# ── LaTeX build artifacts ─────────────────────────────────────────────────
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk

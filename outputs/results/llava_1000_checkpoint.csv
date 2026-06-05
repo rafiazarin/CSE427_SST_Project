@@ -1,0 +1,1001 @@
+sample_index,image_id,question,ground_truth,prediction,latency_sec
+0,2409655,On which side of the picture is the chimney?,right,Right,9.620451211929321
+1,2352072,"What material do you think is the boot, rubber or leather?",rubber,Rubber,4.564841985702515
+2,2388049,Is the camera in the bottom part or in the top of the photo?,top,Bottom,4.409138917922974
+3,2392384,Is that bus teal and long?,yes,Yes,4.353028297424316
+4,2352021,On which side of the image is the toilet paper?,right,Left,4.398492813110352
+5,2385218,Does this plane look white and huge?,no,Yes,4.355135917663574
+6,2382242,Which color is the floor?,brown,Blue,4.42399001121521
+7,2340293,On which side of the photo is the full boat?,right,Left,4.518484830856323
+8,2381600,Is the color of the boat the same as the sky?,yes,Yes,4.461374759674072
+9,2393484,Is the umbrella that is to the right of the glasses light blue or pink?,pink,Pink,4.3646440505981445
+10,2367852,Is the catcher on the left side?,no,No,4.4145472049713135
+11,2399683,On which side of the photo is the American flag?,left,Left,4.342015981674194
+12,2334664,Is that a blue airplane?,yes,No,4.35641884803772
+13,2411136,On which side of the photo is the little doll?,left,Right,4.342105150222778
+14,2362150,On which side of the photo is the picture?,left,Left,4.332639932632446
+15,2336923,"Where in the photo is the cat, in the top or in the bottom?",bottom,Bottom,4.390552759170532
+16,2400422,Does the blue sky look full and clear?,no,Yes,4.335582971572876
+17,2385432,On which side of the picture is the gas stove?,left,Right,4.337543964385986
+18,2318376,Is the shirt short sleeved or long sleeved?,short sleeved,Short sleeved,4.489471912384033
+19,2344540,Does the clock look white and large?,no,Yes,4.338106155395508
+20,2409579,Is the truck on the right?,yes,No,4.337179899215698
+21,370,Do the fan and the box have a different colors?,no,Yes,4.341064214706421
+22,2338671,Which side of the image is the house on?,left,Left,4.342282056808472
+23,2374816,Which color are the trousers?,tan,Tan,4.341639280319214
+24,2346104,Does the lamp on the ceiling look colorful?,yes,No,4.348165035247803
+25,2319140,Are the flags on the left side?,no,Yes,4.334482908248901
+26,2370134,Are the vase and the pitcher made of the same material?,yes,No,4.33978533744812
+27,2340446,Which part of the photo is the zebra in?,left,No zebra,4.488602161407471
+28,2404130,On which side of the photo is the salad?,right,Right,4.34182596206665
+29,2410613,Is the man in the bottom part of the picture?,yes,Yes,4.338989973068237
+30,2398351,Do the tennis racket and the shirt have a different colors?,yes,Yes,4.339416742324829
+31,2407481,Which side is the chair on?,right,Right,4.336597919464111
+32,2397982,Does the cow in front of the path look young and black and white?,yes,No,4.342206001281738
+33,2396386,Does the helmet appear to be green or white?,green,White,4.340556859970093
+34,2388904,On which side are the glasses?,left,Left,4.3446362018585205
+35,2365742,Does the end table that is to the right of the CDs have brown color?,no,No,4.346201181411743
+36,2377465,Does the bird look brown?,no,No,4.33299994468689
+37,2390473,Is the fresh fruit in the top part of the picture?,no,No,4.338545083999634
+38,2389362,Of which color is that hair?,gray,Blond,4.393493890762329
+39,2355364,Is the vase on the right side or on the left?,right,Right,4.337139129638672
+40,2352253,"How does the tall grass look, green or brown?",brown,Brown,4.3429200649261475
+41,2368249,On which side of the photo is the cabinet?,right,Left,4.338302850723267
+42,2345391,What is the color of the cat's fur?,orange,Orange,4.430801153182983
+43,2382178,"In which part of the photo are the wood chairs, the top or the bottom?",top,Bottom,4.3908562660217285
+44,2394369,What color do you think the jacket that the woman is wearing is?,red,Black,4.4351959228515625
+45,2365742,What color is the chair made of plastic?,blue,Blue,4.511218786239624
+46,2396174,What is the boy doing?,jumping,Skateboarding,4.788546085357666
+47,2390215,Does the necktie look metallic and brown?,yes,Yes,4.855387210845947
+48,2391999,On which side of the photo is the curtain?,left,Right,4.894047021865845
+49,2391468,On which side is the bottle?,right,Left,4.961262941360474
+50,2325505,What color are the trousers?,gray,White,5.14150595664978
+51,2386438,"Who is older, the boy or the woman?",woman,Woman,5.1319990158081055
+52,2357332,What is the color of the table?,tan,Brown,5.274136066436768
+53,2367108,Is the food truck white or orange?,white,White,5.230702877044678
+54,2388067,Does the racket have red color?,no,No,5.329674243927002
+55,2389666,"On which side is the man, the right or the left?",left,Right,5.247391939163208
+56,2334664,The car on the left has which color?,white,Black,5.380802869796753
+57,2338258,Which side of the image is the frisbee on?,right,Right,5.295813083648682
+58,2370687,On which side is the train?,left,Left,5.437440872192383
+59,2327921,Is the plate empty or full?,full,Full,5.276062965393066
+60,2341715,On which side of the image is the bookshelf?,right,Right,5.461645841598511
+61,2345451,Which color do you think is the boat in the middle?,red,Green,5.311695098876953
+62,2371,Are the oranges on the right?,no,Yes,5.543029069900513
+63,2397498,Does the large chair look brown?,no,Yes,5.34355616569519
+64,2323054,On which side of the picture is the chair?,left,Right,5.608381032943726
+65,2395326,What color is the large cow?,brown,Brown,5.370763063430786
+66,2375761,Which side is the person on?,left,Left,5.542443037033081
+67,2410862,On which side of the image is the red drink?,right,Right,5.348084926605225
+68,2335027,Is the radiator on the right side?,yes,Yes,5.4599409103393555
+69,2415698,Does the grass look green and short?,yes,No,5.352935791015625
+70,2322571,What color is the bag?,white,White,5.4591898918151855
+71,2318785,Are the animals elephants?,yes,Yes,5.418905019760132
+72,2392663,Does the pillow that is to the left of the other pillow seem to be round and maroon?,no,No,5.428380966186523
+73,2347367,Is the coffee cup on the left of the photo?,yes,Yes,5.403207778930664
+74,2338167,Is the pipe brown?,yes,No,5.428540945053101
+75,2399600,What color is the shirt the lady is wearing?,black,Tan,5.495798110961914
+76,2388984,On which side of the image are the cars?,left,Left,5.375193119049072
+77,2385159,What is the color of the mousepad?,yellow,Yellow,5.47856593132019
+78,2375091,Is the green container on the right side or on the left of the image?,left,Left,5.3486247062683105
+79,2338350,What color are the pants the man wears?,orange,Black,5.4967663288116455
+80,2359280,What color is the cap the coach is wearing?,blue,Blue,5.334880590438843
+81,2414425,On which side of the image is the woman?,right,Right,5.52479100227356
+82,2390550,What color is the tray?,black,Black,5.327741861343384
+83,2343973,The outfit is of which color?,blue,Purple,5.579346179962158
+84,2393273,In which part is the person?,left,Right,5.335883855819702
+85,2354084,On which side of the image is the frisbee?,right,Right,5.50605583190918
+86,2348437,What is the shelf made of?,glass,Tile,5.367120265960693
+87,2350854,Which color is the animal in front of the fence?,brown,Brown,5.44951605796814
+88,2412817,Which color does the hair have?,black,Black,5.264233112335205
+89,2392049,What is the door made of?,metal,Wood,5.40090012550354
+90,2388904,On which side of the photo is the bottle?,right,Right,5.29439902305603
+91,2319861,Which color is the vehicle made of metal?,orange,Orange,5.43810510635376
+92,2403960,Is the lamp on the right side or on the left?,left,Left,5.326535224914551
+93,2358938,Is the door white and closed?,yes,Yes,5.413499116897583
+94,2315486,Is the dessert to the right of the table cloth curved and red?,no,No,5.384373188018799
+95,2317753,Which color is the kite on the right of the picture?,yellow,Red,5.4532787799835205
+96,2396535,Does the bat that is not big have blue color?,yes,No,5.483663082122803
+97,2318376,Is the frisbee round and orange?,no,No,5.4520580768585205
+98,2316790,What is the color of the car on the left?,white,Black,5.5320892333984375
+99,2387456,What is the sidewalk made of?,brick,Brick,5.584001779556274
+100,2326180,Are the animals of the same type?,yes,Yes,5.667968988418579
+101,2365213,Which side of the photo is the large picture on?,left,Left,5.4613001346588135
+102,2340805,Is the green broccoli dark or light?,light,Dark,5.666823148727417
+103,2403469,Are the trousers blue?,no,No,5.470104694366455
+104,2334480,On which side of the picture is the plate?,right,Right,5.61854100227356
+105,2357363,What is the sidewalk made of?,brick,Brick,5.548598051071167
+106,2316905,What is the bottle made of?,plastic,Plastic,5.685871124267578
+107,2412344,Is the brown door small or large?,large,Large,5.53288197517395
+108,2417104,What color is the chair?,white,White,5.491026163101196
+109,2328644,Is the shoe white or brown?,brown,Brown,5.493335962295532
+110,2370948,Of what color is the sweater?,brown,Brown,5.5148186683654785
+111,1159522,What do the computer desk and the chair have in common?,material,Material,5.6058268547058105
+112,2371990,Is the shirt short sleeved or long sleeved?,short sleeved,Short sleeved,5.643457889556885
+113,2326757,How long are the pants?,short,Short,5.6552040576934814
+114,2399388,Are the floor and the door made of the same material?,no,Yes,5.44697117805481
+115,2342977,Which side of the photo is the man on?,left,Right,5.635379076004028
+116,2416767,What color is the oar in the center?,silver,Red,5.437294006347656
+117,2402763,Is the man's hair long and brown?,no,No,5.615025758743286
+118,2328812,What is the table made of?,metal,Metal,5.4749228954315186
+119,3716,Does the tower seem to be white and large?,yes,No,5.607310771942139
+120,2404827,Is the skateboard green?,yes,No,5.468065023422241
+121,2401748,Does the pizza with the ham look small and full?,no,No,5.548701286315918
+122,2359504,Does the skateboard have white color?,no,No,5.507758855819702
+123,1593102,Is the bowl on the right?,no,Yes,5.558316946029663
+124,2323095,Of what color is the boat in the bottom of the picture?,white,White,5.539628982543945
+125,2396539,Do the flowers look orange?,no,No,5.544347286224365
+126,2413471,The palm tree that is to the left of the man is which color?,yellow,White,5.63043212890625
+127,2326327,What color do you think is the skateboard on the left?,brown,Yellow,5.530721187591553
+128,2396884,Is the house in the top part of the photo?,no,No,5.660829305648804
+129,2317841,Is the fence to the right of the people made of wood or wire?,wood,Wood,5.504899024963379
+130,2405676,What color does the vehicle that is not narrow have?,orange,Orange,5.714187860488892
+131,2362824,Is the scarf yellow?,yes,Yes,5.585306167602539
+132,2361665,Which side of the photo is the blond woman on?,right,Left,5.728574991226196
+133,2362137,Does the grass look green or brown?,green,Green,5.613562822341919
+134,2347262,What is the color of the large kite?,black,Green,5.72799015045166
+135,2406169,Is the white vest short sleeved or long sleeved?,short sleeved,Short sleeved,5.8923258781433105
+136,2396304,Does the sky appear to be cloudy and white?,no,Yes,5.70196008682251
+137,2349487,What is the ring made of?,metal,Wood,5.722587823867798
+138,2364258,Is the woman on the right side of the picture?,yes,Yes,5.59769606590271
+139,2398615,On which side of the image is the car?,right,Right,5.705228090286255
+140,2387359,On which side of the photo is the rug?,right,Right,5.522639751434326
+141,2334521,Is the wood chair on the left side?,yes,Yes,5.697893857955933
+142,2318553,Is the packet in the top part?,yes,Yes,5.537248849868774
+143,2384822,Which side of the picture are the dark bags on?,right,Left,5.656059265136719
+144,2369526,How tall is the grass?,short,Short,5.510276794433594
+145,2339466,Does the lamp shade look red?,yes,Yes,5.558831691741943
+146,2316296,What is the height of the fence near the field?,short,Short,5.532333135604858
+147,2374729,Which side of the picture is the couch on?,right,Right,5.524441242218018
+148,2377973,How large are the leaves?,large,Small,5.5227391719818115
+149,2357167,Is the sign in front of the bridge small and white?,no,No,5.442004919052124
+150,2325932,Is the fence in the top or in the bottom part?,top,Top,5.636637210845947
+151,2363020,What is the bag made of?,metal,Plastic,5.519795894622803
+152,2363785,Does the bread that is to the right of the bowl look brown or maybe white?,brown,Brown,5.6288838386535645
+153,2366401,Is the green cabbage in the bottom or in the top part of the image?,bottom,Bottom,5.508307933807373
+154,2400661,What color are the small scissors?,purple,Black,5.667253017425537
+155,2355417,How old is the child?,little,Young,5.5019121170043945
+156,2350945,What do the number and the coat have in common?,color,Color,5.768164157867432
+157,498281,Is the pillow to the left of the frog cream colored or green?,green,Cream colored,6.051345109939575
+158,2403478,Do the desk and the keyboard have a different colors?,no,Yes,5.895598888397217
+159,2377602,Which color does the elephant near the water have?,gray,Gray,5.759186744689941
+160,2404259,Does the animal that looks white and brown look colorful?,yes,Yes,6.065997123718262
+161,2401482,Does the cloud have a different color than the map?,no,No,6.586357116699219
+162,2362452,That shirt has what color?,red,Red,5.811630725860596
+163,2386651,Does that woman appear to be sitting?,yes,Yes,5.805453062057495
+164,2388285,Does the sky look blue and clear?,no,No,5.667108058929443
+165,2366127,Is the painting on the right of the picture?,yes,Yes,5.724372863769531
+166,2319908,Is the sky cloudy and blue?,yes,No,5.57989501953125
+167,498234,What do the sky and the fence have in common?,color,Color,5.536545991897583
+168,2349504,Is the curtain to the left of the other curtain red or white?,red,Red,5.632899761199951
+169,2333104,What color does the pan have?,red,Red,5.673274993896484
+170,2861,What is the color of the coat?,black,Green,5.830077171325684
+171,2415105,Is the laptop off or on?,on,On,5.521389007568359
+172,2349159,What is the white chair made of?,metal,Plastic,5.6550452709198
+173,2366832,On which side is the house?,right,Right,5.448687791824341
+174,2358184,Is the field brown?,yes,No,5.6564130783081055
+175,713748,Is the motorbike on the left side?,no,No,5.437898874282837
+176,2386337,Is the brown sand smooth or rough?,smooth,Smooth,5.597421884536743
+177,2360292,Is the bread on the right?,yes,Yes,5.409202814102173
+178,2362719,The bear in the bottom of the image is of what color?,dark brown,Pink,5.509828090667725
+179,2348385,Is the table large and wooden?,yes,Yes,5.444746971130371
+180,1592305,Is the truck on the left?,yes,No,5.493762969970703
+181,1593172,Are both the crate and the canopy the same color?,no,No,5.443414926528931
+182,2352741,Is the microwave on the right side?,yes,Yes,5.449005126953125
+183,2412366,Is the gray car in the top or in the bottom part?,top,Top,5.49605393409729
+184,2390989,Is the cupboard large and brown?,no,No,5.459530830383301
+185,2354285,Does the short grass beneath the blanket look green or brown?,green,Brown,5.546607971191406
+186,2333868,Is this a silver plate?,yes,Yes,5.491634845733643
+187,2371677,"On which side are the white plates, the left or the right?",right,Left,5.680275917053223
+188,2391939,Does that train have yellow color?,yes,Yes,5.565279960632324
+189,2400997,On which side of the picture is the orange cone?,right,Left,5.727337121963501
+190,2027,Is the ottoman in the top of the photo?,no,No,5.5175862312316895
+191,2399462,"Which size is the vehicle, small or large?",small,Small,5.679865837097168
+192,2332903,Is the cardboard container in the top part of the image?,no,No,5.521428108215332
+193,2372439,What do the door and the outfit have in common?,color,Color,5.586594104766846
+194,2405354,Do the shoes look black?,yes,No,5.459996938705444
+195,2976,"In which part of the picture is the dumpster, the bottom or the top?",bottom,Bottom,5.578906297683716
+196,2380112,Is the vehicle to the left of the helmet small and green?,no,No,5.532346963882446
+197,2374264,"In which part of the photo is the wood fence, the bottom or the top?",bottom,Bottom,5.5355048179626465
+198,2380175,What color is the rope?,blue,Blue,5.551151752471924
+199,2331460,On which side is the fence?,left,Right,5.457032918930054
+200,2404320,On which side is the long mirror?,left,Right,5.627770900726318
+201,2376749,On which side is the monitor?,left,Right,5.471421003341675
+202,2393394,Do the pole and the word have the same color?,yes,No,5.6144750118255615
+203,2338258,How long is the blond hair?,short,Short,5.458623886108398
+204,2376818,What color is the hair?,red,Red,5.6162378787994385
+205,2381305,Does the device near the book appear to be open?,no,No,5.459482192993164
+206,2352259,On which side of the photo are the houses?,right,Left,5.7421088218688965
+207,2344431,What are the shelves made of?,wood,Wood,5.595428943634033
+208,2394454,Is the boat different in color than the vehicle?,no,Yes,5.666866064071655
+209,2371768,Are the orange carrots in the top of the photo?,no,No,5.697403907775879
+210,2375442,Is the cat on the left of the photo?,yes,Yes,5.603222131729126
+211,2401166,Does the tire look red and large?,no,Yes,5.635158061981201
+212,2383358,What color is the helmet?,black,Yellow,5.5146870613098145
+213,2353576,"What was used to make the fence to the right of the guy, wood or metal?",wood,Wood,5.62215781211853
+214,2349648,What is the color of the cat?,brown,Brown and white,5.574956655502319
+215,2350879,Which side of the photo is the dark curtain on?,right,Left,5.695734977722168
+216,2408827,"What color is the sauce above the bun, orange or white?",orange,Orange,5.510817050933838
+217,2406666,Is the empty street wet or dry?,wet,Wet,5.708053827285767
+218,2358894,What is the color of the shirt?,black,Black,5.5238659381866455
+219,150495,On which side is the hair dryer?,right,Right,5.659404039382935
+220,2391802,Do the sky and the flag have the same color?,yes,No,5.57390022277832
+221,2315613,In which part is the large spoon?,left,Right,5.5975401401519775
+222,498144,What color is the animal on top of the bench?,black,Black,5.63029408454895
+223,2397948,Do the goggles look small or large?,large,Small,5.563173055648804
+224,2388658,Do the celery and the pumpkin have the same color?,yes,No,5.735542058944702
+225,2356967,What color is that sky?,gray,Gray,5.869487762451172
+226,2394351,What do both the wires and the shorts have in common?,color,Color,5.89823317527771
+227,2335112,What color is the vase on the left?,white,White,5.584950923919678
+228,2405555,How is the water in the picture?,calm,Still,5.674704074859619
+229,2406772,What is the weight of the tub?,light,Light,5.524511098861694
+230,2391115,Is the bacon to the left of the chair both cooked and red?,no,No,5.666031837463379
+231,2386338,Is the animal to the left of the papers orange or black?,black,Black,5.585532188415527
+232,2317142,Is the car on the right side?,no,No,5.593883275985718
+233,2383415,Is the snow board to the left of the skis long and brown?,no,Yes,5.570977210998535
+234,2353016,What color does the dog's hair have?,blond,Brown,5.499770164489746
+235,2401553,"Which material is the fence made of, wood or steel?",wood,Wood,5.557693958282471
+236,2323054,Are the animals of different species?,yes,Yes,5.385116815567017
+237,2361904,Are the chairs both green and empty?,yes,No,5.418926239013672
+238,2380512,Is the American flag on the left part or on the right?,left,Right,5.232787132263184
+239,2412,Does the sidewalk look dark?,yes,Yes,5.432568788528442
+240,2384329,Is the mug full or maybe empty?,empty,Empty,5.248709201812744
+241,2372240,How large is the building that is made of brick?,large,Large,5.337479114532471
+242,2376684,Is the car that is to the right of the lock blue or black?,black,Blue,5.1341681480407715
+243,2386299,Do the net and the bike have a different colors?,yes,Yes,5.294410943984985
+244,2365078,Is the man on the right or on the left side?,right,Right,5.157708168029785
+245,2386456,Does the zebra in front of the grass have black color and striped pattern?,yes,Yes,5.298464059829712
+246,2408823,What is the dish made of?,porcelain,Metal,5.114794969558716
+247,2324564,Is the silver device in the bottom part or in the top of the image?,bottom,Top,5.332053899765015
+248,2380375,Does the white shirt look short sleeved?,yes,No,5.20003604888916
+249,2353260,Is the broccoli on the right part of the photo?,yes,Yes,5.3889172077178955
+250,2385164,What do you think is the color of the plate?,yellow,White,5.2704010009765625
+251,2337577,Are both the wall and the floor the same color?,yes,No,5.512085914611816
+252,2368361,Is the dress short and black?,yes,Yes,5.305491209030151
+253,2404261,Is the color of the athletic shoe different than the paddle?,no,No,5.552250146865845
+254,2385419,What color is the SUV that is on the street?,red,Red,5.418370723724365
+255,2369851,What do both the backpack and the mirror have in common?,color,Color,5.604305982589722
+256,2376923,Does the hair seem to be white or red?,white,White,5.505181789398193
+257,2376201,"Where is the woman, in the top or in the bottom part of the picture?",top,Top,5.62928318977356
+258,2401381,Does the device that is to the right of the telephone look gray and small?,no,Yes,5.52548885345459
+259,2325954,Does the clock tower appear to be tan or green?,tan,Tan,5.5335822105407715
+260,2372749,Is the water brown or blue?,blue,Blue,5.4653730392456055
+261,2356493,What color is the tennis racket on the left?,green,Orange,5.4406421184539795
+262,2364622,Does the helmet that is to the right of the man look black?,yes,No,5.47517204284668
+263,2377817,Are the mountains near the station tall and grassy?,no,No,5.415464878082275
+264,2417483,On which side of the photo are the small berries?,left,Left,5.520218133926392
+265,2398770,Does the grass look green?,yes,Yes,5.401223182678223
+266,2392303,On which side is the large clock?,right,Right,5.532639980316162
+267,2389290,Is the train long or short?,long,Long,5.392209053039551
+268,2412272,Do the sky and the sweater have a different colors?,yes,No,5.626482963562012
+269,2392274,On which side of the picture is the napkin?,right,Right,5.431582927703857
+270,2374828,Which color do you think the shirt is?,white,Gray,5.586688995361328
+271,2402960,Are the cabinets brown?,yes,Yes,5.41420316696167
+272,2373660,The blanket is of what color?,brown,Gray,5.5847718715667725
+273,2380130,Is the pedestrian in the top part or in the bottom of the image?,bottom,Bottom,5.531760931015015
+274,2320327,Is wood used to make the steering wheel?,yes,No,5.643077850341797
+275,2380050,What makes up the fence that is not short?,metal,Metal,5.521057605743408
+276,2417738,Which color is the striped tie?,blue,Red,5.558868169784546
+277,2405223,"Which color is the bridge, gray or red?",gray,Gray,5.549379110336304
+278,2334798,Does the counter look clean and black?,yes,Yes,5.493265867233276
+279,2352555,Which color is the sticker?,red,Black,5.536663055419922
+280,2371386,"Which material makes up that ground, stone or hardwood?",stone,Stone,5.476627826690674
+281,2375479,Which company is the shoe from?,nike,Nike,5.658252954483032
+282,2315727,Is the person on the left of the image?,no,No,5.4721598625183105
+283,2341948,How tall is the grass surrounding the rocks?,short,Tall,5.616789102554321
+284,2354925,Which color is the syrup that is to the left of the banana?,brown,Black,5.457832098007202
+285,2397825,What color is the van the bicycles are to the left of?,white,White,5.668608903884888
+286,2324287,What material are the blinds to the right of the other blinds made of?,metal,Metal,5.497898101806641
+287,2369789,Is the fire place made of marble?,no,Yes,5.644718885421753
+288,2383798,What do both the radiator and the window frame have in common?,color,Color,5.5463080406188965
+289,2399031,Does the blue car appear to be driving?,no,No,5.667271852493286
+290,2404437,What do the coat and the television have in common?,color,Color,5.649837970733643
+291,2411612,Are the kids in the bottom part or in the top of the image?,bottom,Bottom,5.709287881851196
+292,2400536,Are the floor and the shoe the same color?,no,Yes,5.73073935508728
+293,2415237,Is the frisbee on the right side or on the left of the image?,right,Right,5.627718925476074
+294,2387080,What color does the dog that is sitting on top of the bed have?,brown,Brown,5.733696937561035
+295,2417665,Which side of the photo is the man on?,right,Left,5.563228130340576
+296,2370112,Is the mousepad on the left side or on the right?,left,Left,5.769174098968506
+297,2323396,Of what color are the wheels?,orange,Orange,5.619742155075073
+298,2381683,Do you think the floor is clean?,no,Yes,5.7296531200408936
+299,2373979,On which side of the photo is the picture?,right,Right,5.606225967407227
+300,2399600,What is the man on the street doing?,walking,Talking,5.741890907287598
+301,2334444,Do the trees behind the elephant look brown?,yes,No,5.701056003570557
+302,2373590,What's the fence made of?,metal,Concrete,5.641434907913208
+303,2397009,Is the chair on the right side of the photo?,yes,Yes,5.664828300476074
+304,2357500,Are the clouds white and thin?,no,Yes,5.5325517654418945
+305,2318261,Is the color of the wristwatch different than the glove?,yes,Yes,5.710999965667725
+306,2317575,Does the vehicle to the right of the animals seem to be empty or full?,empty,Empty,5.584945917129517
+307,2367639,Does the desk appear to be wooden and large?,no,No,5.722194194793701
+308,2374331,Which color does the bike the bottle is on have?,blue,Blue,5.537691116333008
+309,2373462,Which side is the curtain on?,right,Right,5.708672046661377
+310,2413588,What is the color of the woman's t-shirt?,pink,Red,5.581939935684204
+311,2388655,What color is the suitcase?,black,No suitcase,5.810478925704956
+312,2393510,Does the frisbee to the right of the man seem to be white?,no,No,5.7241621017456055
+313,2380082,Are these animals of different species?,yes,Yes,5.701081037521362
+314,2392663,What color do you think the pillow on the right is?,maroon,Red,5.772831916809082
+315,2360401,Do the liquid and the cup have the same color?,no,No,5.648806810379028
+316,2335594,Which side is the blue painting on?,right,Left,5.787876129150391
+317,2402755,Does the device on the table look black?,yes,No,5.629239082336426
+318,2415826,Is the cardboard box in the bottom part or in the top of the image?,bottom,Bottom,5.887725114822388
+319,2401625,What is the color of the plate the food is on?,green,Brown,5.701211929321289
+320,2399079,How long are the leaves?,long,Long,5.772140979766846
+321,2362155,Does the shirt look gray?,yes,Yes,5.659093856811523
+322,2321647,Does the cap have pink color?,no,Yes,5.663920164108276
+323,2384733,Is the tennis racket in the top part of the image?,no,No,5.640408992767334
+324,2362857,Is the bag on the left side?,yes,No,5.5534889698028564
+325,2320261,"What material is the glass on the table, stainless steel or plastic?",stainless steel,Stainless steel,5.7924580574035645
+326,2394854,Is the camera silver or tan?,tan,Silver,5.586023807525635
+327,2323848,Is the vehicle blue?,yes,No,5.671513080596924
+328,2371768,Does the fruit to the right of the lemons look bright?,yes,Yes,5.462503910064697
+329,2347670,Is the bag on the left?,no,No,5.619545221328735
+330,2384376,"What is the container that is to the left of the pan made of, plastic or glass?",plastic,Plastic,5.5314249992370605
+331,2378779,Is the water the same color as the grass?,yes,Yes,5.614544153213501
+332,2327007,What is the color of the tshirt the man wears?,red,Red,5.481519937515259
+333,45,Which color is the vehicle that the traffic signal is to the left of?,green,White,5.554104804992676
+334,1592272,What do the car and the carriage have in common?,color,Color,5.558437824249268
+335,2377214,Does the cherry in the bowl look round and red?,yes,Yes,5.568068027496338
+336,2344678,Is the umbrella in the top or in the bottom part?,bottom,Bottom,5.64802098274231
+337,2361918,Which color is the bus to the left of the cars?,red,Red,5.542475938796997
+338,2409538,Does the giraffe's tail have blue color?,no,No,5.648709774017334
+339,2399658,On which side is the white umbrella?,left,Left,5.519735813140869
+340,2383086,Does the brown animal look tiny?,no,No,5.677958011627197
+341,2362085,What is the color of the racket that is to the left of the man?,red,White,5.540678262710571
+342,2373585,Do these animals have different types?,yes,Yes,5.839368104934692
+343,2363417,Which color is the tail?,tan,Yellow,5.558786869049072
+344,2358919,Does the shirt have red color?,no,No,5.640039920806885
+345,2372497,Is the elephant both dirty and brown?,yes,Yes,5.533218145370483
+346,2381671,Does the bird that is to the right of the purse look black?,no,No,5.602355003356934
+347,2330010,On which side is the box?,right,Left,5.602785110473633
+348,2350540,Which color is the dome?,black,Gold,5.577789068222046
+349,2404140,Does that grass look short?,no,Yes,5.61901593208313
+350,2361820,Is the water that looks murky brown and calm?,yes,Yes,5.703145980834961
+351,2406339,What is the color of the baseball hat?,red,Red,5.779505014419556
+352,4079,Is the phone on the left or on the right?,left,Left,5.550443887710571
+353,2411681,Do the wall and the counter have a different colors?,no,No,5.688662767410278
+354,2334194,On which side of the photo is the figurine?,right,Right,5.477828025817871
+355,2411256,On which side of the image is the white car?,left,Right,5.563416242599487
+356,2406435,"Which part of the picture is the lettuce in, the top or the bottom?",bottom,Bottom,5.4168860912323
+357,2396367,Is this a blue bed?,no,No,5.422030925750732
+358,2411437,On which side of the photo is the dishwasher?,right,Right,5.226202011108398
+359,2408602,Are these people of the same gender?,yes,No,5.422094821929932
+360,498231,On which side is the cup?,left,Left,5.193899154663086
+361,2343874,Which side of the image is the yellow umbrella on?,right,Right,5.19249415397644
+362,2394483,What is the color of the shoes the player is wearing?,blue,White,5.01770281791687
+363,713216,Which side of the photo is the broccoli on?,right,Left,5.135416030883789
+364,2329648,Is the drawing green or gold?,gold,Green,5.0796732902526855
+365,2317721,What is the color of the hair?,blond,Gray,5.221314907073975
+366,2357039,Is the color of the trash can different than the boot?,no,No,5.134020805358887
+367,2362616,Of which color are the skis on the right of the photo?,black,White,5.224050045013428
+368,2410196,Is this a large pizza?,no,No,5.094146966934204
+369,2327787,Is the remote in the bottom part or in the top of the picture?,bottom,Top,5.264425992965698
+370,2384502,Do the wetsuit of the man and the ocean have a different colors?,no,No,5.154925107955933
+371,2368361,What color is the car that is to the left of the bag?,silver,White,5.331380128860474
+372,1159352,Is this a dark brown table?,yes,No,5.231958866119385
+373,2343615,On which side of the picture is the woman?,right,Left,5.368124961853027
+374,2395529,Do the cap and the mask have the same color?,no,No,5.367680072784424
+375,2416766,"Which part of the picture is the man in, the bottom or the top?",bottom,Bottom,5.428046226501465
+376,107903,Which side is the plate on?,right,Left,5.327525854110718
+377,2350204,On which side is the gray helmet?,right,Left,5.303146123886108
+378,2369489,Is the entertainment center on the right side of the image?,yes,No,5.284440040588379
+379,2334798,"In which part of the photo is the drawer, the top or the bottom?",bottom,Bottom,5.327887773513794
+380,2408463,Does the boat near the ball look empty and red?,no,No,5.280066013336182
+381,2343238,Which color is the jacket?,yellow,Gray,5.2572338581085205
+382,2387380,Is that sky black?,no,No,5.293336629867554
+383,1331,On which side is the chimney?,left,Left,5.304313898086548
+384,2393788,What color do you think the dress the bear is wearing has?,pink,Pink,5.361150026321411
+385,2317127,Does the cabinet that is to the left of the curtains look white?,yes,No,5.282499074935913
+386,2388052,What color is the vehicle made of chrome?,blue,Blue,5.37574028968811
+387,2355633,Is the coffee on the right?,yes,Yes,5.3030900955200195
+388,2404499,Is the man's hair curly or straight?,curly,Straight,5.489128112792969
+389,1159433,Of what color are the trousers that the man is in?,blue,White,5.315133810043335
+390,2398067,Does the sign have the same color as the cap?,no,Yes,5.45713472366333
+391,2406203,On which side of the photo is the ball?,right,Left,5.285808801651001
+392,2332159,Does the backpack have blue color?,no,No,5.45635199546814
+393,3314,On which side is the car?,right,Right,5.259061098098755
+394,2339401,On which side of the photo is the white stove?,right,Right,5.472084999084473
+395,2375841,Does the sweater seem to be blue?,no,No,5.31082010269165
+396,2354656,Does the broccoli that is to the left of the carrot look purple and steamed?,no,No,5.5635552406311035
+397,2371728,"Where in this photo is the woman, on the right side or on the left?",left,Right,5.406798839569092
+398,2414951,Is the sheet in the bottom of the image?,no,Yes,5.530791997909546
+399,2371078,Is the color of the collar different than the color of the wall?,no,No,5.369544267654419
+400,2404197,Does the concrete floor look clean and pink?,yes,No,5.5224597454071045
+401,2413138,Is the zebra the same color as the jacket?,no,No,5.388502836227417
+402,2397397,Do the shorts look black?,no,Yes,5.447716236114502
+403,2388803,Is the shoe black and white or colorful?,black and white,Colorful,5.439301013946533
+404,2384182,What are the chairs made of?,plastic,Wood,5.46032190322876
+405,2412198,Are the trees small or large?,large,Small,5.448509216308594
+406,2335456,What do the racket and the tape have in common?,color,Color,5.460732936859131
+407,2343656,Is the toilet open?,yes,No,5.482912063598633
+408,2369899,"Which material is the cabinet made of, wood or glass?",wood,Wood,5.414721965789795
+409,2337130,Do the sneakers look black?,no,No,5.522506952285767
+410,2334914,On which side of the picture is the small bread?,left,Right,5.420314311981201
+411,2406044,What color are the clouds?,white,White,5.522387981414795
+412,2385274,What color is the ladder?,yellow,Brown,5.323265075683594
+413,2343858,Which side of the image is the dryer on?,right,Left,5.489594221115112
+414,2321943,On which side of the image is the backpack?,right,Right,5.310240030288696
+415,1618,Does the cup have a different color than the desk?,no,Yes,5.529649972915649
+416,2322984,"Which part of the image is the man in, the top or the bottom?",bottom,Bottom,5.354327201843262
+417,2315383,What is the color of the water at the hillside?,gray,Blue,5.50199818611145
+418,2367379,Which color is the fruit to the right of the people?,yellow,Red,5.3157689571380615
+419,2386987,What is the size of the pot to the right of the person?,large,Small,5.529254198074341
+420,2392969,On which side of the photo are the figurines?,right,Right,5.421584844589233
+421,2390677,How large is the device of the oven?,small,Large,5.557674884796143
+422,2404396,Is the dog that is to the left of the other dog colorful or is it black and white?,colorful,Colorful,5.488664865493774
+423,2345207,Does the bright shirt have orange color?,no,No,5.522282123565674
+424,2413910,"Which seem to be less healthy, the pizza or the peppers of the pizza?",pizza,Pizza,5.5173890590667725
+425,2348670,Which side of the picture is the woman on?,right,Left,5.479698896408081
+426,2382242,What color is the carpet?,blue,Blue,5.463081121444702
+427,2335783,Do the sky and the wetsuit have a different colors?,no,Yes,5.419496774673462
+428,2368153,Is the sky overcast and white?,no,Yes,5.515573978424072
+429,2380477,Are the trousers white and striped?,yes,No,5.45743727684021
+430,2384131,Is the sofa on the left side?,no,No,5.609431982040405
+431,2834,What color is the bag the child holds?,green,Blue,5.442079067230225
+432,2328226,How long is the hair?,short,Short,5.611725091934204
+433,2353347,What color is the glove?,blue,Black,5.475965976715088
+434,2376445,Is the small racket on the right side?,no,Yes,5.642597913742065
+435,2412272,What color is the rope on the boat?,green,Black,5.448243141174316
+436,2397589,Are the headphones in the top or in the bottom part?,bottom,Bottom,5.641683340072632
+437,2346911,Is the person in the bottom of the photo?,no,Yes,5.5219879150390625
+438,2351588,Which side of the picture is the crate on?,right,Left,5.610589981079102
+439,2399462,Is the vehicle green and small?,no,No,5.523330926895142
+440,2390939,Does the utensil on the plate look silver and real?,yes,Yes,5.518534183502197
+441,2394430,On which side is the shelf?,left,Left,5.5531980991363525
+442,2383280,Is the balcony white or black?,white,White,5.541263818740845
+443,2318140,Does the boat at the pier look red?,no,No,5.614992141723633
+444,2411294,Which color do you think the tail is?,orange,White,5.4762396812438965
+445,2384254,Is the chair different in color than the sign?,no,No,5.597643136978149
+446,2384006,Is the little girl on the left or on the right of the photo?,right,Right,5.41598916053772
+447,2381096,What is she doing?,posing,Posing,5.65549898147583
+448,2318574,Is the orange in the top part or in the bottom?,bottom,Bottom,5.4548139572143555
+449,2400224,On which side of the image is the woman?,right,Left,5.601813077926636
+450,341,What color is the motorbike on the right side?,black,Black,5.4611852169036865
+451,2380720,Is the shirt black or orange?,orange,Orange,5.61899209022522
+452,2342945,Which color do you think the device the ipod is to the right of is?,gray,Black,5.494315147399902
+453,2410011,On which side of the photo is the TV?,right,Right,5.562989950180054
+454,2385114,"In which part of the image is the shelf, the top or the bottom?",top,Top,5.579720973968506
+455,2383583,On which side is the mirror?,right,Left,5.553844928741455
+456,2346184,Is that sky white or blue?,blue,Blue,5.582849025726318
+457,2353264,Which color is the umbrella the person is holding?,blue,Black,5.482163906097412
+458,2368893,What tone does the coffee table made of wood have?,light,Light,5.6037211418151855
+459,2405821,Is the flower near the leaf blue and little?,yes,No,5.506139039993286
+460,2371272,Are both the door and the fence made of the same material?,no,Yes,5.668079137802124
+461,2387036,On which side of the image is the wood chair?,right,Left,5.482117176055908
+462,2378563,Is the vehicle to the left of the motorcycle white or brown?,brown,Brown,5.6208131313323975
+463,2368239,"On which side of the image is the teddy bear, the left or the right?",right,Right,5.42977499961853
+464,2385409,The container has which color?,silver,Silver,5.569962978363037
+465,2410065,What's the girl doing?,posing,Standing,5.516335964202881
+466,2403595,Is the color of the pillow the same as the blouse?,yes,Yes,5.585808992385864
+467,2353078,What is the color of the potato to the right of the tomato?,red,Red,5.532693862915039
+468,2396616,Is the door blue?,yes,No,5.589308261871338
+469,1100,Are the tiles black?,no,No,5.536226749420166
+470,2344499,"In which part of the photo is the screen, the bottom or the top?",bottom,Bottom,5.618614673614502
+471,2366862,Does the animal next to the bath tub look large?,no,No,5.743929862976074
+472,2340945,What is the long bat made of?,metal,Wood,5.670842885971069
+473,2341861,Is the man on the left or on the right?,left,Left,5.905848741531372
+474,2367541,Is the beer on the left?,no,No,5.795583963394165
+475,2366877,Is the truck in the bottom or in the top part?,top,Top,6.17616605758667
+476,2417051,Is the potato in the bottom or in the top part?,top,Bottom,6.115279912948608
+477,2416539,What is the color of the shirt that the man is wearing?,brown,Gray,6.019710063934326
+478,2351317,Does the colorful hat look red?,no,Yes,6.0725178718566895
+479,2373574,Is the cup in the bottom part or in the top of the image?,top,Bottom,5.94451904296875
+480,2390060,Is the truck different in color than the antenna?,no,No,6.111081123352051
+481,2412066,Is the keyboard on the left side of the photo?,yes,No,5.902612924575806
+482,2333864,Which color is the vase on the table?,gold,Gold,5.989301919937134
+483,2365785,What do both the sign and the post have in common?,material,Color,5.931638956069946
+484,2416361,Are the decorations blue or silver?,silver,Blue,5.861192941665649
+485,2401064,"What color is the bathroom, beige or black?",beige,Beige,6.0285868644714355
+486,2378302,What is the rhino doing?,drinking,Eating,6.390272855758667
+487,2373168,Is the shirt white and short sleeved?,no,No,6.1036741733551025
+488,2364995,Which side of the picture is the man on?,left,Right,5.889420986175537
+489,2386495,Is the lamp shade square and white?,yes,No,5.893377065658569
+490,2376999,What color is the roast beef to the left of the other roast beef?,red,Red,5.8889312744140625
+491,2386337,Does the dark horse appear to be standing?,no,Yes,5.748309850692749
+492,2346159,Does the frisbee have white color?,no,No,5.885283946990967
+493,2411612,Are the people in the bottom of the photo?,yes,Yes,5.719563007354736
+494,2384592,"Which color are the flames, orange or blue?",orange,Orange,5.867633819580078
+495,2402502,Is the speaker in the bottom or in the top of the image?,bottom,Top,5.705641031265259
+496,2330972,Does the mane have long length?,no,No,5.827310085296631
+497,2338308,Which color does the nose have?,white,Gray,5.792741060256958
+498,2320407,On which side is the backpack?,right,Right,5.818057060241699
+499,2317439,Is the tennis racket in the top or in the bottom part?,top,Top,5.870890855789185
+500,2326408,What is the tray made of?,plastic,Foil,5.839882135391235
+501,1159778,Is the cabinet in the top part of the photo?,yes,Yes,5.9835920333862305
+502,2371,Which color are the leaves?,purple,Red,5.755979061126709
+503,2374309,What color is that counter top?,tan,White,5.903871059417725
+504,2401618,Do the trees behind the giraffe look leafy and skinny?,no,No,5.792620897293091
+505,2361858,What is the color of the hair?,black,Black,5.8889899253845215
+506,713470,What color is the wood boat to the right of the glasses?,cream colored,Red,5.94539999961853
+507,2365644,Do the suit and the shirt have a different colors?,yes,Yes,6.3388659954071045
+508,2405354,Does the jersey look white?,no,No,6.774702072143555
+509,2413212,On which side of the photo is the white truck?,right,Left,6.797982931137085
+510,2334456,Which side is the backpack on?,left,Left,6.472322225570679
+511,2342618,What do both the dress and the suit have in common?,color,Color,6.195646047592163
+512,2375580,What color does that keyboard have?,black,White,5.88420295715332
+513,2364161,What color is the vehicle that the boy is sitting on?,green,Black,6.106831073760986
+514,2389957,Is the grass green or brown?,green,Green,5.8712828159332275
+515,2401764,Are the children on the left or on the right part of the image?,left,Left,5.887365818023682
+516,2336023,Is the container in the bottom or in the top part of the photo?,bottom,Bottom,5.903005123138428
+517,2358723,On which side of the photo is the boy?,right,Right,5.792085886001587
+518,2365505,Is the brown animal on the right side of the image?,no,No,5.960526704788208
+519,221,On which side of the image is the wood fence?,right,Right,5.8518218994140625
+520,2332188,Do you think the sky is overcast or clear?,overcast,Overcast,6.171174764633179
+521,2414682,Do you think the jeans are purple?,yes,No,5.982503175735474
+522,2399053,What is the man doing?,reading,Reading,6.011377811431885
+523,2404130,Do the bun and the basket have a different colors?,yes,No,5.939938068389893
+524,2373966,Does the glass by the sink appear to be real and clear?,yes,No,5.887739181518555
+525,2363958,On which side of the picture is the wine glass?,right,Right,6.0359718799591064
+526,2332891,How big is the zebra on the left side of the picture?,large,Large,5.956181049346924
+527,2410041,What are the crates made of?,wood,Wood,6.0036022663116455
+528,2378055,What is the color of the bag that is on the right of the photo?,white,White,5.854546070098877
+529,2391960,"In which part of the photo is the boy, the bottom or the top?",bottom,Top,5.944138050079346
+530,2376882,On which side are the ear buds?,left,Left,5.9704530239105225
+531,2394981,On which side of the picture is the tower?,left,Left,5.860398769378662
+532,2373609,Which color are the feathers?,gray,Black,5.999635934829712
+533,2374595,The suit is of what color?,red,Orange,5.7901482582092285
+534,2406002,On which side of the image is the chef?,left,Right,5.9704742431640625
+535,2383239,Is the man in the top or in the bottom of the picture?,bottom,Bottom,5.916154146194458
+536,2370435,On which side is the towel dispenser?,left,Left,5.936680793762207
+537,2405590,Does the computer to the right of the container appear to be on?,yes,Yes,6.0044639110565186
+538,2392147,Is the pan in the top part or in the bottom of the picture?,bottom,Bottom,6.018813848495483
+539,2364725,Is the couch in the bottom part or in the top of the photo?,bottom,Bottom,6.149791240692139
+540,2325180,Is the zebra's nose orange?,no,No,5.927767753601074
+541,1669,What is the color of the computer that the monitor is on top of?,white,White,6.042374849319458
+542,2355163,Does the wet coat look white?,no,No,5.894337177276611
+543,2361871,How is the water?,calm,Rough,6.006904125213623
+544,2341540,Is the scarf on the teddy bear brown and small?,yes,No,5.950731039047241
+545,2368952,On which side of the picture is the player?,right,Left,5.85350489616394
+546,2406789,Is the shirt white or blue?,blue,White,6.018038034439087
+547,2329954,Are the sandals yellow or blue?,blue,Blue,5.883953809738159
+548,1159352,Which side of the image is the couch on?,left,Right,6.125303745269775
+549,2375394,On which side is the man?,left,Left,6.193035125732422
+550,2368981,Are the shorts white?,no,No,6.140296936035156
+551,2375234,The umbrella to the right of the people is of which color?,green,Green,6.050524711608887
+552,1592713,On which side of the photo is the chair?,right,Right,6.013718128204346
+553,2416648,Is the cup on the right or on the left of the image?,left,Right,6.076884984970093
+554,150295,Is the cabin standing?,yes,Yes,5.886634826660156
+555,2322153,Which color do you think the fence made of wood is?,brown,Brown,6.0642149448394775
+556,2370484,On which side of the image is the man?,right,Right,5.886253833770752
+557,2398401,Do you think the sky is cloudy?,yes,Yes,6.027688026428223
+558,2374253,"In which part of the picture is the person, the bottom or the top?",bottom,Bottom,6.140265226364136
+559,1437,Which side are the people on?,left,Left,5.9512622356414795
+560,2400661,On which side of the picture is the cardboard container?,left,Right,6.064146041870117
+561,2345428,Does the man appear to be sitting?,yes,No,5.936453819274902
+562,2402492,What is the cat doing?,resting,Standing on laptop,6.289959907531738
+563,2331654,Is the man in the bottom part or in the top of the picture?,bottom,Bottom,6.0349390506744385
+564,2378230,Is this fire hydrant black or white?,white,Black,5.968425035476685
+565,2383719,Does the jacket appear to be black?,yes,Yes,5.934212923049927
+566,2397035,Of what color is the tent the shrubs are in front of?,green,White,5.852297067642212
+567,2354467,Are the tomatoes in the top part or in the bottom of the image?,top,Top,6.004351854324341
+568,2381915,Is the water both still and dark blue?,no,No,5.898713111877441
+569,4488,Is the color of the skirt different than the floor?,no,Yes,6.359982252120972
+570,2398287,Is the sky blue and cloudless?,yes,Yes,6.288207769393921
+571,2407698,Is the pot made of the same material as the container?,yes,Yes,6.571389198303223
+572,2404666,Is the shirt red?,no,No,6.580604076385498
+573,2349483,Which side of the photo is the lamp on?,left,Right,6.2806150913238525
+574,2399386,What is common to the planter and the jacket?,color,Color,6.488626956939697
+575,2333298,What is the cupboard made of?,wood,Glass,6.473807334899902
+576,1591822,What is the color of the shirt the man is wearing?,green,Gray,6.354946851730347
+577,2386171,Which side of the photo is the man on?,right,Right,6.503324031829834
+578,2386194,Is the hat white?,no,No,6.232732057571411
+579,2327820,Is the fence in front of the grass mesh and green?,no,No,6.438689947128296
+580,2368442,"Where in the image is the clock, on the right or on the left?",right,Right,6.385232925415039
+581,2388405,What is common to the mask and the uniform?,color,Color,6.23173189163208
+582,2378318,Is the path snowy or rocky?,rocky,Rocky,6.485822916030884
+583,2348014,What is the shelf made of?,wood,Wood,6.2089362144470215
+584,2401381,Is the laptop on the left side or on the right of the picture?,right,Right,6.416123151779175
+585,2381387,What's the horse made of?,metal,Wood,6.484336853027344
+586,2411104,On which side of the photo is the sheep?,right,Right,6.969488859176636
+587,2365243,What is the color of the buses in the middle of the picture?,green,Green,6.6374547481536865
+588,2343353,The bag on the right has what color?,black,Black,5.937702894210815
+589,2347683,Which color does the appliance on the left side have?,white,White,4.334215879440308
+590,2369833,On which side of the photo is the fence?,right,Right,4.33141303062439
+591,2321676,"Which side is the dog on, the right or the left?",right,Right,4.332303047180176
+592,2403854,Does the cow to the left of the other cows look huge and black?,no,No,4.402026891708374
+593,2398108,What is the woman that is to the left of the man doing?,taking notes,Drinking,4.626817226409912
+594,2406998,"What makes up that fence, mesh or iron?",mesh,Mesh,4.785031080245972
+595,2379684,What is the person doing?,lying,Lying,4.9243152141571045
+596,2417611,Are the glasses orange or black?,orange,Black,5.218272924423218
+597,2404844,"What is the dog doing, jumping or sitting?",jumping,Jumping,95.91721892356873
+598,2343545,Does the gas stove inside the kitchen have black color?,no,No,4.828005313873291
+599,2323821,How long is the hair the man is with?,long,Short,4.3396100997924805
+600,2357141,Which side of the image is the skateboard on?,left,Right,4.343058109283447
+601,2403045,Which color do you think the shirt that the man is wearing is?,blue,Blue,4.341756820678711
+602,2388805,"Where in the photograph is the player, in the top or in the bottom?",bottom,Bottom,4.387099981307983
+603,2322975,Is the baseball baseball in the bottom or in the top?,top,Bottom,4.389162063598633
+604,2411323,Does the smoke above the train look white and small?,no,No,4.3410420417785645
+605,2369303,Is the rug to the left of the tap green or red?,green,Green,4.338360071182251
+606,2381239,What color do you think the bus is?,white,White,4.3390538692474365
+607,2396300,On which side of the photo is the person?,right,Right,4.3420960903167725
+608,2386511,Does the person beside the cart look tall?,no,Yes,4.340484857559204
+609,2374087,What color is the sign on the sidewalk?,red,Yellow,4.343425989151001
+610,2405038,Are the animals all the same type?,no,No,4.3413379192352295
+611,2387990,Is the bowl to the right of the placemat both wavy and full?,yes,No,4.343586206436157
+612,2396447,Is the color of the bowl blue?,no,No,4.3520121574401855
+613,2330960,Do the trees seem to be short and green?,no,No,4.340041160583496
+614,2352377,Which side of the photo are the drinks on?,right,Left,4.39696192741394
+615,2319662,Does the barn look metallic?,no,No,4.5070531368255615
+616,2353217,What color is the necktie?,gray,Gray,4.721091270446777
+617,150282,What color is the colorful coat?,pink,Pink,5.038739204406738
+618,2377150,Is the cow the same color as the pole?,no,No,5.390074968338013
+619,2362991,"Which material makes up the paved road, brick or cobblestone?",brick,Brick,5.87493896484375
+620,2370077,Which color is the flower that is surrounded by the flower pot?,white,Yellow,6.235976934432983
+621,2330002,Is the mouse pad on top of the desk white or black?,white,White,6.43020486831665
+622,2401166,Does the happy person appear to be eating?,yes,Yes,7.057164907455444
+623,2342838,"What color are the walls, blue or cream colored?",blue,Blue,7.152749061584473
+624,2352226,Is the blue towel in the top part or in the bottom?,bottom,Bottom,7.120188236236572
+625,2349976,On which side of the photo is the ball?,right,Right,7.299996852874756
+626,2334386,How large is the food in the bottom of the photo?,large,Large,7.0556159019470215
+627,2406693,What color is the umbrella in the middle?,white,White,6.629438877105713
+628,2402643,Does the animal on the floor look tan and skinny?,yes,Yes,6.639125108718872
+629,2406370,"What color is the shirt, orange or black?",orange,Orange,6.434338808059692
+630,2403994,Is this a new oven?,no,Yes,6.235926151275635
+631,2333060,On which side of the image is the cabinet?,right,Left,6.30598521232605
+632,2320720,"On which side of the image is the truck, the right or the left?",left,Left,6.070570945739746
+633,2361083,Are the giraffes on the left side or on the right of the picture?,right,Right,6.126572132110596
+634,2321578,What color is the toilet?,white,White,6.051790714263916
+635,2391600,Of what color is the bowl on top of the table?,white,Silver,5.946226119995117
+636,2333800,Is the person on the right side?,no,No,6.04395318031311
+637,2414832,Is the woman on the right side?,no,No,5.859647274017334
+638,2340236,"On which side of the picture is the baseball, the right or the left?",right,Right,6.04082465171814
+639,2360506,Does the shirt that is not short sleeved look red?,no,No,5.917694807052612
+640,2325150,What is common to the flowers and the leaves?,color,Color,5.944366931915283
+641,2408244,Is the gray shirt short or long?,short,Short,5.964953899383545
+642,2323146,Does the signal light look red?,no,Yes,5.878022193908691
+643,2408335,What color is the shirt the boy is wearing?,gray,Black,6.035555124282837
+644,2410083,Is the color of the bench the same as the color of the sky?,yes,No,5.873970985412598
+645,2359164,Which side of the image is the soap dish on?,left,Right,6.012730121612549
+646,2388030,Does the sign on the pole have black color?,no,Yes,5.96085786819458
+647,2331017,Is the tennis ball red or yellow?,yellow,Yellow,6.0058698654174805
+648,2390743,What is the man doing?,skating,Skateboarding,6.180186986923218
+649,2343920,Are all the animals of the same species?,no,No,5.9328718185424805
+650,2340,Does the jacket look blue?,no,No,6.134884834289551
+651,2344270,Does the pizza look fried?,yes,Yes,5.927261829376221
+652,4912,The bedspread is of which color?,blue,Blue,6.08063817024231
+653,2413817,Which color is that rope?,yellow,Black,6.067301988601685
+654,2381562,The bananas on the left side are what color?,green,Green,5.960765838623047
+655,2413251,Is the cardboard box open or closed?,open,Open,6.065629959106445
+656,2363552,What is the fence near the family made of?,wood,Wood,5.886602878570557
+657,2333915,Is the onion in the bottom of the image?,no,Yes,6.045564889907837
+658,2263,Is the color of the van the same as the sign?,yes,No,6.210065841674805
+659,2335787,What do the desk and the computer have in common?,color,Color,6.485757827758789
+660,2369240,Is the suitcase on the left or on the right side of the photo?,left,Right,6.677762031555176
+661,2377712,Which side is the blue box on?,left,Left,6.402491807937622
+662,1593171,Is the clock in the top part of the picture?,yes,No,6.586451768875122
+663,2337499,Is the cap green?,no,Yes,6.50335693359375
+664,2392303,What is the dock made of?,metal,Metal,6.5486509799957275
+665,2400267,Is the house on the left of the photo?,no,No,6.739601135253906
+666,778,On which side of the image are the cars?,right,Right,6.51970100402832
+667,2337454,Is the shirt red or gray?,gray,Gray,7.249441146850586
+668,2381612,What color does the kite that is not short have?,yellow,Yellow,7.588358163833618
+669,2352072,Is the fence behind the hedge made of wood or metal?,metal,Wood,6.792772054672241
+670,347,Is the television on the right or on the left?,right,Right,6.638473033905029
+671,2384422,What color are the trousers?,white,Brown,6.612518072128296
+672,2401028,What material is used to make the cabinet to the right of the screen?,glass,Glass,6.2750771045684814
+673,2408532,Is the towel to the left of the cat black or yellow?,yellow,Black,6.419874906539917
+674,2366877,"In which part of the photo is the car, the bottom or the top?",top,Top,6.291782855987549
+675,2401497,What color is the metal chain?,brown,Blue,6.193002939224243
+676,2350907,What is the gender of the skier in the bottom of the picture?,female,Male,6.391946792602539
+677,2410230,"Which material is used to make the man hat, straw or plastic?",straw,Straw,6.293239116668701
+678,150444,What do both the motorbike and the kiosk have in common?,color,Color,6.512994050979614
+679,2404275,"Where in the image is the boy, on the right or on the left?",left,Left,6.348424911499023
+680,2388100,What color is the shirt that the man is wearing?,purple,White,6.306433916091919
+681,2325895,Does that truck have white color?,yes,Yes,6.477774143218994
+682,2321065,Is the book in the bottom of the photo?,no,No,6.280827760696411
+683,2405707,On which side of the picture is the green blanket?,right,Right,6.467203140258789
+684,2398924,Is the woman on the left of the image?,yes,No,6.443678855895996
+685,2380680,Is the brown hair straight or curly?,straight,Curly,6.408815145492554
+686,2383996,Is the jacket orange or gray?,orange,Orange,6.645622730255127
+687,2411476,Of which shape is the mirror in the top of the photo?,rectangular,Square,6.374064207077026
+688,2329386,Does the vehicle that is to the left of the truck look red?,yes,Yes,6.455322027206421
+689,2344346,Is the white device above the star off or on?,on,Off,6.476495027542114
+690,2386441,"On which side of the picture is the white animal, the right or the left?",right,Right,6.26656699180603
+691,2396616,Does the toilet to the right of the dresser look blue?,no,No,6.711856842041016
+692,2346104,What is the brown chair made of?,leather,Leather,6.482674837112427
+693,2362212,What color is that quilt?,pink,Brown,6.417454719543457
+694,2359700,On which side of the picture are the skis?,left,Left,6.438746929168701
+695,2356502,Of what color is the jacket?,black,Black,6.2395031452178955
+696,1159758,What color is the elephant on the platform?,blue,Blue,6.51654577255249
+697,2352130,What is the dog that looks brown and tan doing?,resting,Sleeping,6.457392930984497
+698,2341998,Are the shorts yellow or blue?,blue,Blue,6.402029752731323
+699,2395567,What color do you think are the trousers the umpire is wearing?,gray,White,6.502722978591919
+700,2409049,What is the bench made of?,wood,Wood,6.372453212738037
+701,2392660,Which side of the picture is the coffee on?,right,Left,6.662250995635986
+702,2411263,Which color are the shorts that he is wearing?,khaki,Tan,6.4449639320373535
+703,2400536,Does the shirt have orange color?,yes,No,6.6353771686553955
+704,2347211,Is the rope in the bottom or in the top of the photo?,bottom,Bottom,7.08213210105896
+705,362,Does the car to the right of the other car have blue color?,no,No,6.475040912628174
+706,2395268,Which side of the photo are the jars on?,left,Left,5.269001007080078
+707,2331930,Which side of the image are the children on?,right,Right,4.3344738483428955
+708,2356089,What is the color of the fruits to the right of the pineapple?,green,Orange,4.335737943649292
+709,2393639,Is the sky cloudy and blue?,yes,No,4.411481142044067
+710,2339327,Is that faucet silver and small?,no,No,4.774550199508667
+711,2386383,Is he a tennis player?,no,No,4.949460029602051
+712,2323553,Which side is the metal shelf on?,left,Right,5.398210048675537
+713,713018,What is the boy that is to the left of the woman doing?,bending,Waiting,5.650835275650024
+714,2393683,What color are the shorts?,black,Dark blue,594.5625650882721
+715,2326912,Is the book in the bottom part of the picture?,no,No,5.4590020179748535
+716,2414595,Do the animals have different types?,yes,No,4.347249269485474
+717,2399798,On which side is the woman?,right,Right,4.3509461879730225
+718,2390370,"Where in this photograph is the large planter, in the top or in the bottom?",bottom,Top,4.343024015426636
+719,2327760,Is the woman in the top part?,yes,Yes,4.33605694770813
+720,2417463,Is the hat of the bear gray?,no,Yes,4.344668865203857
+721,2383197,Which side of the image is the bread on?,left,Left,4.344841003417969
+722,2417463,Is the fence in the bottom of the picture?,no,Yes,4.1209189891815186
+723,2370590,On which side of the picture is the lamp?,left,Left,4.341267108917236
+724,2378689,Is the color of the helmet different than the bat?,yes,No,4.341912031173706
+725,2379118,"Who is older, the lady or the boy?",lady,Lady,4.338783025741577
+726,2406428,Is the house small or large?,large,Large,4.340233325958252
+727,2380504,Are the goggles different in color than the gloves?,no,Yes,4.341341733932495
+728,107913,On which side of the photo is the red vegetable?,left,Left,4.339457988739014
+729,2370488,Is the green grass dried or wet?,dried,Wet,4.389129877090454
+730,2403341,What is the dog doing?,walking,Walking,4.381550073623657
+731,2389372,On which side is the pillow?,left,Left,4.3375489711761475
+732,2349029,What color do you think the horse that is on the right of the image is?,brown,Brown,4.345051050186157
+733,2317654,Is the tail that looks long blue or red?,blue,Blue,4.335940837860107
+734,2406719,Which kind of material is the device on the bed made of?,metal,Metal,4.340685844421387
+735,2326119,Is the mailbox on the left side or on the right?,left,Right,4.331983804702759
+736,2317919,Are the pants red or white?,white,White,4.3358471393585205
+737,2409911,On which side of the photo is the chimney?,left,Right,4.338703155517578
+738,713860,Which color is the vest the man is wearing?,tan,White,4.340108871459961
+739,2330419,What color are the flowers by the road?,red,There are no flowers by the road in this image.,4.814043998718262
+740,2396671,Does the appliance that looks old look old fashioned and black?,no,Yes,4.335161924362183
+741,2338855,What is the material of the cabin?,wood,Wood,4.3423919677734375
+742,2405163,On which side of the image is the bag?,right,Right,4.336871862411499
+743,2386067,What is the color of this table?,black,Black,4.337462902069092
+744,2366034,On which side of the picture is the clock?,left,Right,4.337400913238525
+745,2382923,What is the color of the jersey the batter is in?,blue,Blue,4.339550971984863
+746,2366091,Is the water both calm and blue?,no,No,4.345853805541992
+747,2390647,What color is the bowl that is made of metal?,silver,Silver,4.340435028076172
+748,2395605,What color are the containers that are on the right?,black,Black,4.33988094329834
+749,2399886,Is the table tan or dark?,dark,Dark,4.341024160385132
+750,2064,On which side is the mirror?,left,Left,4.4390342235565186
+751,2318163,On which side of the picture is the long paddle?,right,Left,4.34224009513855
+752,2410668,"What color is the surfboard, blue or red?",blue,Blue,4.608041048049927
+753,2407473,What's he doing?,lying,Sleeping,4.713689804077148
+754,2329135,Does that door look open?,yes,Yes,5.300354719161987
+755,2327025,What color is the hair?,blond,Black,5.466408967971802
+756,2359635,What color do you think the house is?,green,White,5.519325017929077
+757,2318694,Which color is the dress?,white,White,5.499943256378174
+758,2387117,Is the door made of glass?,yes,No,5.871612310409546
+759,2405070,Which side is the small bird on?,right,Right,5.80643105506897
+760,2337624,Is the lamp on the left part or on the right?,left,Right,5.973265171051025
+761,2400599,"Where in the photograph is the car, on the right side or on the left?",right,Right,5.913405179977417
+762,2371719,Which color does the grass have?,brown,Brown,5.862060070037842
+763,2400673,Does the man to the left of the girl appear to be eating?,yes,No,5.9765660762786865
+764,2401037,Do the carriage and the train have the same color?,no,No,5.784313917160034
+765,2382178,What color do the cows that are not thin have?,white,Brown,5.898391962051392
+766,2375788,Which color is the mustard?,brown,Yellow,5.684305191040039
+767,2401553,On which side of the picture is the wood fence?,right,Right,5.814694881439209
+768,2381940,What color does the shirt have?,blue,Gray,5.705138921737671
+769,2399886,Does the plate to the left of the other plate have red color?,no,No,5.913268327713013
+770,2387346,Which color is the stormy sky?,gray,White,7.267174005508423
+771,2375761,Is the pizza slice on the right side or on the left?,right,Right,8.10054326057434
+772,3494,On which side of the image is the cup?,left,Right,6.455461740493774
+773,2362361,Which side of the photo is the fence on?,left,Right,6.1012279987335205
+774,2409147,What is the color of the rope in the top of the image?,green,Green,5.831424951553345
+775,2399101,Does the white sheep seem to be standing?,no,No,5.929646968841553
+776,2376039,What are the doors made of?,wood,Wood,5.742598295211792
+777,2360703,Is the mat on the right or on the left?,right,Left,6.244363069534302
+778,2391413,Do the cap and the pole have a different colors?,no,No,5.877817153930664
+779,1159879,Is the fence short or tall?,tall,Tall,5.667187929153442
+780,2353125,Which side of the picture is the bicycle on?,left,Left,5.620560169219971
+781,2395949,What is the man on the skateboard doing?,skateboarding,Skating,5.5398850440979
+782,2369338,Are the people in the bottom?,yes,Yes,5.621246814727783
+783,2320739,What is the pattern of the dress the baby is wearing?,dotted,Solid,5.504894971847534
+784,2363853,On which side of the picture is the bag?,left,Right,5.635045051574707
+785,2325849,What color is the shirt?,white,White,5.447208881378174
+786,2395165,What color are the jeans?,blue,Blue,5.631505250930786
+787,2400084,Which side of the image is the fire hydrant on?,left,Right,5.505943059921265
+788,2327939,Does the school bus have a different color than the flower?,yes,Yes,5.74552321434021
+789,2370783,Is the car on the left or on the right?,left,Right,5.578248977661133
+790,2324845,Do the trunks have yellow color?,no,No,5.666116237640381
+791,2390938,How long is the cooking utensil above the receipt?,long,0 seconds,5.7070417404174805
+792,2405332,Is the speaker on the right side of the image?,yes,Yes,5.664914131164551
+793,2402718,Which side of the photo is the metal fork on?,left,Left,5.6952080726623535
+794,2318332,Which side of the image is the car on?,left,Right,5.6307692527771
+795,2411141,What material was used to make the pitcher?,metal,Glass,5.7520458698272705
+796,2368908,Is the backpack in the top or in the bottom of the picture?,bottom,Bottom,5.658373117446899
+797,2324774,Is the straw broom on the right side?,no,Yes,5.820152997970581
+798,2408602,What is the fence made of?,wood,Brick,5.680552005767822
+799,2348606,Is the bread box on the right side?,no,No,5.809682130813599
+800,2396750,Which type of material is the bottle of beer made of?,glass,Glass,5.717840909957886
+801,2405889,Are the trunks black?,yes,No,5.913861036300659
+802,2324597,Is the boy on the left side?,yes,No,6.247877836227417
+803,2371222,Is the color of the necktie the same as the napkin?,no,No,5.737928152084351
+804,2384051,Is the window hard?,yes,No,5.854887962341309
+805,2372070,"Where in the image is the clock, in the bottom or in the top?",bottom,Top,5.6714489459991455
+806,2329708,What color is the short hair?,black,Black,5.784519910812378
+807,2372032,How clean are the white shoes?,dirty,Dirty,5.764104127883911
+808,2401477,What is the tea kettle made of?,porcelain,Metal,5.78189492225647
+809,2368442,What is the color of the floor?,blue,Blue,5.7746570110321045
+810,2389735,On which side of the picture is the silver knife?,right,Right,5.73390007019043
+811,2401550,Is the air conditioner on the right side or on the left?,right,Left,5.823110103607178
+812,2368877,What color do you think the umbrella the man is holding is?,green,Blue,5.657347917556763
+813,2400971,Does the cap look black?,yes,No,5.83092474937439
+814,2358464,Is the bowl white or brown?,brown,Brown,5.709269762039185
+815,2379856,Does the person's hat have white color?,yes,Yes,7.3864030838012695
+816,2391868,What's the woman doing?,skiing,Skiing,7.462051153182983
+817,2345780,Is the color of the river different than the sky?,no,No,7.095977067947388
+818,2373736,Are the men that are to the left of the other men looking down or talking?,looking down,Talking,6.786395788192749
+819,2386867,What color is the shelf that the artwork is on top of?,white,White,6.086092948913574
+820,2411391,Is the light sky white or blue?,blue,White,5.768197059631348
+821,1592634,On which side of the photo is the silver fork?,left,Right,5.8873021602630615
+822,2394625,Is the sweater above the dress shirt dark blue or white?,dark blue,Dark blue,5.713343858718872
+823,2401298,Is the damaged luggage near the twigs blue and dirty?,yes,Yes,5.757400989532471
+824,2382163,What color does the net the woman is in front of have?,orange,Orange,5.638843059539795
+825,2367590,Is plastic used to make the bracelet?,no,No,5.674635171890259
+826,2325119,Are the onions in the bottom or in the top of the image?,bottom,Bottom,5.739030122756958
+827,2336230,On which side of the image are the curtains?,right,Left,5.740117073059082
+828,2350095,Are the pipes short?,no,No,5.810283660888672
+829,2379887,What is the color of the rocks?,green,Blue,5.665643930435181
+830,2406586,Does the drink to the left of the computer mouse look red?,yes,Yes,5.927629709243774
+831,2392919,"Where in this photograph is the frisbee, on the left or on the right?",right,Left,5.807018995285034
+832,2376858,What is the color of the carpet?,green,Green,5.8936052322387695
+833,2316356,What color do you think the bench that is on the platform is?,white,Black,5.851547002792358
+834,2387817,What is the color of the traffic cone on the left side?,green,Green,5.8631792068481445
+835,2416222,Which shape is the bowl to the left of the tomato?,square,Square,5.909679889678955
+836,2400350,Which side of the picture is the broccoli on?,left,Right,5.804203987121582
+837,2351384,Does the swimsuit look pink?,yes,No,5.967802047729492
+838,2382460,On which side of the photo is the trash can?,right,Right,5.774570941925049
+839,2352092,Do the shoe and the truck have a different colors?,yes,Yes,5.878191709518433
+840,2407938,"How does the boy to the left of the bicycle appear to be like, skiing or riding?",riding,Riding,5.826251983642578
+841,2377074,Which color does the scarf have?,black,Red,5.8071019649505615
+842,2349222,Is the fence in the top part?,yes,Yes,5.865894079208374
+843,2372406,Is this a black keyboard?,no,No,5.70123815536499
+844,2320675,Does the shelf to the right of the girl look white?,yes,No,5.8783581256866455
+845,2411252,What color are the wires that are in the sky?,gray,Black,5.733401298522949
+846,2406169,How long is the banana that looks green and yellow?,short,Short,5.867725133895874
+847,2409249,Is the suitcase to the left of the truck both green and large?,no,No,5.816621780395508
+848,2363578,Is the door metallic and brown?,yes,No,5.864223003387451
+849,2330551,What is common to the sky and the tractor?,color,Color,5.948009014129639
+850,2325219,Which side of the image are the houses on?,right,Left,5.845185041427612
+851,2404849,Which side of the picture is the woman on?,right,Right,5.939283132553101
+852,2374759,What color are the leaves on the street?,brown,Brown,5.777032852172852
+853,2404429,What's the giraffe doing?,posing,Walking,6.175195693969727
+854,2328981,Is the hair blond?,no,No,6.563939094543457
+855,2405250,Which color is the shirt?,white,Red,6.698529958724976
+856,2379350,Does the woman's hair have brown color?,no,No,7.201746225357056
+857,2316817,"Which is older, the lady or the boy?",lady,Lady,6.398701190948486
+858,2325119,Is the napkin on the right side of the picture?,no,No,6.383763313293457
+859,2394146,On which side of the image is the person?,left,Right,6.454582929611206
+860,4063,Is the bench on the right side?,no,Yes,5.924052953720093
+861,2328271,Is the white vehicle on the left side?,no,No,5.936032772064209
+862,2417476,What color is the mane?,brown,Brown,5.693436861038208
+863,2381580,"In which part of the image is the container, the bottom or the top?",bottom,Bottom,5.837135076522827
+864,2375742,Are the cars in the top of the photo?,no,No,5.704309940338135
+865,2376382,Which side is the red book on?,left,Left,5.7230799198150635
+866,174,Is the bed to the left of the closet small and colorful?,no,Yes,5.740741014480591
+867,2317127,What color is the mug?,white,Green,5.655241966247559
+868,2368263,Does the jacket look blue?,yes,Yes,5.7405641078948975
+869,2408676,Do the gloves look black and small?,yes,Yes,5.595643997192383
+870,2333840,Which side of the picture is the notepad on?,right,Left,5.842625617980957
+871,2407225,Is the house to the right of the fence large and yellow?,yes,No,5.770678997039795
+872,2404215,"On which side is the racket, the right or the left?",left,Right,5.864691734313965
+873,2409346,Is the chair on the right side?,no,No,5.779894113540649
+874,2321227,"On which side are the people, the right or the left?",left,Right,5.854634046554565
+875,2355817,Does the chair have white color?,yes,No,5.92531681060791
+876,2411521,Is the bread in the top or in the bottom part of the image?,bottom,Bottom,5.888551235198975
+877,2389990,On which side of the image is the drawer?,left,Right,5.981281757354736
+878,2372032,Is the skateboard wooden and white?,yes,Yes,5.7845470905303955
+879,2376081,Which side of the picture is the woman on?,left,Left,5.9063732624053955
+880,2367303,On which side of the picture is the man?,left,Left,5.800602912902832
+881,2408154,What is the material of the sheep that looks brown and white?,plastic,Wood,5.8462231159210205
+882,2393923,What do the cell phone screen and the wall have in common?,color,Color,5.832714080810547
+883,2392185,"Which color is the house behind the dog, white or brown?",white,White,5.736421823501587
+884,2348410,Do you think this train is snowy?,yes,Yes,5.867334842681885
+885,2371506,The clock that is in the top of the picture is of what color?,black,Black,5.732701063156128
+886,2367234,"In which part of the picture is the white bowl, the bottom or the top?",bottom,Bottom,6.00302791595459
+887,713905,Which side of the picture is the kitchen faucet on?,right,Right,5.810847043991089
+888,2106,Do you think the box is brown?,no,No,5.893850088119507
+889,2386299,"Which color is the tire, yellow or black?",yellow,Yellow,5.858174085617065
+890,2401477,What is the lid made of?,glass,Metal,5.828023910522461
+891,2393626,On which side is the plate?,left,Left,5.8995020389556885
+892,2032,Is that nightstand white or dark?,dark,Dark,5.752828121185303
+893,2367682,What color is the poster?,blue,White,5.947192907333374
+894,2357958,What is the man doing?,surfing,Surfing,5.83671498298645
+895,2352324,The long couch has what color?,cream colored,Tan,5.9159629344940186
+896,2366184,What color is the table the number is on?,blue,Blue,5.809880971908569
+897,2382804,Is the dryer white or black?,black,Black,5.839379072189331
+898,2356252,Do the giraffes that are playing seem to be walking?,no,Yes,5.891233205795288
+899,2372599,What is the color of the garbage bin that is not big?,silver,Black,5.784143924713135
+900,2404734,"What color is the hat, dark or red?",dark,Dark,5.912615776062012
+901,4609,Does the umbrella to the right of the other umbrella look large and blue?,yes,No,5.75898814201355
+902,2367808,Does the vase on the table have black color?,yes,No,5.929290771484375
+903,2417595,On which side of the picture is the keyboard?,left,Right,5.785592079162598
+904,2394152,Does the small glass look short and clear?,yes,Yes,5.896985054016113
+905,2347983,On which side of the image is the black bag?,left,Right,5.906230926513672
+906,2375648,Does the chair to the right of the umbrella look brown?,no,No,5.881976127624512
+907,2410828,Is the boy in the top part or in the bottom of the photo?,top,Top,6.011669874191284
+908,2343637,Does the bridge have large size?,yes,Yes,5.80465292930603
+909,2328850,Which side of the photo is the woman on?,right,Left,5.9475367069244385
+910,2365517,Does the dog have brown color?,no,No,5.781830072402954
+911,2327121,"Where in the image is the chair, in the top or in the bottom?",top,Top,5.916676998138428
+912,2408684,What is common to the wall and the curtain?,color,Color,6.187284231185913
+913,2387037,On which side of the picture is the bun?,right,Left,6.286242961883545
+914,2385819,Is the steamed broccoli in the bottom of the photo?,no,No,6.617006778717041
+915,2320199,What's the fence made of?,metal,Metal,6.424545049667358
+916,2354285,Is the grass short and green?,yes,Yes,6.599300146102905
+917,2368632,Is the airplane's tail red or blue?,blue,Blue,6.477407932281494
+918,2392147,Is the wood chair in the bottom part or in the top of the image?,top,Bottom,6.385158061981201
+919,2378533,What is the color of the shirt that the woman is wearing?,blue,Blue,6.445791006088257
+920,2375742,Does that clock look tall and black?,no,Yes,6.159425735473633
+921,2335269,What's the fence made of?,metal,Wood,6.341277122497559
+922,2374759,What's the man doing?,skateboarding,Skateboarding,6.380318880081177
+923,2409712,"Where in this image is the chair, on the right or on the left?",left,Right,6.236995697021484
+924,2368332,Which side of the photo is the blue vehicle on?,left,Left,6.305057048797607
+925,2341413,Which side of the photo is the bottle on?,right,Right,6.144678831100464
+926,2396367,The mirror is of which shape?,round,Round,6.405246019363403
+927,2416150,"On which side of the picture are the red vegetables, the right or the left?",right,Right,6.244192838668823
+928,2387251,On which side of the photo is the bell?,right,Right,6.277083873748779
+929,2378658,Which color do the scissors on the left have?,gray,Black,6.357909202575684
+930,2405536,What is the bat made of?,metal,Metal,6.164828300476074
+931,2340236,What color is the jersey the number is on?,black,Red and white,6.522219181060791
+932,2406323,Is the black hair short or long?,long,Long,6.301419973373413
+933,2344346,Are the monitor and the tower the same color?,yes,Yes,6.323083162307739
+934,2352686,What color is the hair?,brown,Black,6.427368879318237
+935,2384939,What is the color of the vest?,blue,White,6.240867853164673
+936,2392665,Is the woman on the left side or on the right of the image?,left,Right,6.459345817565918
+937,2365281,What color is the device on top of the table?,gray,Black,6.281651973724365
+938,2368283,Are the suits black?,no,No,6.299119710922241
+939,2351404,"Which color is the bag to the right of the keyboard, black or green?",black,Black,6.430983066558838
+940,2367508,Are the olives green or black?,green,Green,6.211783170700073
+941,2385903,How hard is the food with the cheese?,soft,Hard,6.383752822875977
+942,2358679,On which side of the photo is the bench?,right,Right,6.169870853424072
+943,2403266,On which side of the picture is the man?,left,Right,6.25930380821228
+944,2326899,Of what color is the sheet in the top of the photo?,pink,Blue,6.31418514251709
+945,2344488,Is the crate in the top of the image?,yes,Yes,6.175067186355591
+946,2413146,Does the small fence look white?,yes,Yes,6.436783790588379
+947,2352617,On which side of the picture is the large bag?,right,Left,6.259646892547607
+948,2394369,What color are the snow boots?,white,Black,6.427896022796631
+949,2367240,On which side of the photo are the French fries?,right,Right,6.516579627990723
+950,2376400,What is the color of the jeans the woman is wearing?,blue,Blue,6.491179943084717
+951,370,Is plastic used to make the trashcan near the window?,yes,No,6.842095136642456
+952,2347450,What's the man doing?,taking photo,Standing,6.7089619636535645
+953,2352191,Is the plate black?,no,No,6.6836278438568115
+954,1592401,What color is the cap?,white,Black,6.849103927612305
+955,2347710,Is the picture in the top part or in the bottom of the photo?,top,Bottom,6.733914136886597
+956,2402121,Is the striped curtain on the left?,no,Yes,6.814250946044922
+957,2337676,"On which side of the photo is the woman, the left or the right?",right,Left,6.885202169418335
+958,2391310,How long is the man's hair?,short,Short,7.310521841049194
+959,2406733,Which side is the blue bird on?,right,Right,7.32638692855835
+960,2387685,What is the ladder by the airplane made of?,metal,Plastic,6.691766023635864
+961,2358063,Is the door red and metallic?,yes,No,4.4599010944366455
+962,2365868,What color is the bus to the right of the car?,blue,White,4.331754922866821
+963,2381632,What color do you think the clouds are?,gray,White,4.395858287811279
+964,2334745,Is the napkin different in color than the bowl?,no,Yes,4.676717042922974
+965,2335234,What is the color of the shirt?,white,White,4.945671081542969
+966,2355792,Is the white lamp on the right?,no,Yes,5.125105857849121
+967,393,What color does the tank top have?,gray,White,5.628582954406738
+968,2317646,Is the snowsuit green or orange?,green,Green,5.7762131690979
+969,1159718,Is the woman on the right or on the left side?,right,Right,905.247575044632
+970,2354705,Does the hydrant have the same color as the fence?,yes,Yes,4.331697940826416
+971,2406659,Does the puddle by the fire truck look short?,no,No,4.33028507232666
+972,2360257,What is the length of the man's hair?,short,Short,4.331573963165283
+973,2316905,Is the color of the frame different than the wine bottle?,yes,No,4.334667205810547
+974,2414475,What's the woman doing?,brushing teeth,Brushing teeth,4.426713943481445
+975,2385456,What color is the TV stand?,gray,White,4.328289985656738
+976,2359264,Which color is the sky?,blue,Blue,4.328655958175659
+977,2330262,On which side are the cones?,right,Right,4.465165138244629
+978,2369041,Is the cowboy on the left?,yes,No,5.1251912117004395
+979,2341698,Is the necklace different in color than the purse?,no,No,215.10086703300476
+980,1159289,Is the rug on the left side of the picture?,yes,Yes,4.337129354476929
+981,2384058,The snowboard is of which color?,silver,Black,4.331238269805908
+982,2352843,The car to the left of the bus has which color?,silver,Yellow,4.335540294647217
+983,90,Is the cabinet on the left side of the photo?,yes,No,4.334031820297241
+984,2368399,Is the ball in the top or in the bottom part?,top,Top,4.33552885055542
+985,713056,Is the gray car in the top part of the image?,yes,Yes,4.34856390953064
+986,2412204,Does the curly hair look short?,yes,Yes,4.368687152862549
+987,2318746,On which side of the picture is the gray helmet?,left,Left,4.635840892791748
+988,2350006,Is the shirt blue or orange?,orange,Orange,5.308566093444824
+989,2401809,Which color is the backpack?,orange,Black,38.65568828582764
+990,2386903,Does that hair look straight?,yes,No,4.645479202270508
+991,2405545,Are the trousers brown or khaki?,brown,Khaki,4.4498679637908936
+992,2400829,Are the tires gray or yellow?,gray,Gray,4.413646936416626
+993,2358074,Is the faucet to the right of the soap antique and silver?,no,No,4.4005749225616455
+994,2349187,Is the girl on the left?,yes,Yes,4.453207969665527
+995,2349526,Is the wood fence in the top of the photo?,no,No,4.407582998275757
+996,2368973,What color do you think is the umbrella?,red,Pink,4.388072967529297
+997,2355306,On which side of the image is the bench?,left,Left,4.385358810424805
+998,1159850,What are the forks made of?,plastic,Plastic,4.41789698600769
+999,2382986,What is the color of the towel on the bed?,brown,Black,4.339939117431641

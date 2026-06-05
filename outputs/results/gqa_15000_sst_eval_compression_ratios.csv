@@ -1,0 +1,9 @@
+method,avg_tokens,compression_ratio_vs_llava
+Full SST,27.077,21.273
+Caption-Style SST,26.944,21.378
+Keyword-Aware SST,18.536,31.075
+Compact Keyword SST,15.894,36.24
+No-Relations SST,18.398,31.308
+No-Attributes SST,24.478,23.531
+Objects-Only SST,15.172,37.965
+Question-Only (no scene),9.0,64.0

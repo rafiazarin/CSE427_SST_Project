@@ -1,2 +1,0 @@
-method,n,exact_accuracy,lenient_accuracy,num_exact_correct,num_lenient_correct,avg_latency_sec,median_latency_sec,min_latency_sec,max_latency_sec
-LLaVA Image + Question,200,0.555,0.565,111,113,5.735332790613175,5.6226770877838135,4.388649940490723,8.803944110870361

@@ -1,8 +1,0 @@
-pipeline,method_name,exact_accuracy,ci_lower_95,ci_upper_95,n
-full_sst_mistral,Full SST,0.545,0.475,0.615,200
-caption_style_sst_mistral,Caption-Style SST,0.53,0.46,0.6,200
-keyword_filtered_sst_mistral,Keyword-Aware SST,0.5,0.43,0.57,200
-compact_keyword_sst_mistral,Compact Keyword-Aware SST,0.41,0.34,0.475,200
-no_relations_sst_mistral,No-Relations SST,0.43,0.36,0.495,200
-no_attributes_sst_mistral,No-Attributes SST,0.4,0.33,0.47,200
-objects_only_sst_mistral,Objects-Only SST,0.225,0.165,0.285,200

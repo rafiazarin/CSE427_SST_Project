@@ -1,0 +1,2 @@
+method,n,exact_accuracy,lenient_accuracy,avg_latency_sec
+LLaVA Image+Question,1000,0.598,0.599,7.42
