@@ -1,0 +1,617 @@
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[a4paper,
+            top=22mm, bottom=26mm,
+            left=14mm, right=14mm,
+            columnsep=7mm]{geometry}
+
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{abstract}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{flushend}
+\usepackage{stfloats}
+\usepackage{needspace}
+\sloppy
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!65!black,
+  citecolor=blue!65!black,
+  urlcolor=blue!65!black,
+  bookmarks=true,
+  pdftitle={Token-Efficient Multimodal Reasoning via Scene-to-Structured-Text Compression},
+  pdfauthor={Rafia Zarin Alisha, Authoy Rahman}
+}
+
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries\centering}
+  {\Roman{section}.}{0.5em}{\MakeUppercase}
+\titleformat{\subsection}
+  {\normalfont\normalsize\itshape}
+  {\Alph{subsection}.}{0.5em}{}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+% ── Minimal, clean footer only ────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ── Captions ─────────────────────────────────────────────────────────────────
+\captionsetup{font=small, labelfont=bf, skip=5pt}
+\captionsetup[table]{position=top, skip=4pt}
+
+% ── Lists ────────────────────────────────────────────────────────────────────
+\setlist[itemize]{noitemsep, topsep=3pt, leftmargin=1.3em, parsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=3pt, leftmargin=1.3em, parsep=0pt}
+
+% ── Paragraph spacing ────────────────────────────────────────────────────────
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\setlength{\intextsep}{8pt}
+\setlength{\textfloatsep}{10pt}
+\setlength{\floatsep}{8pt}
+\setlength{\dbltextfloatsep}{10pt}
+\setlength{\dblfloatsep}{8pt}
+
+% ── Code ─────────────────────────────────────────────────────────────────────
+\lstset{
+  basicstyle=\ttfamily\scriptsize,
+  breaklines=true, frame=single,
+  xleftmargin=4pt, xrightmargin=4pt,
+  belowskip=4pt, aboveskip=4pt
+}
+
+%==============================================================================
+\begin{document}
+%==============================================================================
+
+\twocolumn[{%
+\begin{center}
+{\fontsize{22}{26}\bfseries Token-Efficient Multimodal Reasoning via\\[5pt]
+Scene-to-Structured-Text Compression}\\[18pt]
+\begin{tabular}{cc}
+{\normalsize Rafia Zarin Alisha}
+  & {\normalsize Authoy Rahman}\\[2pt]
+{\normalsize Dept.\ of Computer Science \& Engineering}
+  & {\normalsize Dept.\ of Computer Science \& Engineering}\\
+{\normalsize Brac University}
+  & {\normalsize Brac University}\\
+{\normalsize Dhaka, Bangladesh}
+  & {\normalsize Dhaka, Bangladesh}\\
+{\normalsize ID: 23201425}
+  & {\normalsize ID: 23201492}\\
+\end{tabular}
+\vspace{24pt}
+\end{center}
+}]
+
+\noindent{\small\bfseries\textit{Abstract}---Vision-language models (VLMs) answer questions about images by converting each image into a long sequence of visual tokens. This gives strong performance but also increases context length, inference latency, and computation cost. This paper investigates a simpler alternative: convert the scene into \emph{structured text}, then let a text-only language model answer directly from that text. We call this representation Scene-to-Structured-Text (SST). Using ground-truth GQA scene graphs as oracle input, we build SST records with five fields---objects, counts, attributes, spatial relations, and visible text---and evaluate seven SST variants using Mistral-7B on 1,012 balanced GQA questions. The best-performing variant, Keyword-Aware SST, achieves 56.6\% exact-match accuracy and 60.0\% lenient accuracy using only 157 average input tokens. This is within 3.2 percentage points of the LLaVA image baseline (59.8\%), while achieving a 3.67$\times$ compression ratio relative to LLaVA's 576 visual-token reference. McNemar paired tests confirm that Keyword-Aware SST is not significantly different from Full SST ($p = 0.747$). A field ablation study reveals that attributes and relations are the two most important SST components: removing attributes drops accuracy to 15.3\%, removing relations to 44.0\%, and keeping only objects reduces accuracy to 2.6\%. A real-world extraction pilot using YOLOv8 and EasyOCR on 50 images quantifies the gap between oracle and automatically extracted SST. Overall, SST is a practical, token-efficient approach to multimodal reasoning when accurate scene semantics are available.}
+
+\smallskip
+\noindent{\small\bfseries\textit{Index Terms}---vision-language models, token efficiency, scene graphs, visual question answering, structured text, multimodal reasoning, GQA}
+
+\vspace{8pt}
+%==============================================================================
+\section{Introduction}
+%==============================================================================
+
+Modern vision-language models (VLMs) such as LLaVA~\cite{liu2023llava} and BLIP-2~\cite{li2023blip2} process images by encoding them as a sequence of visual tokens using a CLIP-style visual encoder~\cite{radford2021clip}. A standard 336$\times$336\,px image produces around 576 visual tokens. These tokens are fed into the language model alongside the question text, which expands the context window, slows down inference, and raises computation cost.
+
+Many visual questions do not need every image patch. A question like ``What color is the bus?'' or ``Is the person near the table?'' depends on a small set of semantic facts: object names, attributes, counts, and spatial relationships. This motivates a natural question: \textit{if we can describe the scene accurately in text, can a text-only language model answer questions without ever seeing the image?}
+
+We propose \textbf{Scene-to-Structured-Text (SST)}, a compact text representation that describes a scene using five fields: \texttt{objects}, \texttt{counts}, \texttt{attributes}, \texttt{relations}, and \texttt{text} (OCR). We evaluate seven SST variants against a LLaVA baseline on the GQA benchmark~\cite{hudson2019gqa}. GQA is well-suited for this study because its questions are generated directly from scene-graph annotations---making the benchmark naturally aligned with structured semantic representations.
+
+For the main evaluation, we use GQA ground-truth scene graphs as the SST source. This makes the study an \textit{upper-bound analysis}: it answers how well SST reasoning can perform when semantic extraction is perfect. A separate pilot using YOLOv8 and EasyOCR then shows what happens when semantics are extracted automatically.
+
+\noindent\textbf{Contributions:}
+\begin{itemize}
+  \item Seven SST variants evaluated with Mistral-7B against a LLaVA image baseline on 1,012 GQA questions.
+  \item A Keyword-Aware SST variant that filters scene content by question keywords, reducing tokens without hurting accuracy.
+  \item Exact-match accuracy, lenient accuracy, token counts, latency, bootstrap confidence intervals, and McNemar paired significance tests.
+  \item A YOLOv8\,+\,EasyOCR extraction pilot on 50 images measuring the oracle-to-deployment gap.
+\end{itemize}
+
+%==============================================================================
+\section{Related Work}
+%==============================================================================
+
+\subsection{Vision-Language Models}
+
+VisualBERT~\cite{li2019visualbert} and ViLBERT~\cite{lu2019vilbert} were early models combining image region features with language representations. LXMERT~\cite{tan2019lxmert} added cross-modality attention and achieved strong results on GQA and VQA. CLIP~\cite{radford2021clip} aligned image and text embeddings through large-scale contrastive pretraining. BLIP-2~\cite{li2023blip2} extended this by bridging a frozen CLIP encoder and a frozen language model via a lightweight Q-Former. Flamingo~\cite{alayrac2022flamingo} scaled VLMs to 80B parameters using a Perceiver Resampler. LLaVA~\cite{liu2023llava}, our baseline, connects a CLIP encoder to a language model via a simple linear projection, fine-tuned on visual instruction data. All of these models depend on image encoders that produce dense visual tokens at inference time.
+
+\subsection{Scene Graphs and GQA}
+
+A scene graph describes an image as a set of objects connected by labeled relation edges, with each object carrying attribute annotations~\cite{xu2017scene}. GQA~\cite{hudson2019gqa}, built from Visual Genome~\cite{krishna2017visual}, uses scene graphs to generate 22M compositional questions. Hudson and Manning (Figure~12 in~\cite{hudson2019gqa}) show that models with direct scene-graph access substantially outperform those using detected visual features, which directly supports our upper-bound framing.
+
+\subsection{Token Reduction}
+
+Dong et al.~\cite{dong2024efficient} survey token pruning and merging methods such as EViT, ToMe, and CrossGET, which reduce visual token counts while retaining image encoders. Our work differs: instead of compressing visual tokens, we replace them entirely with structured text, removing the image encoder from inference altogether.
+
+%==============================================================================
+\section{Dataset, EDA, and SST Design}
+%==============================================================================
+
+\subsection{Dataset}
+
+We use the GQA validation set~\cite{hudson2019gqa} with ground-truth scene graphs as the oracle SST source. The evaluation uses 1,012 balanced samples. The LLaVA baseline uses 1,000 image-question pairs. All reported numbers come directly from the final notebook output files.
+
+\subsection{Exploratory Data Analysis}
+
+Fig.~\ref{fig:eda} shows three signals from the dataset that shaped the SST design. The full GQA validation set is dominated by relation and attribute questions. Oracle SST records average 20.1 relations and 9.2 attributes per sample. In terms of token cost, relations are the largest field (136.2 tokens average), followed by attributes (41.1 tokens). This guided our choice to test both field removal and question-aware filtering as token reduction strategies.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_eda.png}
+  \caption{Exploratory data analysis. \textbf{Left:} GQA validation semantic type distribution---relation (61.6k) and attribute (42.2k) questions dominate. \textbf{Center:} Average SST field size in oracle records. \textbf{Right:} Average token contribution per field. Relations (136.2 tokens) are the largest cost driver.}
+  \label{fig:eda}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_scene_graph_eda.png}
+  \caption{Scene graph field richness across 500 sampled SST records. Relations are consistently the dominant contributor to SST token length, motivating the No-Relations ablation and the Keyword-Aware filtering design.}
+  \label{fig:scene_eda}
+\end{figure}
+
+Table~\ref{tab:field_tokens} summarises average token costs per SST field.
+
+\begin{table}[t]
+\centering
+\caption{Average token contribution per SST field (n\,=\,500 samples).}
+\label{tab:field_tokens}
+\begin{tabular}{lrr}
+\toprule
+\textbf{SST Field} & \textbf{Mean tokens} & \textbf{Max tokens} \\
+\midrule
+Question & 9.9 & 20 \\
+Objects & 24.2 & 36 \\
+Counts & 10.0 & 45 \\
+Attributes & 41.1 & 95 \\
+\textbf{Relations} & \textbf{136.2} & 194 \\
+Text (OCR) & 0.0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%==============================================================================
+\section{Methodology}
+%==============================================================================
+
+\subsection{System Overview}
+
+Fig.~\ref{fig:pipeline} shows both pipelines. Pipeline A (LLaVA baseline) sends the raw image and question to LLaVA. Pipeline B (proposed) converts the scene into structured SST text using scene graph data, then passes it to Mistral-7B.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.86\textwidth]{figures/fig_pipeline.png}
+  \caption{System architecture. \textbf{Pipeline A (LLaVA baseline, left):} The raw image and question are sent to LLaVA, which uses a CLIP encoder producing 576 visual tokens. \textbf{Pipeline B (proposed, right):} YOLOv8 detects objects and bounding boxes, EasyOCR extracts visible text, and heuristic geometry produces spatial relations. These are serialized into SST and passed---with the question---to Mistral-7B. The main evaluation uses oracle GQA scene graphs instead of YOLOv8/EasyOCR. Both pipelines are evaluated against GQA ground-truth answers using exact match, lenient match, token counts, latency, and McNemar tests.}
+  \label{fig:pipeline}
+\end{figure*}
+
+\subsection{SST Representation}
+
+Each SST record is a structured text schema (Equation~\ref{eq:sst}):
+
+\begin{equation}
+\text{SST} = \{\texttt{obj},\;\texttt{cnt},\;\texttt{attr},\;\texttt{rel},\;\texttt{text}\}
+\label{eq:sst}
+\end{equation}
+
+\noindent A small example:
+
+\begin{lstlisting}
+objects: bus, person, stop_sign
+counts: person: 3
+attributes: bus: red, road: wet
+relations: person near bus,
+           stop_sign right of bus
+text: STOP
+\end{lstlisting}
+
+Before serialization, pruning is applied: body-part objects (e.g., ``nose'', ``hand'') are removed, weak relations such as ``of'' are dropped, and hard caps are applied (objects $\leq15$, attributes $\leq20$, relations $\leq25$) with deduplication.
+
+\subsection{SST Variants}
+
+Seven variants span the accuracy--token trade-off:
+
+\begin{enumerate}
+  \item \textbf{Full SST:} All five fields. Used as the SST reference.
+  \item \textbf{Caption-Style SST:} All fields, written as natural language sentences.
+  \item \textbf{Keyword-Aware SST:} Fields filtered to items matching question keywords---e.g., ``What color is the bus?'' keeps bus-related attributes and removes unrelated content.
+  \item \textbf{Compact Keyword SST:} Same filtering, with a compressed pipe-separated format.
+  \item \textbf{No-Relations SST:} Full SST minus the relations field.
+  \item \textbf{No-Attributes SST:} Full SST minus the attributes field.
+  \item \textbf{Objects-Only SST:} Objects and counts only.
+\end{enumerate}
+
+\subsection{Reasoning Model}
+
+All SST variants use Mistral-7B~\cite{jiang2023mistral} via Ollama on an Apple M2 MacBook. Output is capped at 20 tokens. The prompt is:
+
+\begin{lstlisting}
+Scene: {SST content}
+Question: {question}
+Answer in one or two words:
+\end{lstlisting}
+
+\subsection{Evaluation Metrics}
+
+\begin{itemize}
+  \item \textbf{Exact-match accuracy:} Ground-truth match after lowercasing and stripping punctuation.
+  \item \textbf{Lenient accuracy:} Exact match \emph{or} substring containment.
+  \item \textbf{Avg.\ input tokens:} Counted with tiktoken (cl100k\_base).
+  \item \textbf{Compression ratio:} $576\,/\,\overline{\text{tokens}}$ relative to LLaVA.
+  \item \textbf{Inference latency:} Wall-clock seconds per query.
+  \item \textbf{Bootstrap 95\% CI:} 1,000 resamples of exact-match accuracy.
+  \item \textbf{McNemar's test:} Paired significance test vs.\ Full SST on matched question outcomes.
+\end{itemize}
+
+\subsection{Real-World Extraction Pilot}
+
+To measure the oracle-to-deployment gap, YOLOv8-nano~\cite{yolov8} and EasyOCR~\cite{easyocr} are run on 50 GQA images. Spatial relations are derived from bounding-box geometry: center offset $>50$\,px triggers directional relations; IoU $>0.3$ triggers ``near.'' No attribute extraction is performed, since YOLOv8 provides class labels only.
+
+%==============================================================================
+\section{Results}
+%==============================================================================
+
+\subsection{Main Results}
+
+Table~\ref{tab:main} presents all results from the final output files. LLaVA is the image-based reference at 59.8\% exact accuracy. Among SST variants, \textbf{Keyword-Aware SST achieves the best result}: 56.6\% exact and 60.0\% lenient accuracy with 157 average tokens---a 3.67$\times$ compression ratio vs.\ LLaVA's 576 tokens, and a 74.1\% reduction in inference latency (7.42\,s~$\rightarrow$~1.92\,s per query).
+
+\begin{table}[t]
+\centering
+\caption{Main results. SST variants use oracle GQA scene graphs with Mistral-7B. LLaVA uses raw images. All values from final output files.}
+\label{tab:main}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Method} & \textbf{Exact} & \textbf{Lenient} & \textbf{Tok.} & \textbf{Lat.(s)} \\
+\midrule
+LLaVA & \textbf{59.8\%} & 59.9\% & 576\textsuperscript{\dag} & 7.42 \\
+\midrule
+Full SST & 56.5\% & 58.7\% & 290 & 3.26 \\
+Caption-Style & 55.8\% & 58.7\% & 288 & 3.23 \\
+\textbf{KW-Aware} & \textbf{56.6\%} & \textbf{60.0\%} & \textbf{157} & \textbf{1.92} \\
+Compact KW & 45.4\% & 51.3\% & 116 & 1.84 \\
+No-Relations & 44.0\% & 45.8\% & 155 & 2.31 \\
+No-Attributes & 15.3\% & 16.9\% & 249 & 2.69 \\
+Objects-Only & 2.6\% & 3.0\% & 105 & 1.77 \\
+\bottomrule
+\multicolumn{5}{l}{\textsuperscript{\dag}CLIP ViT-L/14 @ 336\,px visual tokens.}
+\end{tabular}
+\end{table}
+
+\subsection{Token Efficiency and Compression}
+
+Table~\ref{tab:compression} shows compression ratios for each method relative to LLaVA's 576 visual tokens. Fig.~\ref{fig:tok_llava} plots token counts with accuracy annotations.
+
+\begin{table}[t]
+\centering
+\caption{Token efficiency and compression ratios vs.\ LLaVA.}
+\label{tab:compression}
+\begin{tabular}{lrrc}
+\toprule
+\textbf{Method} & \textbf{Tokens} & \textbf{Reduction} & \textbf{Ratio} \\
+\midrule
+LLaVA & 576 & --- & 1.00$\times$ \\
+Full SST & 290 & 49.7\% & 1.99$\times$ \\
+Caption-Style & 288 & 50.1\% & 2.00$\times$ \\
+Keyword-Aware & 157 & 72.7\% & 3.67$\times$ \\
+Compact KW & 116 & 79.8\% & 4.96$\times$ \\
+No-Relations & 155 & 73.1\% & 3.72$\times$ \\
+No-Attributes & 249 & 56.7\% & 2.31$\times$ \\
+Objects-Only & 105 & 81.8\% & 5.50$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_token_vs_llava.png}
+  \caption{Token usage per method relative to LLaVA's 576-token reference (dashed red). Accuracy is annotated on each bar. Keyword-Aware SST (157 tokens, 56.6\%) gives the best accuracy-per-token trade-off.}
+  \label{fig:tok_llava}
+\end{figure}
+
+\subsection{Accuracy--Token Trade-off}
+
+Fig.~\ref{fig:tradeoff} and Fig.~\ref{fig:acc_tok} show the trade-off between accuracy and token count. Keyword-Aware SST and Full SST sit in the Pareto-optimal region among text-only variants. Note that No-Relations SST causes a larger accuracy drop (12.5\,pp) than its token savings alone would suggest---the relations field is harder to substitute than raw token count implies.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_tradeoff_llava.png}
+  \caption{Accuracy vs.\ average input tokens. LLaVA is the red reference star. Keyword-Aware SST and Full SST are Pareto-optimal among text-only variants---competitive accuracy at a fraction of the token cost.}
+  \label{fig:tradeoff}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_accuracy_vs_tokens.png}
+  \caption{Accuracy vs.\ token count across SST variants. No-Relations SST sits notably below the token-reduction trend, showing that the relations field is disproportionately important relative to its token cost.}
+  \label{fig:acc_tok}
+\end{figure}
+
+\subsection{Statistical Significance}
+
+Table~\ref{tab:mcnemar} shows McNemar paired test results. Each variant is compared against Full SST on matched question outcomes. Caption-Style and Keyword-Aware SST are \emph{not} significantly different from Full SST ($p > 0.05$), confirming these variants preserve performance. All more aggressive variants are significantly worse ($p < 0.001$).
+
+\begin{table}[t]
+\centering
+\caption{McNemar paired tests vs.\ Full SST. ``Method wins'' and ``Full wins'' count matched questions where one method is correct and the other is not.}
+\label{tab:mcnemar}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Method} & \textbf{Full} & \textbf{$p$} & \textbf{Sig.} \\
+ & \textbf{wins} & \textbf{wins} & & \\
+\midrule
+Caption-Style & 22 & 27 & 0.568 & No \\
+Keyword-Aware & 79 & 74 & 0.747 & No \\
+Compact KW & 50 & 160 & $<$0.001 & Yes \\
+No-Relations & 43 & 166 & $<$0.001 & Yes \\
+No-Attributes & 7 & 422 & $<$0.001 & Yes \\
+Objects-Only & 5 & 545 & $<$0.001 & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:ci} shows bootstrap 95\% confidence intervals. Full SST, Caption-Style, and Keyword-Aware SST have strongly overlapping intervals. Ablation variants sit clearly lower with no overlap.
+
+\begin{table}[t]
+\centering
+\caption{Bootstrap 95\% CIs for exact-match accuracy (1,000 resamples, $n = 1{,}012$).}
+\label{tab:ci}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{Accuracy} & \textbf{CI lower} & \textbf{CI upper} \\
+\midrule
+Full SST & 56.5\% & 53.6\% & 59.5\% \\
+Caption-Style & 55.8\% & 52.8\% & 58.8\% \\
+Keyword-Aware & 56.6\% & 53.5\% & 59.6\% \\
+Compact KW & 45.4\% & 42.3\% & 48.4\% \\
+No-Relations & 44.0\% & 40.9\% & 47.0\% \\
+No-Attributes & 15.3\% & 13.0\% & 17.5\% \\
+Objects-Only & 2.6\% & 1.7\% & 3.6\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Ablation Study: Which Fields Matter?}
+
+Table~\ref{tab:ablation} and Fig.~\ref{fig:contrib} quantify the importance of each SST field by removing it and measuring the accuracy drop.
+
+\begin{table}[t]
+\centering
+\caption{Ablation results. Accuracy loss is measured against Full SST (56.5\%).}
+\label{tab:ablation}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Variant} & \textbf{Accuracy} & \textbf{Loss vs.\ Full} \\
+\midrule
+Full SST & 56.5\% & --- \\
+No-Relations SST & 44.0\% & $-$12.5\,pp \\
+No-Attributes SST & 15.3\% & $-$41.2\,pp \\
+Objects-Only SST & 2.6\% & $-$54.0\,pp \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_field_contributions.png}
+  \caption{Marginal accuracy contribution of each SST field, measured as the accuracy drop when that field is removed. Attributes have the largest impact (41.2\,pp), followed by relations (12.5\,pp). Objects alone are not sufficient for compositional reasoning.}
+  \label{fig:contrib}
+\end{figure}
+
+Attributes are the most important field. Removing them drops accuracy by 41.2\,pp---from 56.5\% to 15.3\%. GQA contains many questions about color, material, shape, and size (``Is the bus red?'', ``What material is the table?''), and all of these require attribute information. Relations are the second most important field, supporting questions about position, proximity, and interaction.
+
+\subsection{Per-Semantic-Type Accuracy}
+
+Fig.~\ref{fig:heatmap} shows accuracy broken down by GQA semantic type. The attribute semantic type is most affected by the No-Attributes ablation, and the relation type is most affected by No-Relations, which is consistent with the field-level findings above.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_semantic_heatmap.png}
+  \caption{Per-semantic-type accuracy heatmap across all SST variants. Darker shading means higher accuracy. Each ablation variant most severely affects the question type it removes---No-Attributes hurts attribute questions most; No-Relations hurts relation questions most.}
+  \label{fig:heatmap}
+\end{figure}
+
+\subsection{Latency and Compression}
+
+Fig.~\ref{fig:latency} compares inference latency and compression ratios. LLaVA takes 7.42\,s per query. Keyword-Aware SST takes 1.92\,s---a 74.1\% reduction. The latency savings come from a shorter input, which reduces the time Mistral spends processing the prompt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig_latency.png}
+  \caption{Inference latency (left) and compression ratio vs.\ LLaVA (right). Keyword-Aware SST achieves the best accuracy-to-latency ratio: 56.6\% accuracy at 1.92\,s per query and 3.67$\times$ compression. Objects-Only is fastest but accuracy collapses to 2.6\%.}
+  \label{fig:latency}
+\end{figure}
+
+\subsection{Error Analysis}
+
+Keyword-Aware SST and LLaVA predictions were matched on shared question pairs ($n = 1{,}075$ matched rows). Results:
+
+\begin{itemize}
+  \item \textbf{Both correct:} 352 questions (32.7\%)
+  \item \textbf{LLaVA only correct:} 287 questions (26.7\%)
+  \item \textbf{Keyword-Aware only correct:} 255 questions (23.7\%)
+  \item \textbf{Both wrong:} 181 questions (16.8\%)
+\end{itemize}
+
+Keyword-Aware SST solves 255 questions that LLaVA misses, while LLaVA solves 287 that SST misses. The cases where LLaVA succeeds and SST does not likely involve fine-grained visual details---precise colors, subtle textures, or spatial arrangements---that are visible in the image but may be only partially captured in the scene graph.
+
+\subsection{Oracle vs.\ Detected SST Pilot}
+
+Table~\ref{tab:oracle} summarises the YOLOv8\,+\,EasyOCR pilot on 50 images. All numbers are from the notebook output files (\texttt{oracle\_vs\_detected\_accuracy.csv}, \texttt{oracle\_vs\_detected\_comparison.csv}).
+
+\begin{table}[H]
+\centering
+\caption{Oracle SST vs.\ detected SST pilot (68 evaluation rows, 50 images). Extraction used YOLOv8-nano and EasyOCR.}
+\label{tab:oracle}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Metric} & \textbf{Oracle} & \textbf{Detected} \\
+\midrule
+Exact accuracy & 16.2\% & 1.5\% \\
+Lenient accuracy & 16.2\% & 1.5\% \\
+Avg.\ objects / image & 13.04 & 2.66 \\
+Avg.\ relations / image & 21.48 & 5.72 \\
+Avg.\ attributes / image & 11.36 & 0.00 \\
+Object recall & --- & 10.6\% \\
+Object precision & --- & 54.3\% \\
+Images with OCR text & --- & 5\,/\,50 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The pilot oracle accuracy (16.2\%) is lower than the main evaluation result (56.5\%). This is expected: the pilot subset contains 68 rows drawn from 50 images and has a different, harder question distribution than the full 1,012-sample evaluation. The meaningful comparison is within the pilot itself: oracle 16.2\% vs.\ detected 1.5\%. This gap shows that automatic extraction quality is the binding constraint for real-world SST deployment.
+
+The detected pipeline recovers only 2.66 objects per image (vs.\ 13.04 oracle), produces sparse relations (5.72 vs.\ 21.48), and extracts \emph{zero} attributes. Since the ablation study shows attributes are the most important SST field, the absence of attribute extraction is the clearest bottleneck for a deployable SST system.
+
+%==============================================================================
+\section{Discussion}
+%==============================================================================
+
+\subsection{H1: SST Reduces Tokens}
+
+Supported. Every SST variant uses substantially fewer tokens than LLaVA. Keyword-Aware SST reduces tokens by 72.7\% relative to LLaVA (157 vs.\ 576) while maintaining Full-SST-level accuracy.
+
+\subsection{H2: SST Is Competitive Under Oracle Conditions}
+
+Supported for oracle semantic input. Keyword-Aware SST (56.6\%) is within 3.2\,pp of LLaVA (59.8\%), and McNemar's test shows no statistically significant difference between Keyword-Aware and Full SST ($p = 0.747$). This result relies on oracle scene graphs; real-world extraction introduces a large gap (Section~V.I).
+
+\subsection{H3: Semantic Fields Contribute Unequally}
+
+Strongly supported. Attributes contribute the most (41.2\,pp impact), relations contribute next (12.5\,pp), and object labels alone are not sufficient (accuracy 2.6\%). SST cannot be treated as a simple object list---it needs property and relational information to support compositional reasoning.
+
+\subsection{Why Keyword-Aware Filtering Works}
+
+Keyword-Aware SST filters each field using content words from the question. This removes irrelevant objects, attributes, and relations that add tokens without helping answer the question. Keyword-Aware SST achieves slightly higher lenient accuracy (60.0\%) than Full SST (58.7\%), suggesting that irrelevant scene context can sometimes confuse the model. Compact Keyword SST uses even fewer tokens but falls to 45.4\% accuracy, likely because the compressed delimiter format removes structural cues that Mistral uses to parse the scene.
+
+\subsection{Limitations}
+
+\begin{itemize}
+  \item \textbf{Oracle assumption:} Main results use ground-truth scene graphs. Real deployment requires accurate extraction, which is not yet available at oracle quality.
+  \item \textbf{Sample size:} 1,012 samples is sufficient for statistical testing but limits fine-grained per-type analysis.
+  \item \textbf{Reasoning model:} Mistral-7B is a general-purpose model, not trained on GQA or SST-format data. Fine-tuning would likely improve results.
+  \item \textbf{No attribute extraction in pilot:} YOLOv8 does not predict color or material. This is the largest gap between detected and oracle SST.
+  \item \textbf{GQA specificity:} GQA questions are generated from scene graphs, making them naturally aligned with SST. Generalization to more open-ended VQA benchmarks is unknown.
+\end{itemize}
+
+%==============================================================================
+\Needspace{16\baselineskip}
+\section{Future Work}
+%==============================================================================
+
+The clearest improvement path is better real-world semantic extraction. The YOLOv8\,+\,EasyOCR pilot shows that object recall (10.6\%), relation coverage, and attribute extraction are all far below oracle quality. Key directions include:
+
+\begin{itemize}
+  \item Open-vocabulary detection (e.g., GroundingDINO) not limited to COCO classes.
+  \item Attribute classifiers predicting color, material, and size from bounding boxes.
+  \item Learned spatial relation prediction rather than bounding-box heuristics.
+  \item Fine-tuning a reasoning model on SST-format question-answer pairs.
+  \item Evaluating on a second benchmark (e.g., VQAv2) to test generalization beyond scene-graph-aligned questions.
+\end{itemize}
+
+%==============================================================================
+\Needspace{18\baselineskip}
+\section{Conclusion}
+%==============================================================================
+
+This paper shows that structured semantic text can be a strong substitute for dense visual tokens when accurate scene semantics are available. Keyword-Aware SST achieves \textbf{56.6\% exact-match accuracy} and \textbf{60.0\% lenient accuracy} on GQA with only 157 average input tokens---a \textbf{3.67$\times$ compression ratio} relative to LLaVA's 576 visual tokens and a \textbf{74.1\% reduction in inference latency}. McNemar's test confirms it is statistically indistinguishable from Full SST.
+
+The ablation study gives a clear hierarchy: attributes matter most (41.2\,pp when removed), relations matter next (12.5\,pp), and object labels alone collapse accuracy to 2.6\%. The YOLOv8\,+\,EasyOCR pilot quantifies the deployment gap: detected SST achieves only 1.5\% vs.\ 16.2\% oracle on the same questions, primarily because attribute extraction is completely absent.
+
+Together, these results position SST as a practical upper-bound study for token-efficient multimodal reasoning and clearly identify where future engineering effort should focus: richer object detection, attribute prediction, and spatial relation extraction.
+
+%==============================================================================
+\begin{thebibliography}{14}
+
+\bibitem{liu2023llava}
+H.~Liu, C.~Li, Q.~Wu, and Y.~J. Lee,
+``Visual instruction tuning,''
+in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, 2023.
+
+\bibitem{li2023blip2}
+J.~Li, D.~Li, S.~Savarese, and S.~Hoi,
+``BLIP-2: Bootstrapping language-image pre-training with frozen image encoders and large language models,''
+in \textit{Proc.\ Int.\ Conf.\ on Machine Learning (ICML)}, 2023.
+
+\bibitem{radford2021clip}
+A.~Radford \textit{et al.},
+``Learning transferable visual models from natural language supervision,''
+in \textit{Proc.\ Int.\ Conf.\ on Machine Learning (ICML)}, 2021.
+
+\bibitem{li2019visualbert}
+L.~H. Li, M.~Yatskar, D.~Yin, C.-J. Hsieh, and K.-W. Chang,
+``VisualBERT: A simple and performant baseline for vision and language,''
+\textit{arXiv:1908.03557}, 2019.
+
+\bibitem{lu2019vilbert}
+J.~Lu, D.~Batra, D.~Parikh, and S.~Lee,
+``ViLBERT: Pretraining task-agnostic visiolinguistic representations,''
+in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, 2019.
+
+\bibitem{tan2019lxmert}
+H.~Tan and M.~Bansal,
+``LXMERT: Learning cross-modality encoder representations from transformers,''
+in \textit{Proc.\ Conf.\ on Empirical Methods in Natural Language Processing (EMNLP)}, 2019.
+
+\bibitem{alayrac2022flamingo}
+J.-B. Alayrac \textit{et al.},
+``Flamingo: A visual language model for few-shot learning,''
+in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, 2022.
+
+\bibitem{xu2017scene}
+D.~Xu, Y.~Zhu, C.~B. Choy, and L.~Fei-Fei,
+``Scene graph generation by iterative message passing,''
+in \textit{Proc.\ IEEE/CVF Conf.\ on Computer Vision and Pattern Recognition (CVPR)}, 2017.
+
+\bibitem{hudson2019gqa}
+D.~A. Hudson and C.~D. Manning,
+``GQA: A new dataset for real-world visual reasoning and compositional question answering,''
+in \textit{Proc.\ IEEE/CVF Conf.\ on Computer Vision and Pattern Recognition (CVPR)}, 2019, pp.~6700--6709.
+
+\bibitem{krishna2017visual}
+R.~Krishna \textit{et al.},
+``Visual Genome: Connecting language and vision using crowdsourced dense image annotations,''
+\textit{Int.\ J.\ Comput.\ Vis.}, vol.~123, no.~1, pp.~32--73, 2017.
+
+\bibitem{dong2024efficient}
+Z.~Dong, Y.~Lu, and X.~Wang,
+``Efficient visual token withdrawal for multimodal reasoning,''
+in \textit{Proc.\ Int.\ Conf.\ on Learning Representations (ICLR)}, 2024.
+
+\bibitem{jiang2023mistral}
+A.~Q. Jiang \textit{et al.},
+``Mistral 7B,''
+\textit{arXiv:2310.06825}, 2023.
+
+\bibitem{yolov8}
+G.~Jocher, A.~Chaurasia, and J.~Qiu,
+``Ultralytics YOLO,'' 2023.
+[Online]. Available: \url{https://github.com/ultralytics/ultralytics}
+
+\bibitem{easyocr}
+J.~Kuznetsova,
+``EasyOCR: Ready-to-use OCR with 80+ languages supported,'' 2020.
+[Online]. Available: \url{https://github.com/JaidedAI/EasyOCR}
+
+\end{thebibliography}
+
+\end{document}
