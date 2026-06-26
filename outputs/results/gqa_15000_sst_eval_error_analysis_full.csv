@@ -1,492 +1,1001 @@
-question_id,question,llava_exact,llava_pred,ground_truth,kw_exact,kw_pred,true_answer,semantic_type,category
-19909115,On which side of the picture is the chimney?,1,right,right,0,left,right,attr,llava_only
-121029493,Is the camera in the bottom part or in the top of the photo?,0,bottom,top,0,unknown,top,attr,both_wrong
-12649138,Is that bus teal and long?,1,yes,yes,1,yes,yes,attr,both_correct
-18524347,On which side of the image is the toilet paper?,0,left,right,1,right,right,attr,keyword_only
-19757827,Does this plane look white and huge?,0,yes,no,0,unknown,no,attr,both_wrong
-18237157,Which color is the floor?,0,blue,brown,1,brown,brown,attr,keyword_only
-15471805,Is the catcher on the left side?,1,no,no,1,no,no,attr,both_correct
-111037813,On which side of the photo is the American flag?,1,left,left,0,flying side,left,attr,llava_only
-1066276,Is that a blue airplane?,0,no,yes,1,yes,yes,attr,keyword_only
-14803739,Is the shirt short sleeved or long sleeved?,1,short sleeved,short sleeved,1,short sleeved,short sleeved,attr,both_correct
-16985776,Is the truck on the right?,0,no,yes,0,unknown,yes,attr,both_wrong
-1882998,Do the fan and the box have a different colors?,0,yes,no,0,yes,no,attr,both_wrong
-14974957,Which side of the image is the house on?,1,left,left,0,right,left,attr,llava_only
-17400921,Which color are the trousers?,1,tan,tan,1,tan,tan,attr,both_correct
-15834069,Are the flags on the left side?,0,yes,no,0,unknown,no,attr,both_wrong
-12900698,Which part of the photo is the zebra in?,0,no zebra,left,0,to left of pan,left,attr,both_wrong
-12975037,On which side of the photo is the salad?,1,right,right,0,left,right,attr,llava_only
-18934678,Is the man in the bottom part of the picture?,1,yes,yes,0,unknown,yes,attr,llava_only
-15974537,Do the tennis racket and the shirt have a different colors?,1,yes,yes,1,yes,yes,attr,both_correct
-12962486,Which side is the chair on?,1,right,right,1,right,right,attr,both_correct
-13514980,Does the cow in front of the path look young and black and white?,0,no,yes,1,yes,yes,attr,keyword_only
-1928925,Does the end table that is to the right of the CDs have brown color?,1,no,no,0,unknown,no,attr,llava_only
-15198505,Is the fresh fruit in the top part of the picture?,1,no,no,0,unknown,no,attr,llava_only
-10519313,Of which color is that hair?,0,blond,gray,0,unknown,gray,attr,both_wrong
-11486375,"How does the tall grass look, green or brown?",1,brown,brown,1,brown,brown,attr,both_correct
-11198865,"In which part of the photo are the wood chairs, the top or the bottom?",0,bottom,top,0,bottom,top,attr,both_wrong
-17233908,What color do you think the jacket that the woman is wearing is?,0,black,red,0,pink,red,attr,both_wrong
-1928697,What color is the chair made of plastic?,1,blue,blue,1,blue,blue,attr,both_correct
-165367,What is the boy doing?,0,skateboarding,jumping,0,skateboarding,jumping,attr,both_wrong
-19417775,Does the necktie look metallic and brown?,1,yes,yes,1,yes,yes,attr,both_correct
-15667944,On which side of the photo is the curtain?,0,right,left,1,left,left,attr,keyword_only
-13507892,On which side is the bottle?,0,left,right,1,right,right,attr,keyword_only
-1931295,What color are the trousers?,0,white,gray,1,gray,gray,attr,keyword_only
-13883784,Is the food truck white or orange?,1,white,white,1,white,white,attr,both_correct
-10922197,"On which side is the man, the right or the left?",0,right,left,1,left,left,attr,keyword_only
-1066295,The car on the left has which color?,0,black,white,1,white,white,attr,keyword_only
-13178616,On which side is the train?,1,left,left,1,left,left,attr,both_correct
-12275664,Is the plate empty or full?,1,full,full,1,full,full,attr,both_correct
-15488294,On which side of the image is the bookshelf?,1,right,right,0,to left,right,attr,llava_only
-16803177,Does the large chair look brown?,0,yes,no,0,unknown,no,attr,both_wrong
-181031828,On which side of the picture is the chair?,0,right,left,1,left,left,attr,keyword_only
-161063557,On which side of the image is the red drink?,1,right,right,1,right,right,attr,both_correct
-10136936,Is the radiator on the right side?,1,yes,yes,1,yes,yes,attr,both_correct
-19648737,Does the grass look green and short?,0,no,yes,1,yes,yes,attr,keyword_only
-151052668,What color is the bag?,1,white,white,1,white,white,attr,both_correct
-16186374,Are the animals elephants?,1,yes,yes,1,yes,yes,attr,both_correct
-1583863,On which side of the image are the cars?,1,left,left,1,left,left,attr,both_correct
-19129925,Is the green container on the right side or on the left of the image?,1,left,left,0,unknown,left,attr,llava_only
-11718288,What color is the tray?,1,black,black,1,black,black,attr,both_correct
-1170894,In which part is the person?,0,right,left,0,by bridge,left,attr,both_wrong
-18775171,What is the door made of?,0,wood,metal,1,metal,metal,attr,keyword_only
-16687506,Which color is the kite on the right of the picture?,0,red,yellow,0,blue,yellow,attr,both_wrong
-14803707,Is the frisbee round and orange?,1,no,no,0,unknown,no,attr,llava_only
-17212725,What is the color of the car on the left?,0,black,white,1,white,white,attr,keyword_only
-1858855,Are the trousers blue?,1,no,no,0,pants black,no,attr,llava_only
-11765986,On which side of the picture is the plate?,1,right,right,0,unknown,right,attr,llava_only
-10662521,What is the bottle made of?,1,plastic,plastic,1,plastic,plastic,attr,both_correct
-13267912,What color is the chair?,1,white,white,1,white,white,attr,both_correct
-10108403,How long are the pants?,1,short,short,1,short,short,attr,both_correct
-17867608,Are the floor and the door made of the same material?,0,yes,no,0,unknown,no,attr,both_wrong
-15685817,Which side of the photo is the man on?,0,right,left,0,right,left,attr,both_wrong
-10230297,What color is the oar in the center?,0,red,silver,0,unknown,silver,attr,both_wrong
-151054689,Is the skateboard green?,0,no,yes,1,yes,yes,attr,keyword_only
-19867158,Does the pizza with the ham look small and full?,1,no,no,0,yes,no,attr,llava_only
-1274268,Is the bowl on the right?,0,yes,no,0,unknown,no,attr,both_wrong
-14676522,Of what color is the boat in the bottom of the picture?,1,white,white,0,blue,white,attr,llava_only
-13856077,Is the fence to the right of the people made of wood or wire?,1,wood,wood,1,wood,wood,attr,both_correct
-15576444,Which side of the photo is the blond woman on?,0,left,right,1,right,right,attr,keyword_only
-10481242,What is the color of the large kite?,0,green,black,1,black,black,attr,keyword_only
-11848718,Is the white vest short sleeved or long sleeved?,1,short sleeved,short sleeved,0,white vest is short sleeved,short sleeved,attr,llava_only
-16371831,Does the sky appear to be cloudy and white?,0,yes,no,0,yes assuming cloudy implies presence of clouds and no color attribute for clouds was provided,no,attr,both_wrong
-13471313,What is the ring made of?,0,wood,metal,0,unknown,metal,attr,both_wrong
-131037864,On which side of the image is the car?,1,right,right,0,unknown,right,attr,llava_only
-1272606,Is the wood chair on the left side?,1,yes,yes,1,yes,yes,attr,both_correct
-11675881,Is the packet in the top part?,1,yes,yes,0,unknown,yes,attr,llava_only
-151042655,Does the lamp shade look red?,1,yes,yes,1,yes,yes,attr,both_correct
-13382019,What is the height of the fence near the field?,1,short,short,0,unknown,short,attr,llava_only
-18382968,How large are the leaves?,0,small,large,1,large,large,attr,keyword_only
-15340018,Is the fence in the top or in the bottom part?,1,top,top,0,unknown,top,attr,llava_only
-19415693,Does the bread that is to the right of the bowl look brown or maybe white?,1,brown,brown,1,brown,brown,attr,both_correct
-17750772,Is the green cabbage in the bottom or in the top part of the image?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-13583035,How old is the child?,0,young,little,0,small,little,attr,both_wrong
-1110330,Is the pillow to the left of the frog cream colored or green?,0,cream colored,green,1,green,green,attr,keyword_only
-13396506,Which color does the elephant near the water have?,1,gray,gray,1,gray,gray,attr,both_correct
-14457317,Does the animal that looks white and brown look colorful?,1,yes,yes,0,unknown,yes,attr,llava_only
-19737390,Does that woman appear to be sitting?,1,yes,yes,1,yes,yes,attr,both_correct
-13967544,Is the painting on the right of the picture?,1,yes,yes,0,no,yes,attr,llava_only
-11925604,Is the sky cloudy and blue?,0,no,yes,0,no,yes,attr,both_wrong
-1042140,What is the color of the coat?,0,green,black,1,black,black,attr,keyword_only
-14898381,Is the laptop off or on?,1,on,on,1,on,on,attr,both_correct
-16578746,Is the motorbike on the left side?,1,no,no,1,no,no,attr,both_correct
-14724253,Is the bread on the right?,1,yes,yes,1,yes,yes,attr,both_correct
-151032584,The bear in the bottom of the image is of what color?,0,pink,dark brown,1,dark brown,dark brown,attr,keyword_only
-19743203,Is the truck on the left?,0,no,yes,1,yes,yes,attr,keyword_only
-14824906,Is the cupboard large and brown?,1,no,no,0,unknown,no,attr,llava_only
-11534918,Does the short grass beneath the blanket look green or brown?,0,brown,green,1,green,green,attr,keyword_only
-13118377,Is this a silver plate?,1,yes,yes,1,yes,yes,attr,both_correct
-17519934,Does that train have yellow color?,1,yes,yes,1,yes,yes,attr,both_correct
-12318825,On which side of the picture is the orange cone?,0,left,right,0,left,right,attr,both_wrong
-19582992,Is the ottoman in the top of the photo?,1,no,no,0,unknown,no,attr,llava_only
-14553306,"Which size is the vehicle, small or large?",1,small,small,1,small,small,attr,both_correct
-13541017,What do the door and the outfit have in common?,1,color,color,0,both are to left of something door left of hat boy window gog,color,attr,llava_only
-15849850,Do the shoes look black?,0,no,yes,1,yes,yes,attr,keyword_only
-12622585,"In which part of the picture is the dumpster, the bottom or the top?",1,bottom,bottom,0,unknown,bottom,attr,llava_only
-11546686,Is the vehicle to the left of the helmet small and green?,1,no,no,1,no,no,attr,both_correct
-16267570,"In which part of the photo is the wood fence, the bottom or the top?",1,bottom,bottom,0,behind,bottom,attr,llava_only
-16917929,On which side is the fence?,0,right,left,1,left,left,attr,keyword_only
-14268304,On which side is the monitor?,0,right,left,1,left,left,attr,keyword_only
-18773352,Do the pole and the word have the same color?,0,no,yes,0,no,yes,attr,both_wrong
-1930631,Does the device near the book appear to be open?,1,no,no,0,unknown,no,attr,llava_only
-11273927,On which side of the photo are the houses?,0,left,right,0,unknown,right,attr,both_wrong
-11742852,What are the shelves made of?,1,wood,wood,1,wood,wood,attr,both_correct
-17933461,Is the boat different in color than the vehicle?,0,yes,no,0,yes,no,attr,both_wrong
-19455028,Is the cat on the left of the photo?,1,yes,yes,0,unknown,yes,attr,llava_only
-16766267,"What was used to make the fence to the right of the guy, wood or metal?",1,wood,wood,1,wood,wood,attr,both_correct
-141016798,What is the color of the cat?,0,brown and white,brown,1,brown,brown,attr,keyword_only
-15412714,Which side of the photo is the dark curtain on?,0,left,right,1,right,right,attr,keyword_only
-18509618,Is the empty street wet or dry?,1,wet,wet,1,wet,wet,attr,both_correct
-11293365,Do the sky and the flag have the same color?,0,no,yes,0,no,yes,attr,both_wrong
-10587868,What color is the vase on the left?,1,white,white,1,white,white,attr,both_correct
-13136427,How is the water in the picture?,0,still,calm,1,calm,calm,attr,keyword_only
-17273265,Is the car on the right side?,1,no,no,1,no,no,attr,both_correct
-1724329,Is the snow board to the left of the skis long and brown?,0,yes,no,1,no,no,attr,keyword_only
-15734242,What color does the dog's hair have?,0,brown,blond,0,unknown,blond,attr,both_wrong
-19286275,"Which material is the fence made of, wood or steel?",1,wood,wood,1,wood,wood,attr,both_correct
-181031717,Are the animals of different species?,1,yes,yes,1,yes,yes,attr,both_correct
-1035272,Is the American flag on the left part or on the right?,0,right,left,0,unknown,left,attr,both_wrong
-14363222,Does the sidewalk look dark?,1,yes,yes,1,yes,yes,attr,both_correct
-14104447,Is the man on the right or on the left side?,1,right,right,0,left,right,attr,llava_only
-14647205,Is the silver device in the bottom part or in the top of the image?,0,top,bottom,0,camera is to left of bed camera to left of blanket camera to left of,bottom,attr,both_wrong
-12755296,Does the white shirt look short sleeved?,0,no,yes,1,yes,yes,attr,keyword_only
-11476749,Is the broccoli on the right part of the photo?,1,yes,yes,0,unknown,yes,attr,llava_only
-12951901,What do you think is the color of the plate?,0,white,yellow,1,yellow,yellow,attr,keyword_only
-10607000,Is the color of the athletic shoe different than the paddle?,1,no,no,1,no,no,attr,both_correct
-12604830,What color is the SUV that is on the street?,1,red,red,1,red,red,attr,both_correct
-17238479,Does the clock tower appear to be tan or green?,1,tan,tan,1,tan,tan,attr,both_correct
-11960280,Is the water brown or blue?,1,blue,blue,1,blue,blue,attr,both_correct
-16954451,Does the grass look green?,1,yes,yes,1,yes,yes,attr,both_correct
-11214209,Do the sky and the sweater have a different colors?,0,no,yes,1,yes,yes,attr,keyword_only
-18976802,On which side of the picture is the napkin?,1,right,right,0,to right,right,attr,llava_only
-13582118,Which color do you think the shirt is?,0,gray,white,1,white,white,attr,keyword_only
-11846094,Are the cabinets brown?,1,yes,yes,1,yes,yes,attr,both_correct
-15258984,The blanket is of what color?,0,gray,brown,1,brown,brown,attr,keyword_only
-18680017,Is the pedestrian in the top part or in the bottom of the image?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-16464923,What makes up the fence that is not short?,1,metal,metal,1,metal,metal,attr,both_correct
-10129937,"Which color is the bridge, gray or red?",1,gray,gray,1,gray,gray,attr,both_correct
-14486700,"Which material makes up that ground, stone or hardwood?",1,stone,stone,1,stone,stone,attr,both_correct
-15959781,Which company is the shoe from?,1,nike,nike,1,nike,nike,attr,both_correct
-18778699,Which color is the syrup that is to the left of the banana?,0,black,brown,1,brown,brown,attr,keyword_only
-181002628,What color is the van the bicycles are to the left of?,1,white,white,1,white,white,attr,both_correct
-13455224,Is the fire place made of marble?,0,yes,no,0,unknown,no,attr,both_wrong
-1592118,Does the blue car appear to be driving?,1,no,no,1,no,no,attr,both_correct
-19334084,What do the coat and the television have in common?,1,color,color,0,neither object has specified color in common,color,attr,llava_only
-151001039,Are the kids in the bottom part or in the top of the image?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-15510712,Are the floor and the shoe the same color?,0,yes,no,1,no,no,attr,keyword_only
-10484044,Which side of the photo is the man on?,0,left,right,0,unknown,right,attr,both_wrong
-13345897,Is the mousepad on the left side or on the right?,1,left,left,1,left,left,attr,both_correct
-17224279,Of what color are the wheels?,1,orange,orange,1,orange,orange,attr,both_correct
-1619741,Do the trees behind the elephant look brown?,0,no,yes,0,brown,yes,attr,both_wrong
-14835949,Is the chair on the right side of the photo?,1,yes,yes,0,unknown,yes,attr,llava_only
-191039245,Does the desk appear to be wooden and large?,1,no,no,0,unknown,no,attr,llava_only
-15290641,Which side is the curtain on?,1,right,right,1,right,right,attr,both_correct
-12282078,What is the color of the woman's t-shirt?,0,red,pink,1,pink,pink,attr,keyword_only
-13158997,What color is the suitcase?,0,no suitcase,black,1,black,black,attr,keyword_only
-17168598,Which side is the blue painting on?,0,left,right,1,right,right,attr,keyword_only
-11229212,Does the device on the table look black?,0,no,yes,1,yes,yes,attr,keyword_only
-1121555,Is the cardboard box in the bottom part or in the top of the image?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-18435808,Does the cap have pink color?,0,yes,no,0,unknown,no,attr,both_wrong
-18439636,Is the tennis racket in the top part of the image?,1,no,no,0,unknown,no,attr,llava_only
-17239581,Is the bag on the left side?,0,no,yes,0,no,yes,attr,both_wrong
-14991920,Is the vehicle blue?,0,no,yes,1,yes,yes,attr,keyword_only
-11661722,Is the bag on the left?,1,no,no,1,no,no,attr,both_correct
-11260607,Is the water the same color as the grass?,1,yes,yes,0,unknown,yes,attr,llava_only
-1317775,What is the color of the tshirt the man wears?,1,red,red,0,unknown,red,attr,llava_only
-161046443,Does the cherry in the bowl look round and red?,1,yes,yes,1,yes,yes,attr,both_correct
-1325617,Does the brown animal look tiny?,1,no,no,0,unknown,no,attr,llava_only
-10331254,Do these animals have different types?,1,yes,yes,0,unknown,yes,attr,llava_only
-1732628,Which color is the tail?,0,yellow,tan,0,unknown,tan,attr,both_wrong
-15775457,Is the elephant both dirty and brown?,1,yes,yes,1,yes,yes,attr,both_correct
-181058200,Does the bird that is to the right of the purse look black?,1,no,no,0,unknown,no,attr,llava_only
-19803317,On which side is the box?,0,left,right,1,right,right,attr,keyword_only
-11976456,What is the color of the baseball hat?,1,red,red,1,red,red,attr,both_correct
-15870388,Is the phone on the left or on the right?,1,left,left,0,right,left,attr,llava_only
-1771689,On which side of the image is the white car?,0,right,left,0,unknown,left,attr,both_wrong
-18252712,"Which part of the picture is the lettuce in, the top or the bottom?",1,bottom,bottom,0,unknown,bottom,attr,llava_only
-16545513,Are these people of the same gender?,0,no,yes,0,unknown,yes,attr,both_wrong
-18153571,Which side of the image is the yellow umbrella on?,1,right,right,1,right,right,attr,both_correct
-19922632,Which side of the photo is the broccoli on?,0,left,right,1,right,right,attr,keyword_only
-19243788,Is the drawing green or gold?,0,green,gold,1,gold,gold,attr,keyword_only
-15777191,Is the color of the trash can different than the boot?,1,no,no,1,no,no,attr,both_correct
-12526131,Do the wetsuit of the man and the ocean have a different colors?,1,no,no,0,yes,no,attr,llava_only
-15193451,Is this a dark brown table?,0,no,yes,1,yes,yes,attr,keyword_only
-19180327,On which side of the picture is the woman?,0,left,right,1,right,right,attr,keyword_only
-10230425,"Which part of the picture is the man in, the bottom or the top?",1,bottom,bottom,0,unknown,bottom,attr,llava_only
-16406275,Which side is the plate on?,0,left,right,1,right,right,attr,keyword_only
-1311052,On which side is the gray helmet?,0,left,right,0,to left and right of gray helmet,right,attr,both_wrong
-16351161,Is the entertainment center on the right side of the image?,0,no,yes,1,yes,yes,attr,keyword_only
-18178043,Is that sky black?,1,no,no,1,no,no,attr,both_correct
-141000009,On which side is the chimney?,1,left,left,0,right,left,attr,llava_only
-16222344,What color do you think the dress the bear is wearing has?,1,pink,pink,1,pink,pink,attr,both_correct
-19893732,Does the cabinet that is to the left of the curtains look white?,0,no,yes,1,yes,yes,attr,keyword_only
-11283826,Is the coffee on the right?,1,yes,yes,0,no,yes,attr,llava_only
-18506186,Of what color are the trousers that the man is in?,0,white,blue,1,blue,blue,attr,keyword_only
-121044418,On which side of the photo is the ball?,0,left,right,0,unknown,right,attr,both_wrong
-13457278,Does the backpack have blue color?,1,no,no,1,no,no,attr,both_correct
-17755610,On which side of the photo is the white stove?,1,right,right,0,to right,right,attr,llava_only
-11900592,Does the broccoli that is to the left of the carrot look purple and steamed?,1,no,no,1,no,no,attr,both_correct
-10931485,Is the sheet in the bottom of the image?,0,yes,no,0,unknown,no,attr,both_wrong
-15278866,Does the concrete floor look clean and pink?,0,no,yes,0,no concrete floor does not look pink,yes,attr,both_wrong
-12324886,Is the zebra the same color as the jacket?,1,no,no,1,no,no,attr,both_correct
-12879850,Do the shorts look black?,0,yes,no,1,no,no,attr,keyword_only
-11941473,What are the chairs made of?,0,wood,plastic,0,unknown,plastic,attr,both_wrong
-13414119,Are the trees small or large?,0,small,large,1,large,large,attr,keyword_only
-12122053,What do the racket and the tape have in common?,1,color,color,0,they are both white,color,attr,llava_only
-14297463,"Which material is the cabinet made of, wood or glass?",1,wood,wood,1,wood,wood,attr,both_correct
-10744301,Which side of the image is the dryer on?,0,left,right,0,unknown,right,attr,both_wrong
-15812332,On which side of the image is the backpack?,1,right,right,0,carrying side,right,attr,llava_only
-1864254,"Which part of the image is the man in, the top or the bottom?",1,bottom,bottom,1,bottom,bottom,attr,both_correct
-12800650,On which side of the photo are the figurines?,1,right,right,0,unknown,right,attr,llava_only
-10595316,Is the dog that is to the left of the other dog colorful or is it black and white?,1,colorful,colorful,0,unknown,colorful,attr,llava_only
-11568695,Which side of the picture is the woman on?,0,left,right,0,left,right,attr,both_wrong
-18237167,What color is the carpet?,1,blue,blue,1,blue,blue,attr,both_correct
-14996056,What color is the glove?,0,black,blue,1,blue,blue,attr,keyword_only
-11214696,What color is the rope on the boat?,0,black,green,0,unknown,green,attr,both_wrong
-14553291,Is the vehicle green and small?,1,no,no,1,no,no,attr,both_correct
-15126937,Does the utensil on the plate look silver and real?,1,yes,yes,1,yes,yes,attr,both_correct
-12642499,Does the boat at the pier look red?,1,no,no,0,unknown,no,attr,llava_only
-17600709,What is she doing?,1,posing,posing,1,posing,posing,attr,both_correct
-14432170,On which side of the image is the woman?,0,left,right,1,right,right,attr,keyword_only
-13476211,On which side is the mirror?,0,left,right,0,to right,right,attr,both_wrong
-12822438,Is that sky white or blue?,1,blue,blue,1,blue,blue,attr,both_correct
-17401477,Which color is the umbrella the person is holding?,0,black,blue,1,blue,blue,attr,keyword_only
-161027552,What tone does the coffee table made of wood have?,1,light,light,0,wood,light,attr,llava_only
-14304658,On which side of the image is the wood chair?,0,left,right,0,unknown,right,attr,both_wrong
-17397773,Is the vehicle to the left of the motorcycle white or brown?,1,brown,brown,0,unknown,brown,attr,llava_only
-12241557,"On which side of the image is the teddy bear, the left or the right?",1,right,right,1,right,right,attr,both_correct
-14774965,Is the color of the pillow the same as the blouse?,1,yes,yes,1,yes,yes,attr,both_correct
-1315955,Is the door blue?,0,no,yes,1,yes,yes,attr,keyword_only
-11458012,Are the tiles black?,1,no,no,0,unknown,no,attr,llava_only
-1925086,Does the animal next to the bath tub look large?,1,no,no,0,unknown,no,attr,llava_only
-14544574,What is the long bat made of?,0,wood,metal,1,metal,metal,attr,keyword_only
-12833931,Is the man on the left or on the right?,1,left,left,0,man is to left,left,attr,llava_only
-18495700,Is the beer on the left?,1,no,no,0,yes,no,attr,llava_only
-11678164,Is the potato in the bottom or in the top part?,0,bottom,top,0,unknown,top,attr,both_wrong
-121030820,Is the keyboard on the left side of the photo?,0,no,yes,0,unknown,yes,attr,both_wrong
-13117223,Which color is the vase on the table?,1,gold,gold,1,gold,gold,attr,both_correct
-14503018,What do both the sign and the post have in common?,0,color,material,0,pink,material,attr,both_wrong
-1614443,What is the rhino doing?,0,eating,drinking,0,rhino is drinking,drinking,attr,both_wrong
-111054858,Is the lamp shade square and white?,0,no,yes,0,unknown,yes,attr,both_wrong
-14138720,Does the frisbee have white color?,1,no,no,0,unknown,no,attr,llava_only
-151000945,Are the people in the bottom of the photo?,1,yes,yes,0,unknown,yes,attr,llava_only
-15556374,"Which color are the flames, orange or blue?",1,orange,orange,1,orange,orange,attr,both_correct
-10637625,Does the mane have long length?,1,no,no,1,no,no,attr,both_correct
-10570635,Which color does the nose have?,0,gray,white,0,unknown,white,attr,both_wrong
-12591324,Is the tennis racket in the top or in the bottom part?,1,top,top,0,bottom,top,attr,llava_only
-17935319,What is the tray made of?,0,foil,plastic,1,plastic,plastic,attr,keyword_only
-141034911,What color is the wood boat to the right of the glasses?,0,red,cream colored,1,cream colored,cream colored,attr,keyword_only
-16350461,Do the suit and the shirt have a different colors?,1,yes,yes,1,yes,yes,attr,both_correct
-15849977,Does the jersey look white?,1,no,no,0,unknown,no,attr,llava_only
-13109179,Which side is the backpack on?,1,left,left,1,left,left,attr,both_correct
-19505230,Is the grass green or brown?,1,green,green,1,green,green,attr,both_correct
-1665302,Is the container in the bottom or in the top part of the photo?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-10719966,On which side of the photo is the boy?,1,right,right,1,right,right,attr,both_correct
-10887034,Is the brown animal on the right side of the image?,1,no,no,0,yes,no,attr,llava_only
-17634428,Do you think the sky is overcast or clear?,1,overcast,overcast,1,overcast,overcast,attr,both_correct
-19640800,Do you think the jeans are purple?,0,no,yes,1,yes,yes,attr,keyword_only
-131059567,What is the man doing?,1,reading,reading,0,man is reading,reading,attr,llava_only
-12974391,Do the bun and the basket have a different colors?,0,no,yes,1,yes,yes,attr,keyword_only
-171010127,On which side of the picture is the wine glass?,1,right,right,1,right,right,attr,both_correct
-11942266,How big is the zebra on the left side of the picture?,1,large,large,1,large,large,attr,both_correct
-123808,What are the crates made of?,1,wood,wood,1,wood,wood,attr,both_correct
-19954290,On which side of the image is the chef?,0,right,left,1,left,left,attr,keyword_only
-18460738,Does the computer to the right of the container appear to be on?,1,yes,yes,0,no,yes,attr,llava_only
-12633776,Does the wet coat look white?,1,no,no,1,no,no,attr,both_correct
-16565594,Is the scarf on the teddy bear brown and small?,0,no,yes,1,yes,yes,attr,keyword_only
-13831085,Is the shirt white or blue?,0,white,blue,1,blue,blue,attr,keyword_only
-15193564,Which side of the image is the couch on?,0,right,left,1,left,left,attr,keyword_only
-10104953,The umbrella to the right of the people is of which color?,1,green,green,1,green,green,attr,both_correct
-15943866,Is the cup on the right or on the left of the image?,0,right,left,1,left,left,attr,keyword_only
-10351208,Is the cabin standing?,1,yes,yes,1,yes,yes,attr,both_correct
-131032800,Which color do you think the fence made of wood is?,1,brown,brown,1,brown,brown,attr,both_correct
-10914399,Which side are the people on?,1,left,left,1,left,left,attr,both_correct
-10601640,What is the cat doing?,0,standing on laptop,resting,0,cat is lying on keyboard and laptop,resting,attr,both_wrong
-1878763,Is the man in the bottom part or in the top of the picture?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-16177674,Does the jacket appear to be black?,1,yes,yes,1,yes,yes,attr,both_correct
-18967908,Are the tomatoes in the top part or in the bottom of the image?,1,top,top,0,unknown,top,attr,llava_only
-15897485,Is the color of the skirt different than the floor?,0,yes,no,0,yes,no,attr,both_wrong
-17969180,Is the sky blue and cloudless?,1,yes,yes,1,yes,yes,attr,both_correct
-1754185,Is the shirt red?,1,no,no,1,no,no,attr,both_correct
-13470170,Which side of the photo is the lamp on?,0,right,left,0,right,left,attr,both_wrong
-17834448,What is common to the planter and the jacket?,1,color,color,1,color,color,attr,both_correct
-10926052,What is the color of the shirt the man is wearing?,0,gray,green,0,gray,green,attr,both_wrong
-14303432,Is the fence in front of the grass mesh and green?,1,no,no,0,yes,no,attr,llava_only
-16807716,"Where in the image is the clock, on the right or on the left?",1,right,right,0,unknown,right,attr,llava_only
-18994398,Is the path snowy or rocky?,1,rocky,rocky,1,rocky,rocky,attr,both_correct
-17150271,What's the horse made of?,0,wood,metal,1,metal,metal,attr,keyword_only
-12490735,On which side of the photo is the sheep?,1,right,right,0,unknown,right,attr,llava_only
-15339557,What is the color of the buses in the middle of the picture?,1,green,green,1,green,green,attr,both_correct
-17397322,The bag on the right has what color?,1,black,black,1,black,black,attr,both_correct
-14153770,Which color does the appliance on the left side have?,1,white,white,1,white,white,attr,both_correct
-10282986,On which side of the photo is the fence?,1,right,right,0,to right,right,attr,llava_only
-13696672,"Which side is the dog on, the right or the left?",1,right,right,1,right,right,attr,both_correct
-16937009,Does the cow to the left of the other cows look huge and black?,1,no,no,0,no assuming that black refers to color and in given scene there,no,attr,llava_only
-16713330,What is the woman that is to the left of the man doing?,0,drinking,taking notes,0,unknown,taking notes,attr,both_wrong
-15940707,"What makes up that fence, mesh or iron?",1,mesh,mesh,1,mesh,mesh,attr,both_correct
-17736392,Does the gas stove inside the kitchen have black color?,1,no,no,0,unknown,no,attr,llava_only
-12189792,How long is the hair the man is with?,0,short,long,0,unknown,long,attr,both_wrong
-12411333,Which side of the image is the skateboard on?,0,right,left,0,right,left,attr,both_wrong
-17207969,Is the baseball baseball in the bottom or in the top?,0,bottom,top,0,unknown,top,attr,both_wrong
-11826829,Does the smoke above the train look white and small?,1,no,no,0,unknown,no,attr,llava_only
-15569475,Is the rug to the left of the tap green or red?,1,green,green,0,unknown,green,attr,llava_only
-16371251,On which side of the photo is the person?,1,right,right,1,right,right,attr,both_correct
-18174108,Are the animals all the same type?,1,no,no,0,unknown,no,attr,llava_only
-17888586,Is the bowl to the right of the placemat both wavy and full?,0,no,yes,0,unknown,yes,attr,both_wrong
-11662246,What color is the necktie?,1,gray,gray,1,gray,gray,attr,both_correct
-14150784,What color is the colorful coat?,1,pink,pink,0,blue since there s only 1 colorful coat mentioned and it s to right of,pink,attr,llava_only
-12818552,"Which material makes up the paved road, brick or cobblestone?",1,brick,brick,0,black,brick,attr,llava_only
-161037527,"What color are the walls, blue or cream colored?",1,blue,blue,1,blue,blue,attr,both_correct
-17786326,Is the blue towel in the top part or in the bottom?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-14956126,Does the animal on the floor look tan and skinny?,1,yes,yes,1,yes,yes,attr,both_correct
-19217441,On which side of the image is the cabinet?,0,left,right,1,right,right,attr,keyword_only
-15889850,Are the giraffes on the left side or on the right of the picture?,1,right,right,0,giraffes to left,right,attr,llava_only
-10885588,What color is the toilet?,1,white,white,1,white,white,attr,both_correct
-17728706,Of what color is the bowl on top of the table?,0,silver,white,1,white,white,attr,keyword_only
-19321727,"On which side of the picture is the baseball, the right or the left?",1,right,right,0,left,right,attr,llava_only
-14169573,What is common to the flowers and the leaves?,1,color,color,1,color,color,attr,both_correct
-18368140,Does the sign on the pole have black color?,0,yes,no,1,no,no,attr,keyword_only
-1481872,Is the tennis ball red or yellow?,1,yellow,yellow,1,yellow,yellow,attr,both_correct
-18961383,What is the man doing?,0,skateboarding,skating,1,skating,skating,attr,keyword_only
-17930023,Is the cardboard box open or closed?,1,open,open,1,open,open,attr,both_correct
-14856323,What is the fence near the family made of?,1,wood,wood,0,brown,wood,attr,llava_only
-1122650,Is the color of the van the same as the sign?,0,no,yes,0,no,yes,attr,both_wrong
-16204787,Is the house on the left of the photo?,1,no,no,1,no,no,attr,both_correct
-16447562,What color does the kite that is not short have?,1,yellow,yellow,1,yellow,yellow,attr,both_correct
-19629354,What is the gender of the skier in the bottom of the picture?,0,male,female,1,female,female,attr,keyword_only
-13653678,What do both the motorbike and the kiosk have in common?,1,color,color,0,unknown,color,attr,llava_only
-181047050,What color is the shirt that the man is wearing?,0,white,purple,1,purple,purple,attr,keyword_only
-12189196,Does that truck have white color?,1,yes,yes,1,yes,yes,attr,both_correct
-17639570,On which side of the picture is the green blanket?,1,right,right,1,right,right,attr,both_correct
-13766962,Is the white device above the star off or on?,0,off,on,1,on,on,attr,keyword_only
-1315888,Does the toilet to the right of the dresser look blue?,1,no,no,0,yes,no,attr,llava_only
-15350605,What color is that quilt?,0,brown,pink,1,pink,pink,attr,keyword_only
-19253791,On which side of the picture are the skis?,1,left,left,1,left,left,attr,both_correct
-1652450,What color is the elephant on the platform?,1,blue,blue,0,yellow,blue,attr,llava_only
-11695469,Are the shorts yellow or blue?,1,blue,blue,1,blue,blue,attr,both_correct
-10274365,What color do you think are the trousers the umpire is wearing?,0,white,gray,1,gray,gray,attr,keyword_only
-15510765,Does the shirt have orange color?,0,no,yes,1,yes,yes,attr,keyword_only
-14147022,Does the car to the right of the other car have blue color?,1,no,no,0,unknown,no,attr,llava_only
-18554647,Is the sky cloudy and blue?,0,no,yes,1,yes,yes,attr,keyword_only
-13858054,Is that faucet silver and small?,1,no,no,1,no,no,attr,both_correct
-11160465,Is he a tennis player?,1,no,no,0,unknown,no,attr,llava_only
-1124803,Which side is the metal shelf on?,0,right,left,1,left,left,attr,keyword_only
-13324676,What is the boy that is to the left of the woman doing?,0,waiting,bending,0,boy is bending,bending,attr,both_wrong
-16806651,What color are the shorts?,0,dark blue,black,1,black,black,attr,keyword_only
-18342344,Do the animals have different types?,0,no,yes,0,unknown,yes,attr,both_wrong
-11878829,"Where in this photograph is the large planter, in the top or in the bottom?",0,top,bottom,1,bottom,bottom,attr,keyword_only
-19730486,Which side of the image is the bread on?,1,left,left,1,left,left,attr,both_correct
-14785459,On which side of the picture is the lamp?,1,left,left,1,left,left,attr,both_correct
-19443098,Is the color of the helmet different than the bat?,0,no,yes,1,yes,yes,attr,keyword_only
-14732604,Are the goggles different in color than the gloves?,0,yes,no,0,yes,no,attr,both_wrong
-16297893,What is the dog doing?,1,walking,walking,1,walking,walking,attr,both_correct
-14383991,On which side is the pillow?,1,left,left,1,left,left,attr,both_correct
-14530719,Is the mailbox on the left side or on the right?,0,right,left,1,left,left,attr,keyword_only
-11257274,Are the pants red or white?,1,white,white,1,white,white,attr,both_correct
-15665797,Does the appliance that looks old look old fashioned and black?,0,yes,no,0,unknown,no,attr,both_wrong
-15764266,What is the material of the cabin?,1,wood,wood,1,wood,wood,attr,both_correct
-11351608,On which side of the image is the bag?,1,right,right,1,right,right,attr,both_correct
-11315934,What color do you think the house is?,0,white,green,1,green,green,attr,keyword_only
-15337543,Which color is the dress?,1,white,white,1,white,white,attr,both_correct
-17200006,Is the door made of glass?,0,no,yes,1,yes,yes,attr,keyword_only
-12930405,Which side is the small bird on?,1,right,right,1,right,right,attr,both_correct
-12774582,"Where in the photograph is the car, on the right side or on the left?",1,right,right,0,left,right,attr,llava_only
-13497769,Which color does the grass have?,1,brown,brown,1,brown,brown,attr,both_correct
-11199202,What color do the cows that are not thin have?,0,brown,white,1,white,white,attr,keyword_only
-1513270,Which color is the mustard?,0,yellow,brown,1,brown,brown,attr,keyword_only
-19286250,On which side of the picture is the wood fence?,1,right,right,0,to right,right,attr,llava_only
-15404974,On which side of the image is the cup?,0,right,left,1,left,left,attr,keyword_only
-161013462,What are the doors made of?,1,wood,wood,1,wood,wood,attr,both_correct
-12826684,Do the cap and the pole have a different colors?,1,no,no,0,yes,no,attr,llava_only
-16424574,Which side of the picture is the bicycle on?,1,left,left,0,unknown,left,attr,llava_only
-1527613,On which side of the picture is the bag?,0,right,left,0,to right,left,attr,both_wrong
-12361310,What color are the jeans?,1,blue,blue,1,blue,blue,attr,both_correct
-17835312,Which side of the image is the fire hydrant on?,0,right,left,0,unknown,left,attr,both_wrong
-16415574,Does the school bus have a different color than the flower?,1,yes,yes,1,yes,yes,attr,both_correct
-1682965,Is the car on the left or on the right?,0,right,left,0,car is to left,left,attr,both_wrong
-15127141,How long is the cooking utensil above the receipt?,0,0 seconds,long,0,unknown,long,attr,both_wrong
-1813870,Is the speaker on the right side of the image?,1,yes,yes,0,unknown,yes,attr,llava_only
-16514620,Which side of the photo is the metal fork on?,1,left,left,0,right,left,attr,llava_only
-19172502,Is the backpack in the top or in the bottom of the picture?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-16545710,What is the fence made of?,0,brick,wood,1,wood,wood,attr,keyword_only
-12916817,Which type of material is the bottle of beer made of?,1,glass,glass,1,glass,glass,attr,both_correct
-15133656,Is the boy on the left side?,0,no,yes,1,yes,yes,attr,keyword_only
-13907563,Is the color of the necktie the same as the napkin?,1,no,no,0,unknown,no,attr,llava_only
-13522065,Is the window hard?,0,no,yes,1,yes,yes,attr,keyword_only
-16319869,What is the tea kettle made of?,0,metal,porcelain,1,porcelain,porcelain,attr,keyword_only
-16807847,What is the color of the floor?,1,blue,blue,1,blue,blue,attr,both_correct
-19621196,Is the air conditioner on the right side or on the left?,0,left,right,1,right,right,attr,keyword_only
-18592720,What color do you think the umbrella the man is holding is?,0,blue,green,1,green,green,attr,keyword_only
-1217330,Is the light sky white or blue?,0,white,blue,1,blue,blue,attr,keyword_only
-10165920,On which side of the photo is the silver fork?,0,right,left,0,to right,left,attr,both_wrong
-1847763,Is the sweater above the dress shirt dark blue or white?,1,dark blue,dark blue,0,unknown,dark blue,attr,llava_only
-13832404,Is the damaged luggage near the twigs blue and dirty?,1,yes,yes,1,yes,yes,attr,both_correct
-15871286,What color does the net the woman is in front of have?,1,orange,orange,1,orange,orange,attr,both_correct
-19388647,Are the onions in the bottom or in the top of the image?,1,bottom,bottom,0,unknown,bottom,attr,llava_only
-151030041,What color do you think the bench that is on the platform is?,0,black,white,1,white,white,attr,keyword_only
-15700178,What is the color of the traffic cone on the left side?,1,green,green,1,green,green,attr,both_correct
-18394576,Does the swimsuit look pink?,0,no,yes,0,no since question asks about appearance of swimsuit and there s no information,yes,attr,both_wrong
-11354121,On which side of the photo is the trash can?,1,right,right,1,right,right,attr,both_correct
-11852173,Do the shoe and the truck have a different colors?,1,yes,yes,1,yes,yes,attr,both_correct
-1771363,What color are the wires that are in the sky?,0,black,gray,0,unknown,gray,attr,both_wrong
-11848872,How long is the banana that looks green and yellow?,1,short,short,0,unknown,short,attr,llava_only
-15381233,Is the suitcase to the left of the truck both green and large?,1,no,no,0,unknown,no,attr,llava_only
-18234702,Which side of the image are the houses on?,0,left,right,0,left,right,attr,both_wrong
-10831847,Is the hair blond?,1,no,no,0,unknown,no,attr,llava_only
-15741199,Which color is the shirt?,0,red,white,1,white,white,attr,keyword_only
-19388728,Is the napkin on the right side of the picture?,1,no,no,1,no,no,attr,both_correct
-12739785,Is the bench on the right side?,0,yes,no,0,unknown,no,attr,both_wrong
-17476228,What color is the mane?,1,brown,brown,1,brown,brown,attr,both_correct
-10816740,Are the cars in the top of the photo?,1,no,no,0,unknown,no,attr,llava_only
-19992520,Which side is the red book on?,1,left,left,1,left,left,attr,both_correct
-19893884,What color is the mug?,0,green,white,1,white,white,attr,keyword_only
-13704563,Does the jacket look blue?,1,yes,yes,1,yes,yes,attr,both_correct
-10324351,Do the gloves look black and small?,1,yes,yes,1,yes,yes,attr,both_correct
-111025042,"On which side are the people, the right or the left?",0,right,left,1,left,left,attr,keyword_only
-14375451,On which side of the image is the drawer?,0,right,left,1,left,left,attr,keyword_only
-10444948,On which side of the picture is the man?,1,left,left,0,unknown,left,attr,llava_only
-14658164,What is the material of the sheep that looks brown and white?,0,wood,plastic,0,unknown,plastic,attr,both_wrong
-15174137,Do you think this train is snowy?,1,yes,yes,1,yes,yes,attr,both_correct
-10452208,"In which part of the picture is the white bowl, the bottom or the top?",1,bottom,bottom,1,bottom,bottom,attr,both_correct
-12788776,Do you think the box is brown?,1,no,no,1,no,no,attr,both_correct
-16320096,What is the lid made of?,0,metal,glass,1,glass,glass,attr,keyword_only
-14522660,On which side is the plate?,1,left,left,1,left,left,attr,both_correct
-17694403,Is that nightstand white or dark?,1,dark,dark,1,dark,dark,attr,both_correct
-16161096,What color is the table the number is on?,1,blue,blue,1,blue,blue,attr,both_correct
-18615687,Is the dryer white or black?,1,black,black,1,black,black,attr,both_correct
-10939599,Do the giraffes that are playing seem to be walking?,0,yes,no,1,no,no,attr,keyword_only
-19486584,"What color is the hat, dark or red?",1,dark,dark,1,dark,dark,attr,both_correct
-10698780,Does the umbrella to the right of the other umbrella look large and blue?,0,no,yes,0,no,yes,attr,both_wrong
-15957882,On which side of the picture is the keyboard?,0,right,left,0,to left,left,attr,both_wrong
-11211631,Does the small glass look short and clear?,1,yes,yes,1,yes,yes,attr,both_correct
-13837682,On which side of the image is the black bag?,0,right,left,0,unknown,left,attr,both_wrong
-13727489,Does the chair to the right of the umbrella look brown?,1,no,no,0,unknown,no,attr,llava_only
-12710997,Does the bridge have large size?,1,yes,yes,1,yes,yes,attr,both_correct
-14740357,Does the dog have brown color?,1,no,no,0,unknown,no,attr,llava_only
-14305066,On which side of the picture is the bun?,0,left,right,1,right,right,attr,keyword_only
-1638408,Is the steamed broccoli in the bottom of the photo?,1,no,no,0,unknown,no,attr,llava_only
-19630283,What's the fence made of?,1,metal,metal,1,metal,metal,attr,both_correct
-11534891,Is the grass short and green?,1,yes,yes,1,yes,yes,attr,both_correct
-10816685,Does that clock look tall and black?,0,yes,no,1,no,no,attr,keyword_only
-14641375,"Where in this image is the chair, on the right or on the left?",0,right,left,0,on left,left,attr,both_wrong
-12409660,Which side of the photo is the blue vehicle on?,1,left,left,0,unknown,left,attr,llava_only
-141014447,Which side of the photo is the bottle on?,1,right,right,0,near fish,right,attr,llava_only
-16148515,"On which side of the picture are the red vegetables, the right or the left?",1,right,right,0,unknown,right,attr,llava_only
-17587413,On which side of the photo is the bell?,1,right,right,0,on alarm clock,right,attr,llava_only
-18912355,Which color do the scissors on the left have?,0,black,gray,1,gray,gray,attr,keyword_only
-19321685,What color is the jersey the number is on?,0,red and white,black,1,black,black,attr,keyword_only
-13766459,Are the monitor and the tower the same color?,1,yes,yes,0,no,yes,attr,llava_only
-16644446,Are the suits black?,1,no,no,0,unknown,no,attr,llava_only
-15633092,"Which color is the bag to the right of the keyboard, black or green?",1,black,black,0,unknown,black,attr,llava_only
-19121798,Are the olives green or black?,1,green,green,1,green,green,attr,both_correct
-10628161,Does the small fence look white?,1,yes,yes,1,yes,yes,attr,both_correct
-15586558,On which side of the picture is the large bag?,0,left,right,1,right,right,attr,keyword_only
-17233936,What color are the snow boots?,0,black,white,1,white,white,attr,keyword_only
-12806963,On which side of the photo are the French fries?,1,right,right,0,to right,right,attr,llava_only
-1883025,Is plastic used to make the trashcan near the window?,0,no,yes,0,unknown,yes,attr,both_wrong
-10960170,What's the man doing?,0,standing,taking photo,0,unknown,taking photo,attr,both_wrong
-13664755,Is the plate black?,1,no,no,0,unknown,no,attr,llava_only
-11593583,Is the picture in the top part or in the bottom of the photo?,0,bottom,top,0,unknown,top,attr,both_wrong
-19111195,Is the striped curtain on the left?,0,yes,no,1,no,no,attr,keyword_only
-14355282,How long is the man's hair?,1,short,short,0,unknown,short,attr,llava_only
-19659532,Which side is the blue bird on?,1,right,right,0,left,right,attr,llava_only
-16690063,What is the ladder by the airplane made of?,0,plastic,metal,1,metal,metal,attr,keyword_only
-15241843,Is the door red and metallic?,0,no,yes,1,yes,yes,attr,keyword_only
-15978230,What color is the bus to the right of the car?,0,white,blue,1,blue,blue,attr,keyword_only
-15640813,Is the napkin different in color than the bowl?,0,yes,no,0,yes,no,attr,both_wrong
-18946975,Is the white lamp on the right?,0,yes,no,1,no,no,attr,keyword_only
-13386758,Does the hydrant have the same color as the fence?,1,yes,yes,0,no,yes,attr,llava_only
-10662245,Is the color of the frame different than the wine bottle?,0,no,yes,1,yes,yes,attr,keyword_only
-19237150,Which color is the sky?,1,blue,blue,1,blue,blue,attr,both_correct
-14165422,Is the necklace different in color than the purse?,1,no,no,0,yes,no,attr,llava_only
-14604143,Is the rug on the left side of the picture?,1,yes,yes,0,no,yes,attr,llava_only
-13523030,The snowboard is of which color?,0,black,silver,1,silver,silver,attr,keyword_only
-1735963,Is the cabinet on the left side of the photo?,0,no,yes,1,yes,yes,attr,keyword_only
-1414253,Is the ball in the top or in the bottom part?,1,top,top,0,unknown,top,attr,llava_only
-19860572,Is the shirt blue or orange?,1,orange,orange,1,orange,orange,attr,both_correct
-11192422,Which color is the backpack?,0,black,orange,1,orange,orange,attr,keyword_only
-12753263,Does that hair look straight?,0,no,yes,0,unknown,yes,attr,both_wrong
-11340610,Is the faucet to the right of the soap antique and silver?,1,no,no,1,no,no,attr,both_correct
-12800792,Is the girl on the left?,1,yes,yes,0,no,yes,attr,llava_only
-14598262,Is the wood fence in the top of the photo?,1,no,no,0,unknown,no,attr,llava_only
-1341294,What color do you think is the umbrella?,0,pink,red,1,red,red,attr,keyword_only
+question_id,llava_exact,llava_pred,kw_exact,kw_pred,ground_truth,semantic_type,category
+19909115,1,right,0,left,right,attr,llava_only
+9245326,1,rubber,1,rubber,rubber,attr,both_correct
+121029493,0,bottom,0,unknown,top,attr,both_wrong
+12649138,1,yes,1,yes,yes,attr,both_correct
+18524347,0,left,1,right,right,attr,keyword_only
+19757827,0,yes,0,unknown,no,attr,both_wrong
+18237157,0,blue,1,brown,brown,attr,keyword_only
+1575844,0,left,0,unknown,right,attr,both_wrong
+366809,1,yes,0,no,yes,attr,llava_only
+2895353,1,pink,0,unknown,pink,attr,llava_only
+15471805,1,no,1,no,no,attr,both_correct
+111037813,1,left,0,flying side,left,attr,llava_only
+1066276,0,no,1,yes,yes,attr,keyword_only
+4174158,0,right,1,left,left,attr,keyword_only
+598443,1,left,1,left,left,attr,both_correct
+8435271,1,bottom,0,unknown,bottom,attr,llava_only
+3365348,0,yes,0,yes,no,attr,both_wrong
+7470215,0,right,0,right,left,attr,both_wrong
+14803739,1,short sleeved,1,short sleeved,short sleeved,attr,both_correct
+8114762,0,yes,0,unknown,no,attr,both_wrong
+16985776,0,no,0,unknown,yes,attr,both_wrong
+1882998,0,yes,0,yes,no,attr,both_wrong
+14974957,1,left,0,right,left,attr,llava_only
+17400921,1,tan,1,tan,tan,attr,both_correct
+372905,0,no,0,unknown,yes,attr,both_wrong
+15834069,0,yes,0,unknown,no,attr,both_wrong
+155957,0,no,0,unknown,yes,attr,both_wrong
+12900698,0,no zebra,0,to left of pan,left,attr,both_wrong
+12975037,1,right,0,left,right,attr,llava_only
+18934678,1,yes,0,unknown,yes,attr,llava_only
+15974537,1,yes,1,yes,yes,attr,both_correct
+12962486,1,right,1,right,right,attr,both_correct
+13514980,0,no,1,yes,yes,attr,keyword_only
+6898979,0,white,1,green,green,attr,keyword_only
+2454662,1,left,1,left,left,attr,both_correct
+1928925,1,no,0,unknown,no,attr,llava_only
+1476398,1,no,0,unknown,no,attr,llava_only
+15198505,1,no,0,unknown,no,attr,llava_only
+10519313,0,blond,0,unknown,gray,attr,both_wrong
+3534125,1,right,1,right,right,attr,both_correct
+11486375,1,brown,1,brown,brown,attr,both_correct
+553483,0,left,0,left,right,attr,both_wrong
+2468206,1,orange,1,orange,orange,attr,both_correct
+11198865,0,bottom,0,bottom,top,attr,both_wrong
+17233908,0,black,0,pink,red,attr,both_wrong
+1928697,1,blue,1,blue,blue,attr,both_correct
+165367,0,skateboarding,0,skateboarding,jumping,attr,both_wrong
+19417775,1,yes,1,yes,yes,attr,both_correct
+15667944,0,right,1,left,left,attr,keyword_only
+13507892,0,left,1,right,right,attr,keyword_only
+1931295,0,white,1,gray,gray,attr,keyword_only
+660180,1,woman,0,unknown,woman,attr,llava_only
+90628,0,brown,1,tan,tan,attr,keyword_only
+13883784,1,white,1,white,white,attr,both_correct
+9124700,1,no,0,unknown,no,attr,llava_only
+10922197,0,right,1,left,left,attr,keyword_only
+1066295,0,black,1,white,white,attr,keyword_only
+8996320,1,right,0,unknown,right,attr,llava_only
+13178616,1,left,1,left,left,attr,both_correct
+12275664,1,full,1,full,full,attr,both_correct
+15488294,1,right,0,to left,right,attr,llava_only
+4245397,0,green,1,red,red,attr,keyword_only
+655955,0,yes,1,no,no,attr,keyword_only
+16803177,0,yes,0,unknown,no,attr,both_wrong
+181031828,0,right,1,left,left,attr,keyword_only
+231373,1,brown,1,brown,brown,attr,both_correct
+2948648,1,left,1,left,left,attr,both_correct
+161063557,1,right,1,right,right,attr,both_correct
+10136936,1,yes,1,yes,yes,attr,both_correct
+19648737,0,no,1,yes,yes,attr,keyword_only
+151052668,1,white,1,white,white,attr,both_correct
+16186374,1,yes,1,yes,yes,attr,both_correct
+2933624,1,no,0,unknown,no,attr,llava_only
+8100583,1,yes,1,yes,yes,attr,both_correct
+7508841,0,no,1,yes,yes,attr,keyword_only
+1584227,0,tan,0,purple,black,attr,both_wrong
+1583863,1,left,1,left,left,attr,both_correct
+81018935,1,yellow,1,yellow,yellow,attr,both_correct
+19129925,1,left,0,unknown,left,attr,llava_only
+8188819,0,black,1,orange,orange,attr,keyword_only
+1456850,1,blue,1,blue,blue,attr,both_correct
+8778540,1,right,1,right,right,attr,both_correct
+11718288,1,black,1,black,black,attr,both_correct
+3697909,0,purple,1,blue,blue,attr,keyword_only
+1170894,0,right,0,by bridge,left,attr,both_wrong
+2180944,1,right,1,right,right,attr,both_correct
+7949045,0,tile,1,glass,glass,attr,keyword_only
+7513179,1,brown,1,brown,brown,attr,both_correct
+9589089,1,black,0,unknown,black,attr,llava_only
+18775171,0,wood,1,metal,metal,attr,keyword_only
+2454581,1,right,0,left,right,attr,llava_only
+6999240,1,orange,1,orange,orange,attr,both_correct
+2540193,1,left,1,left,left,attr,both_correct
+612913,1,yes,1,yes,yes,attr,both_correct
+8565825,1,no,1,no,no,attr,both_correct
+16687506,0,red,0,blue,yellow,attr,both_wrong
+9844253,0,no,1,yes,yes,attr,keyword_only
+14803707,1,no,0,unknown,no,attr,llava_only
+17212725,0,black,1,white,white,attr,keyword_only
+6732218,1,brick,1,brick,brick,attr,both_correct
+853341,1,yes,0,unknown,yes,attr,llava_only
+6674956,1,left,1,left,left,attr,both_correct
+1601604,0,dark,1,light,light,attr,keyword_only
+1858855,1,no,0,pants black,no,attr,llava_only
+11765986,1,right,0,unknown,right,attr,llava_only
+9298905,1,brick,1,brick,brick,attr,both_correct
+10662521,1,plastic,1,plastic,plastic,attr,both_correct
+2795948,1,large,1,large,large,attr,both_correct
+13267912,1,white,1,white,white,attr,both_correct
+5603075,1,brown,1,brown,brown,attr,both_correct
+5529936,1,brown,1,brown,brown,attr,both_correct
+750336,1,material,0,both are to left of chair,material,attr,llava_only
+8822686,1,short sleeved,1,short sleeved,short sleeved,attr,both_correct
+10108403,1,short,1,short,short,attr,both_correct
+17867608,0,yes,0,unknown,no,attr,both_wrong
+15685817,0,right,0,right,left,attr,both_wrong
+10230297,0,red,0,unknown,silver,attr,both_wrong
+458198,1,no,0,unknown,no,attr,llava_only
+9195302,1,metal,1,metal,metal,attr,both_correct
+1275415,0,no,1,yes,yes,attr,keyword_only
+151054689,0,no,1,yes,yes,attr,keyword_only
+19867158,1,no,0,yes,no,attr,llava_only
+5488858,1,no,0,unknown,no,attr,llava_only
+1274268,0,yes,0,unknown,no,attr,both_wrong
+14676522,1,white,0,blue,white,attr,llava_only
+9843309,1,no,1,no,no,attr,both_correct
+867849,0,white,1,yellow,yellow,attr,keyword_only
+4792349,0,yellow,1,brown,brown,attr,keyword_only
+9106834,1,no,0,unknown,no,attr,llava_only
+13856077,1,wood,1,wood,wood,attr,both_correct
+2751622,1,orange,1,orange,orange,attr,both_correct
+1235845,1,yes,1,yes,yes,attr,both_correct
+15576444,0,left,1,right,right,attr,keyword_only
+9249759,1,green,1,green,green,attr,both_correct
+10481242,0,green,1,black,black,attr,keyword_only
+11848718,1,short sleeved,0,white vest is short sleeved,short sleeved,attr,llava_only
+16371831,0,yes,0,yes assuming cloudy implies presence of clouds and no color attribute for clouds was provided,no,attr,both_wrong
+13471313,0,wood,0,unknown,metal,attr,both_wrong
+778813,1,yes,0,no,yes,attr,llava_only
+131037864,1,right,0,unknown,right,attr,llava_only
+7343358,1,right,0,unknown,right,attr,llava_only
+1272606,1,yes,1,yes,yes,attr,both_correct
+11675881,1,yes,0,unknown,yes,attr,llava_only
+4280110,0,left,0,unknown,right,attr,both_wrong
+2867461,1,short,1,short,short,attr,both_correct
+151042655,1,yes,1,yes,yes,attr,both_correct
+13382019,1,short,0,unknown,short,attr,llava_only
+8416146,1,right,1,right,right,attr,both_correct
+18382968,0,small,1,large,large,attr,keyword_only
+314218,1,no,1,no,no,attr,both_correct
+15340018,1,top,0,unknown,top,attr,llava_only
+21056199,0,plastic,1,metal,metal,attr,keyword_only
+19415693,1,brown,1,brown,brown,attr,both_correct
+17750772,1,bottom,0,unknown,bottom,attr,llava_only
+745187,0,black,1,purple,purple,attr,keyword_only
+13583035,0,young,0,small,little,attr,both_wrong
+4967002,1,color,0,black,color,attr,llava_only
+1110330,0,cream colored,1,green,green,attr,keyword_only
+21061137,0,yes,0,yes,no,attr,both_wrong
+13396506,1,gray,1,gray,gray,attr,both_correct
+14457317,1,yes,0,unknown,yes,attr,llava_only
+1351156,1,no,0,yes,no,attr,llava_only
+6355242,1,red,1,red,red,attr,both_correct
+19737390,1,yes,1,yes,yes,attr,both_correct
+6121383,1,no,1,no,no,attr,both_correct
+13967544,1,yes,0,no,yes,attr,llava_only
+11925604,0,no,0,no,yes,attr,both_wrong
+8592062,1,color,0,both sky and fence share attribute of being blue,color,attr,llava_only
+6774657,1,red,1,red,red,attr,both_correct
+804877,1,red,1,red,red,attr,both_correct
+1042140,0,green,1,black,black,attr,keyword_only
+14898381,1,on,1,on,on,attr,both_correct
+4527939,0,plastic,1,metal,metal,attr,keyword_only
+8278115,1,right,1,right,right,attr,both_correct
+612741,0,no,1,yes,yes,attr,keyword_only
+16578746,1,no,1,no,no,attr,both_correct
+5709549,1,smooth,1,smooth,smooth,attr,both_correct
+14724253,1,yes,1,yes,yes,attr,both_correct
+151032584,0,pink,1,dark brown,dark brown,attr,keyword_only
+529564,1,yes,1,yes,yes,attr,both_correct
+19743203,0,no,1,yes,yes,attr,keyword_only
+3150083,1,no,1,no,no,attr,both_correct
+7687000,1,yes,1,yes,yes,attr,both_correct
+2632075,1,top,0,unknown,top,attr,llava_only
+14824906,1,no,0,unknown,no,attr,llava_only
+11534918,0,brown,1,green,green,attr,keyword_only
+13118377,1,yes,1,yes,yes,attr,both_correct
+4968977,0,left,1,right,right,attr,keyword_only
+17519934,1,yes,1,yes,yes,attr,both_correct
+12318825,0,left,0,left,right,attr,both_wrong
+19582992,1,no,0,unknown,no,attr,llava_only
+14553306,1,small,1,small,small,attr,both_correct
+6319046,1,no,0,unknown,no,attr,llava_only
+13541017,1,color,0,both are to left of something door left of hat boy window gog,color,attr,llava_only
+15849850,0,no,1,yes,yes,attr,keyword_only
+12622585,1,bottom,0,unknown,bottom,attr,llava_only
+11546686,1,no,1,no,no,attr,both_correct
+16267570,1,bottom,0,behind,bottom,attr,llava_only
+4642706,1,blue,1,blue,blue,attr,both_correct
+16917929,0,right,1,left,left,attr,keyword_only
+3969802,0,right,0,to left,left,attr,both_wrong
+14268304,0,right,1,left,left,attr,keyword_only
+18773352,0,no,0,no,yes,attr,both_wrong
+8996350,1,short,0,unknown,short,attr,llava_only
+63235,1,red,0,unknown,red,attr,llava_only
+1930631,1,no,0,unknown,no,attr,llava_only
+11273927,0,left,0,unknown,right,attr,both_wrong
+11742852,1,wood,1,wood,wood,attr,both_correct
+17933461,0,yes,0,yes,no,attr,both_wrong
+3408045,1,no,0,unknown,no,attr,llava_only
+19455028,1,yes,0,unknown,yes,attr,llava_only
+9836364,0,yes,1,no,no,attr,keyword_only
+9323807,0,yellow,1,black,black,attr,keyword_only
+16766267,1,wood,1,wood,wood,attr,both_correct
+141016798,0,brown and white,1,brown,brown,attr,keyword_only
+15412714,0,left,1,right,right,attr,keyword_only
+4861179,1,orange,1,orange,orange,attr,both_correct
+18509618,1,wet,1,wet,wet,attr,both_correct
+8355017,1,black,1,black,black,attr,both_correct
+4485615,1,right,0,left,right,attr,llava_only
+11293365,0,no,0,no,yes,attr,both_wrong
+7600527,0,right,0,to left of refrigerator,left,attr,both_wrong
+737611,1,black,1,black,black,attr,both_correct
+8185088,0,small,1,large,large,attr,keyword_only
+3211780,0,no,0,unknown,yes,attr,both_wrong
+145904,1,gray,1,gray,gray,attr,both_correct
+5377833,1,color,0,color black,color,attr,llava_only
+10587868,1,white,1,white,white,attr,both_correct
+13136427,0,still,1,calm,calm,attr,keyword_only
+91049659,1,light,0,unknown,light,attr,llava_only
+8606853,1,no,1,no,no,attr,both_correct
+5899358,1,black,1,black,black,attr,both_correct
+17273265,1,no,1,no,no,attr,both_correct
+1724329,0,yes,1,no,no,attr,keyword_only
+15734242,0,brown,0,unknown,blond,attr,both_wrong
+19286275,1,wood,1,wood,wood,attr,both_correct
+181031717,1,yes,1,yes,yes,attr,both_correct
+3204032,0,no,1,yes,yes,attr,keyword_only
+1035272,0,right,0,unknown,left,attr,both_wrong
+14363222,1,yes,1,yes,yes,attr,both_correct
+7685458,1,empty,1,empty,empty,attr,both_correct
+9139247,1,large,1,large,large,attr,both_correct
+8277151,0,blue,1,black,black,attr,keyword_only
+3963293,1,yes,1,yes,yes,attr,both_correct
+14104447,1,right,0,left,right,attr,llava_only
+2988583,1,yes,1,yes,yes,attr,both_correct
+4861975,0,metal,1,porcelain,porcelain,attr,keyword_only
+14647205,0,top,0,camera is to left of bed camera to left of blanket camera to left of,bottom,attr,both_wrong
+12755296,0,no,1,yes,yes,attr,keyword_only
+11476749,1,yes,0,unknown,yes,attr,llava_only
+12951901,0,white,1,yellow,yellow,attr,keyword_only
+832435,0,no,0,no,yes,attr,both_wrong
+395030,1,yes,1,yes,yes,attr,both_correct
+10607000,1,no,1,no,no,attr,both_correct
+12604830,1,red,1,red,red,attr,both_correct
+7163556,1,color,0,color black,color,attr,llava_only
+51063571,1,white,0,unknown,white,attr,llava_only
+6235536,1,top,0,unknown,top,attr,llava_only
+71031645,0,yes,0,unknown,no,attr,both_wrong
+17238479,1,tan,1,tan,tan,attr,both_correct
+11960280,1,blue,1,blue,blue,attr,both_correct
+9313451,0,orange,1,green,green,attr,keyword_only
+91050533,0,no,0,no,yes,attr,both_wrong
+1281084,1,no,0,unknown,no,attr,llava_only
+9418060,1,left,1,left,left,attr,both_correct
+16954451,1,yes,1,yes,yes,attr,both_correct
+2185156,1,right,1,right,right,attr,both_correct
+7646193,1,long,1,long,long,attr,both_correct
+11214209,0,no,1,yes,yes,attr,keyword_only
+18976802,1,right,0,to right,right,attr,llava_only
+13582118,0,gray,1,white,white,attr,keyword_only
+11846094,1,yes,1,yes,yes,attr,both_correct
+15258984,0,gray,1,brown,brown,attr,keyword_only
+18680017,1,bottom,0,unknown,bottom,attr,llava_only
+2590889,0,no,1,yes,yes,attr,keyword_only
+16464923,1,metal,1,metal,metal,attr,both_correct
+8777252,0,red,1,blue,blue,attr,keyword_only
+10129937,1,gray,1,gray,gray,attr,both_correct
+974913,1,yes,0,yes counter looks clean and black,yes,attr,llava_only
+5838474,0,black,1,red,red,attr,keyword_only
+14486700,1,stone,1,stone,stone,attr,both_correct
+15959781,1,nike,1,nike,nike,attr,both_correct
+9152705,1,no,0,yes,no,attr,llava_only
+3649650,0,tall,0,unknown,short,attr,both_wrong
+18778699,0,black,1,brown,brown,attr,keyword_only
+181002628,1,white,1,white,white,attr,both_correct
+3903868,1,metal,1,metal,metal,attr,both_correct
+13455224,0,yes,0,unknown,no,attr,both_wrong
+5657233,1,color,0,both radiator and window frame are white,color,attr,llava_only
+1592118,1,no,1,no,no,attr,both_correct
+19334084,1,color,0,neither object has specified color in common,color,attr,llava_only
+151001039,1,bottom,0,unknown,bottom,attr,llava_only
+15510712,0,yes,1,no,no,attr,keyword_only
+5575301,1,right,0,left,right,attr,llava_only
+1588470,1,brown,1,brown,brown,attr,both_correct
+10484044,0,left,0,unknown,right,attr,both_wrong
+13345897,1,left,1,left,left,attr,both_correct
+17224279,1,orange,1,orange,orange,attr,both_correct
+9871900,0,yes,0,dirty,no,attr,both_wrong
+5895704,1,right,0,left,right,attr,llava_only
+1584553,0,talking,1,walking,walking,attr,keyword_only
+1619741,0,no,0,brown,yes,attr,both_wrong
+6436273,0,concrete,1,metal,metal,attr,keyword_only
+14835949,1,yes,0,unknown,yes,attr,llava_only
+8745836,0,yes,0,unknown,no,attr,both_wrong
+2189502,1,yes,1,yes,yes,attr,both_correct
+261199,1,empty,0,unknown,empty,attr,llava_only
+191039245,1,no,0,unknown,no,attr,llava_only
+397532,1,blue,1,blue,blue,attr,both_correct
+15290641,1,right,1,right,right,attr,both_correct
+12282078,0,red,1,pink,pink,attr,keyword_only
+13158997,0,no suitcase,1,black,black,attr,keyword_only
+5469501,1,no,0,unknown,no,attr,llava_only
+7861991,1,yes,1,yes,yes,attr,both_correct
+2933651,0,red,1,maroon,maroon,attr,keyword_only
+6224163,1,no,1,no,no,attr,both_correct
+17168598,0,left,1,right,right,attr,keyword_only
+11229212,0,no,1,yes,yes,attr,keyword_only
+1121555,1,bottom,0,unknown,bottom,attr,llava_only
+9786167,0,brown,1,green,green,attr,keyword_only
+416824,1,long,1,long,long,attr,both_correct
+597843,1,yes,1,yes,yes,attr,both_correct
+18435808,0,yes,0,unknown,no,attr,both_wrong
+18439636,1,no,0,unknown,no,attr,llava_only
+17239581,0,no,0,no,yes,attr,both_wrong
+565604,1,stainless steel,1,stainless steel,stainless steel,attr,both_correct
+9869,0,silver,1,tan,tan,attr,keyword_only
+14991920,0,no,1,yes,yes,attr,keyword_only
+3408028,1,yes,1,yes,yes,attr,both_correct
+11661722,1,no,1,no,no,attr,both_correct
+91027813,1,plastic,1,plastic,plastic,attr,both_correct
+11260607,1,yes,0,unknown,yes,attr,llava_only
+1317775,1,red,0,unknown,red,attr,llava_only
+61046713,0,white,0,unknown,green,attr,both_wrong
+2812790,1,color,0,black,color,attr,llava_only
+161046443,1,yes,1,yes,yes,attr,both_correct
+3769805,1,bottom,0,unknown,bottom,attr,llava_only
+797831,1,red,1,red,red,attr,both_correct
+1239848,1,no,0,unknown,no,attr,llava_only
+248334,1,left,0,unknown,left,attr,llava_only
+1325617,1,no,0,unknown,no,attr,llava_only
+6562053,0,white,1,red,red,attr,keyword_only
+10331254,1,yes,0,unknown,yes,attr,llava_only
+1732628,0,yellow,0,unknown,tan,attr,both_wrong
+6457951,1,no,1,no,no,attr,both_correct
+15775457,1,yes,1,yes,yes,attr,both_correct
+181058200,1,no,0,unknown,no,attr,llava_only
+19803317,0,left,1,right,right,attr,keyword_only
+8645439,0,gold,1,black,black,attr,keyword_only
+7155363,0,yes,0,unknown,no,attr,both_wrong
+8133853,1,yes,1,yes,yes,attr,both_correct
+11976456,1,red,1,red,red,attr,both_correct
+15870388,1,left,0,right,left,attr,llava_only
+9850936,1,no,0,yes,no,attr,llava_only
+6206326,1,right,0,right of vases,right,attr,llava_only
+1771689,0,right,0,unknown,left,attr,both_wrong
+18252712,1,bottom,0,unknown,bottom,attr,llava_only
+3189719,1,no,0,unknown,no,attr,llava_only
+2625528,1,right,0,to right,right,attr,llava_only
+16545513,0,no,0,unknown,yes,attr,both_wrong
+9500067,1,left,1,left,left,attr,both_correct
+18153571,1,right,1,right,right,attr,both_correct
+6113934,0,white,0,white,blue,attr,both_wrong
+19922632,0,left,1,right,right,attr,keyword_only
+19243788,0,green,1,gold,gold,attr,keyword_only
+8944499,0,gray,0,unknown,blond,attr,both_wrong
+15777191,1,no,1,no,no,attr,both_correct
+6747995,0,white,1,black,black,attr,keyword_only
+932916,1,no,0,unknown,no,attr,llava_only
+9847218,0,top,0,unknown,bottom,attr,both_wrong
+12526131,1,no,0,yes,no,attr,llava_only
+395063,0,white,0,black,silver,attr,both_wrong
+15193451,0,no,1,yes,yes,attr,keyword_only
+19180327,0,left,1,right,right,attr,keyword_only
+91048703,1,no,1,no,no,attr,both_correct
+10230425,1,bottom,0,unknown,bottom,attr,llava_only
+16406275,0,left,1,right,right,attr,keyword_only
+1311052,0,left,0,to left and right of gray helmet,right,attr,both_wrong
+16351161,0,no,1,yes,yes,attr,keyword_only
+975091,1,bottom,0,unknown,bottom,attr,llava_only
+4235440,1,no,0,unknown,no,attr,llava_only
+4353853,0,gray,1,yellow,yellow,attr,keyword_only
+18178043,1,no,1,no,no,attr,both_correct
+141000009,1,left,0,right,left,attr,llava_only
+16222344,1,pink,1,pink,pink,attr,both_correct
+19893732,0,no,1,yes,yes,attr,keyword_only
+965973,1,blue,0,metal,blue,attr,llava_only
+11283826,1,yes,0,no,yes,attr,llava_only
+270218,0,straight,0,unknown,curly,attr,both_wrong
+18506186,0,white,1,blue,blue,attr,keyword_only
+6406124,0,yes,1,no,no,attr,keyword_only
+121044418,0,left,0,unknown,right,attr,both_wrong
+13457278,1,no,1,no,no,attr,both_correct
+7386420,1,right,1,right,right,attr,both_correct
+17755610,1,right,0,to right,right,attr,llava_only
+3575919,1,no,0,unknown,no,attr,llava_only
+11900592,1,no,1,no,no,attr,both_correct
+8695246,0,right,0,on right,left,attr,both_wrong
+10931485,0,yes,0,unknown,no,attr,both_wrong
+51007493,1,no,0,yes,no,attr,llava_only
+15278866,0,no,0,no concrete floor does not look pink,yes,attr,both_wrong
+12324886,1,no,1,no,no,attr,both_correct
+12879850,0,yes,1,no,no,attr,keyword_only
+5414296,0,colorful,1,black and white,black and white,attr,keyword_only
+11941473,0,wood,0,unknown,plastic,attr,both_wrong
+13414119,0,small,1,large,large,attr,keyword_only
+12122053,1,color,0,they are both white,color,attr,llava_only
+4856244,0,no,1,yes,yes,attr,keyword_only
+14297463,1,wood,1,wood,wood,attr,both_correct
+2957470,1,no,0,unknown,no,attr,llava_only
+5858224,0,right,1,left,left,attr,keyword_only
+1228962,1,white,1,white,white,attr,both_correct
+1341944,0,brown,1,yellow,yellow,attr,keyword_only
+10744301,0,left,0,unknown,right,attr,both_wrong
+15812332,1,right,0,carrying side,right,attr,llava_only
+4115181,0,yes,0,yes,no,attr,both_wrong
+1864254,1,bottom,1,bottom,bottom,attr,both_correct
+2931772,0,blue,1,gray,gray,attr,keyword_only
+1227260,0,red,1,yellow,yellow,attr,keyword_only
+2271623,0,small,0,unknown,large,attr,both_wrong
+12800650,1,right,0,unknown,right,attr,llava_only
+4197249,0,large,0,unknown,small,attr,both_wrong
+10595316,1,colorful,0,unknown,colorful,attr,llava_only
+6215953,1,no,0,unknown,no,attr,llava_only
+1673304,1,pizza,0,unknown,pizza,attr,llava_only
+11568695,0,left,0,left,right,attr,both_wrong
+18237167,1,blue,1,blue,blue,attr,both_correct
+1385325,0,yes,0,yes,no,attr,both_wrong
+312221,0,yes,1,no,no,attr,keyword_only
+727676,0,no,1,yes,yes,attr,keyword_only
+5249329,1,no,1,no,no,attr,both_correct
+139182,0,blue,0,unknown,green,attr,both_wrong
+4972802,1,short,0,unknown,short,attr,llava_only
+14996056,0,black,1,blue,blue,attr,keyword_only
+9802178,0,yes,0,yes,no,attr,both_wrong
+11214696,0,black,0,unknown,green,attr,both_wrong
+213852,1,bottom,0,unknown,bottom,attr,llava_only
+1295414,0,yes,0,unknown,no,attr,both_wrong
+185809,0,left,1,right,right,attr,keyword_only
+14553291,1,no,1,no,no,attr,both_correct
+15126937,1,yes,1,yes,yes,attr,both_correct
+510703,1,left,0,inside,left,attr,llava_only
+9192459,1,white,1,white,white,attr,both_correct
+12642499,1,no,0,unknown,no,attr,llava_only
+1435550,0,white,0,unknown,orange,attr,both_wrong
+7721157,1,no,0,yes,no,attr,llava_only
+4238821,1,right,1,right,right,attr,both_correct
+17600709,1,posing,1,posing,posing,attr,both_correct
+41024838,1,bottom,0,unknown,bottom,attr,llava_only
+14432170,0,left,1,right,right,attr,keyword_only
+1309341,1,black,1,black,black,attr,both_correct
+5287661,1,orange,1,orange,orange,attr,both_correct
+7383359,0,black,0,black,gray,attr,both_wrong
+1233365,1,right,1,right,right,attr,both_correct
+3753582,1,top,0,unknown,top,attr,llava_only
+13476211,0,left,0,to right,right,attr,both_wrong
+12822438,1,blue,1,blue,blue,attr,both_correct
+17401477,0,black,1,blue,blue,attr,keyword_only
+161027552,1,light,0,wood,light,attr,llava_only
+1154810,0,no,0,no,yes,attr,both_wrong
+457638,0,yes,1,no,no,attr,keyword_only
+14304658,0,left,0,unknown,right,attr,both_wrong
+17397773,1,brown,0,unknown,brown,attr,llava_only
+12241557,1,right,1,right,right,attr,both_correct
+9516601,1,silver,1,silver,silver,attr,both_correct
+5130981,0,standing,0,girl is posing,posing,attr,both_wrong
+14774965,1,yes,1,yes,yes,attr,both_correct
+3267101,1,red,1,red,red,attr,both_correct
+1315955,0,no,1,yes,yes,attr,keyword_only
+11458012,1,no,0,unknown,no,attr,llava_only
+9520159,1,bottom,0,unknown,bottom,attr,llava_only
+1925086,1,no,0,unknown,no,attr,llava_only
+14544574,0,wood,1,metal,metal,attr,keyword_only
+12833931,1,left,0,man is to left,left,attr,llava_only
+18495700,1,no,0,yes,no,attr,llava_only
+31038546,1,top,1,top,top,attr,both_correct
+11678164,0,bottom,0,unknown,top,attr,both_wrong
+508541,0,gray,1,brown,brown,attr,keyword_only
+51058772,0,yes,0,unknown,no,attr,both_wrong
+4813325,0,bottom,1,top,top,attr,keyword_only
+135245,1,no,0,yes,no,attr,llava_only
+121030820,0,no,0,unknown,yes,attr,both_wrong
+13117223,1,gold,1,gold,gold,attr,both_correct
+14503018,0,color,0,pink,material,attr,both_wrong
+3224912,0,blue,1,silver,silver,attr,keyword_only
+7424393,1,beige,1,beige,beige,attr,both_correct
+1614443,0,eating,0,rhino is drinking,drinking,attr,both_wrong
+5749433,1,no,0,unknown,no,attr,llava_only
+3850357,0,right,1,left,left,attr,keyword_only
+111054858,0,no,0,unknown,yes,attr,both_wrong
+6257650,1,red,1,red,red,attr,both_correct
+5709471,0,yes,1,no,no,attr,keyword_only
+14138720,1,no,0,unknown,no,attr,llava_only
+151000945,1,yes,0,unknown,yes,attr,llava_only
+15556374,1,orange,1,orange,orange,attr,both_correct
+81002310,0,top,0,unknown,bottom,attr,both_wrong
+10637625,1,no,1,no,no,attr,both_correct
+10570635,0,gray,0,unknown,white,attr,both_wrong
+976088,1,right,0,left,right,attr,llava_only
+12591324,1,top,0,bottom,top,attr,llava_only
+17935319,0,foil,1,plastic,plastic,attr,keyword_only
+8206373,1,yes,1,yes,yes,attr,both_correct
+656085,0,red,1,purple,purple,attr,keyword_only
+6970859,0,white,1,tan,tan,attr,keyword_only
+610265,1,no,0,unknown,no,attr,llava_only
+2618339,1,black,0,unknown,black,attr,llava_only
+141034911,0,red,1,cream colored,cream colored,attr,keyword_only
+16350461,1,yes,1,yes,yes,attr,both_correct
+15849977,1,no,0,unknown,no,attr,llava_only
+3670727,0,left,0,to right,right,attr,both_wrong
+13109179,1,left,1,left,left,attr,both_correct
+7399174,1,color,1,color,color,attr,both_correct
+1945269,0,white,1,black,black,attr,keyword_only
+7515152,0,black,1,green,green,attr,keyword_only
+19505230,1,green,1,green,green,attr,both_correct
+6860029,1,left,0,children to left of snow,left,attr,llava_only
+1665302,1,bottom,0,unknown,bottom,attr,llava_only
+10719966,1,right,1,right,right,attr,both_correct
+10887034,1,no,0,yes,no,attr,llava_only
+8255017,1,right,0,left,right,attr,llava_only
+17634428,1,overcast,1,overcast,overcast,attr,both_correct
+19640800,0,no,1,yes,yes,attr,keyword_only
+131059567,1,reading,0,man is reading,reading,attr,llava_only
+12974391,0,no,1,yes,yes,attr,keyword_only
+9427136,0,no,1,yes,yes,attr,keyword_only
+171010127,1,right,1,right,right,attr,both_correct
+11942266,1,large,1,large,large,attr,both_correct
+123808,1,wood,1,wood,wood,attr,both_correct
+1582788,1,white,1,white,white,attr,both_correct
+836022,0,top,1,bottom,bottom,attr,keyword_only
+1494760,1,left,1,left,left,attr,both_correct
+746413,1,left,0,unknown,left,attr,llava_only
+8428923,0,black,1,gray,gray,attr,keyword_only
+3267621,0,orange,1,red,red,attr,keyword_only
+19954290,0,right,1,left,left,attr,keyword_only
+6846114,1,bottom,0,unknown,bottom,attr,llava_only
+693265,1,left,1,left,left,attr,both_correct
+18460738,1,yes,0,no,yes,attr,llava_only
+1642357,1,bottom,0,unknown,bottom,attr,llava_only
+21025296,1,bottom,0,unknown,bottom,attr,llava_only
+886518,1,no,0,unknown,no,attr,llava_only
+2802322,1,white,0,unknown,white,attr,llava_only
+12633776,1,no,1,no,no,attr,both_correct
+9447854,0,rough,1,calm,calm,attr,keyword_only
+16565594,0,no,1,yes,yes,attr,keyword_only
+942660,0,left,0,left,right,attr,both_wrong
+13831085,0,white,1,blue,blue,attr,keyword_only
+1039626,1,blue,1,blue,blue,attr,both_correct
+15193564,0,right,1,left,left,attr,keyword_only
+3723125,1,left,0,unknown,left,attr,llava_only
+9654538,1,no,0,unknown,no,attr,llava_only
+10104953,1,green,1,green,green,attr,both_correct
+6550074,1,right,1,right,right,attr,both_correct
+15943866,0,right,1,left,left,attr,keyword_only
+10351208,1,yes,1,yes,yes,attr,both_correct
+131032800,1,brown,1,brown,brown,attr,both_correct
+7429094,1,right,1,right,right,attr,both_correct
+2785248,1,yes,1,yes,yes,attr,both_correct
+5490599,1,bottom,0,unknown,bottom,attr,llava_only
+10914399,1,left,1,left,left,attr,both_correct
+744772,0,right,1,left,left,attr,keyword_only
+1313759,0,no,1,yes,yes,attr,keyword_only
+10601640,0,standing on laptop,0,cat is lying on keyboard and laptop,resting,attr,both_wrong
+1878763,1,bottom,0,unknown,bottom,attr,llava_only
+953474,0,black,1,white,white,attr,keyword_only
+16177674,1,yes,1,yes,yes,attr,both_correct
+1261593,0,white,1,green,green,attr,keyword_only
+18967908,1,top,0,unknown,top,attr,llava_only
+9961817,1,no,0,unknown,no,attr,llava_only
+15897485,0,yes,0,yes,no,attr,both_wrong
+17969180,1,yes,1,yes,yes,attr,both_correct
+9982001,1,yes,1,yes,yes,attr,both_correct
+1754185,1,no,1,no,no,attr,both_correct
+13470170,0,right,0,right,left,attr,both_wrong
+17834448,1,color,1,color,color,attr,both_correct
+8800739,0,glass,1,wood,wood,attr,keyword_only
+10926052,0,gray,0,gray,green,attr,both_wrong
+9350981,1,right,1,right,right,attr,both_correct
+1258192,1,no,0,unknown,no,attr,llava_only
+14303432,1,no,0,yes,no,attr,llava_only
+16807716,1,right,0,unknown,right,attr,llava_only
+6292109,1,color,0,white,color,attr,llava_only
+18994398,1,rocky,1,rocky,rocky,attr,both_correct
+2475238,1,wood,1,wood,wood,attr,both_correct
+71031333,1,right,1,right,right,attr,both_correct
+17150271,0,wood,1,metal,metal,attr,keyword_only
+12490735,1,right,0,unknown,right,attr,llava_only
+15339557,1,green,1,green,green,attr,both_correct
+17397322,1,black,1,black,black,attr,both_correct
+14153770,1,white,1,white,white,attr,both_correct
+10282986,1,right,0,to right,right,attr,llava_only
+13696672,1,right,1,right,right,attr,both_correct
+16937009,1,no,0,no assuming that black refers to color and in given scene there,no,attr,llava_only
+16713330,0,drinking,0,unknown,taking notes,attr,both_wrong
+15940707,1,mesh,1,mesh,mesh,attr,both_correct
+3993778,1,lying,1,lying,lying,attr,both_correct
+993475,0,black,1,orange,orange,attr,keyword_only
+2917194,1,jumping,1,jumping,jumping,attr,both_correct
+17736392,1,no,0,unknown,no,attr,llava_only
+12189792,0,short,0,unknown,long,attr,both_wrong
+12411333,0,right,0,right,left,attr,both_wrong
+5276796,1,blue,1,blue,blue,attr,both_correct
+5720038,1,bottom,0,on table,bottom,attr,llava_only
+17207969,0,bottom,0,unknown,top,attr,both_wrong
+11826829,1,no,0,unknown,no,attr,llava_only
+15569475,1,green,0,unknown,green,attr,llava_only
+805634,1,white,1,white,white,attr,both_correct
+16371251,1,right,1,right,right,attr,both_correct
+8460518,0,yes,0,unknown,no,attr,both_wrong
+8315323,0,yellow,0,directional,red,attr,both_wrong
+18174108,1,no,0,unknown,no,attr,llava_only
+17888586,0,no,0,unknown,yes,attr,both_wrong
+4354510,1,no,0,unknown,no,attr,llava_only
+1349616,1,no,0,no trees do not seem to be short,no,attr,llava_only
+4583731,0,left,1,right,right,attr,keyword_only
+8608958,1,no,0,unknown,no,attr,llava_only
+11662246,1,gray,1,gray,gray,attr,both_correct
+14150784,1,pink,0,blue since there s only 1 colorful coat mentioned and it s to right of,pink,attr,llava_only
+747531,1,no,1,no,no,attr,both_correct
+12818552,1,brick,0,black,brick,attr,llava_only
+3999495,0,yellow,0,pink,white,attr,both_wrong
+3801898,1,white,1,white,white,attr,both_correct
+9836435,1,yes,1,yes,yes,attr,both_correct
+161037527,1,blue,1,blue,blue,attr,both_correct
+17786326,1,bottom,0,unknown,bottom,attr,llava_only
+8321245,1,right,0,unknown,right,attr,llava_only
+8847832,1,large,0,unknown,large,attr,llava_only
+2152961,1,white,1,white,white,attr,both_correct
+14956126,1,yes,1,yes,yes,attr,both_correct
+6615120,1,orange,1,orange,orange,attr,both_correct
+6498947,0,yes,1,no,no,attr,keyword_only
+19217441,0,left,1,right,right,attr,keyword_only
+8173668,1,left,0,right,left,attr,llava_only
+15889850,1,right,0,giraffes to left,right,attr,llava_only
+10885588,1,white,1,white,white,attr,both_correct
+17728706,0,silver,1,white,white,attr,keyword_only
+9517338,1,no,1,no,no,attr,both_correct
+7124741,1,no,0,yes,no,attr,llava_only
+19321727,1,right,0,left,right,attr,llava_only
+3711414,1,no,0,unknown,no,attr,llava_only
+14169573,1,color,1,color,color,attr,both_correct
+1998385,1,short,1,short,short,attr,both_correct
+4777456,0,yes,1,no,no,attr,keyword_only
+1390505,0,black,1,gray,gray,attr,keyword_only
+7317189,0,no,0,no,yes,attr,both_wrong
+51013403,0,right,1,left,left,attr,keyword_only
+18368140,0,yes,1,no,no,attr,keyword_only
+1481872,1,yellow,1,yellow,yellow,attr,both_correct
+18961383,0,skateboarding,1,skating,skating,attr,keyword_only
+41046955,1,no,1,no,no,attr,both_correct
+2848566,1,no,0,unknown,no,attr,llava_only
+6455311,1,yes,1,yes,yes,attr,both_correct
+4819609,1,blue,1,blue,blue,attr,both_correct
+7614073,0,black,1,yellow,yellow,attr,keyword_only
+9542333,1,green,1,green,green,attr,both_correct
+17930023,1,open,1,open,open,attr,both_correct
+14856323,1,wood,0,brown,wood,attr,llava_only
+4443855,0,yes,0,unknown,no,attr,both_wrong
+1122650,0,no,0,no,yes,attr,both_wrong
+1269827,1,color,0,white,color,attr,llava_only
+7287879,0,right,0,right,left,attr,both_wrong
+7810464,1,left,0,right,left,attr,llava_only
+3149564,0,no,0,unknown,yes,attr,both_wrong
+2528482,0,yes,1,no,no,attr,keyword_only
+2185286,1,metal,1,metal,metal,attr,both_correct
+16204787,1,no,1,no,no,attr,both_correct
+3687393,1,right,0,right of sidewalk,right,attr,llava_only
+6676019,1,gray,1,gray,gray,attr,both_correct
+16447562,1,yellow,1,yellow,yellow,attr,both_correct
+9245290,0,wood,1,metal,metal,attr,keyword_only
+111204,1,right,0,left,right,attr,llava_only
+7872694,0,brown,1,white,white,attr,keyword_only
+1179300,1,glass,1,glass,glass,attr,both_correct
+434400,0,black,1,yellow,yellow,attr,keyword_only
+31038604,1,top,1,top,top,attr,both_correct
+5283017,0,blue,1,brown,brown,attr,keyword_only
+19629354,0,male,1,female,female,attr,keyword_only
+2199071,1,straw,1,straw,straw,attr,both_correct
+13653678,1,color,0,unknown,color,attr,llava_only
+7639804,1,left,0,unknown,left,attr,llava_only
+181047050,0,white,1,purple,purple,attr,keyword_only
+12189196,1,yes,1,yes,yes,attr,both_correct
+5103831,1,no,0,unknown,no,attr,llava_only
+17639570,1,right,1,right,right,attr,both_correct
+6153713,0,no,0,no,yes,attr,both_wrong
+5543986,0,curly,0,unknown,straight,attr,both_wrong
+7667728,1,orange,1,orange,orange,attr,both_correct
+7411051,0,square,1,rectangular,rectangular,attr,keyword_only
+6503483,1,yes,0,no,yes,attr,llava_only
+13766962,0,off,1,on,on,attr,keyword_only
+91039334,1,right,0,unknown,right,attr,llava_only
+1315888,1,no,0,yes,no,attr,llava_only
+372860,1,leather,1,leather,leather,attr,both_correct
+15350605,0,brown,1,pink,pink,attr,keyword_only
+19253791,1,left,1,left,left,attr,both_correct
+7507609,1,black,1,black,black,attr,both_correct
+1652450,1,blue,0,yellow,blue,attr,llava_only
+107098,0,sleeping,0,brown and tan dog is resting,resting,attr,both_wrong
+11695469,1,blue,1,blue,blue,attr,both_correct
+10274365,0,white,1,gray,gray,attr,keyword_only
+8577287,1,wood,1,wood,wood,attr,both_correct
+2934747,0,left,1,right,right,attr,keyword_only
+8902607,0,tan,1,khaki,khaki,attr,keyword_only
+15510765,0,no,1,yes,yes,attr,keyword_only
+8108210,1,bottom,0,unknown,bottom,attr,llava_only
+14147022,1,no,0,unknown,no,attr,llava_only
+5865315,1,left,1,left,left,attr,both_correct
+826231,1,right,1,right,right,attr,both_correct
+2698569,0,orange,0,red,green,attr,both_wrong
+18554647,0,no,1,yes,yes,attr,keyword_only
+13858054,1,no,1,no,no,attr,both_correct
+11160465,1,no,0,unknown,no,attr,llava_only
+1124803,0,right,1,left,left,attr,keyword_only
+13324676,0,waiting,0,boy is bending,bending,attr,both_wrong
+16806651,0,dark blue,1,black,black,attr,keyword_only
+2752494,1,no,0,unknown,no,attr,llava_only
+18342344,0,no,0,unknown,yes,attr,both_wrong
+5343490,1,right,1,right,right,attr,both_correct
+11878829,0,top,1,bottom,bottom,attr,keyword_only
+6134715,1,yes,0,unknown,yes,attr,llava_only
+1436779,0,yes,0,unknown,no,attr,both_wrong
+19730486,1,left,1,left,left,attr,both_correct
+1436879,0,yes,0,unknown,no,attr,both_wrong
+14785459,1,left,1,left,left,attr,both_correct
+19443098,0,no,1,yes,yes,attr,keyword_only
+1801745,1,lady,0,unknown,lady,attr,llava_only
+2133531,1,large,1,large,large,attr,both_correct
+14732604,0,yes,0,yes,no,attr,both_wrong
+319900,1,left,1,left,left,attr,both_correct
+7429599,0,wet,1,dried,dried,attr,keyword_only
+16297893,1,walking,1,walking,walking,attr,both_correct
+14383991,1,left,1,left,left,attr,both_correct
+5604107,1,brown,1,brown,brown,attr,both_correct
+4920683,1,blue,0,unknown,blue,attr,llava_only
+7490181,1,metal,1,metal,metal,attr,both_correct
+14530719,0,right,1,left,left,attr,keyword_only
+11257274,1,white,1,white,white,attr,both_correct
+551720,0,right,0,unknown,left,attr,both_wrong
+623398,0,white,0,brown,tan,attr,both_wrong
+8814767,0,there are no flowers by road in this image,1,red,red,attr,keyword_only
+15665797,0,yes,0,unknown,no,attr,both_wrong
+15764266,1,wood,1,wood,wood,attr,both_correct
+11351608,1,right,1,right,right,attr,both_correct
+71002302,1,black,1,black,black,attr,both_correct
+4695445,0,right,1,left,left,attr,keyword_only
+8897816,1,blue,1,blue,blue,attr,both_correct
+2556159,1,no,1,no,no,attr,both_correct
+81023023,1,silver,1,silver,silver,attr,both_correct
+1605874,1,black,1,black,black,attr,both_correct
+4897649,1,dark,1,dark,dark,attr,both_correct
+1910377,1,left,0,around,left,attr,llava_only
+6786403,0,left,1,right,right,attr,keyword_only
+788188,1,blue,1,blue,blue,attr,both_correct
+3623367,0,sleeping,0,sleeping,lying,attr,both_wrong
+7733320,1,yes,1,yes,yes,attr,both_correct
+5145899,0,black,0,unknown,blond,attr,both_wrong
+11315934,0,white,1,green,green,attr,keyword_only
+15337543,1,white,1,white,white,attr,both_correct
+17200006,0,no,1,yes,yes,attr,keyword_only
+12930405,1,right,1,right,right,attr,both_correct
+6167096,0,right,0,unknown,left,attr,both_wrong
+12774582,1,right,0,left,right,attr,llava_only
+13497769,1,brown,1,brown,brown,attr,both_correct
+3135864,0,no,0,unknown,yes,attr,both_wrong
+589070,1,no,1,no,no,attr,both_correct
+11199202,0,brown,1,white,white,attr,keyword_only
+1513270,0,yellow,1,brown,brown,attr,keyword_only
+19286250,1,right,0,to right,right,attr,llava_only
+1698460,0,gray,1,blue,blue,attr,keyword_only
+4897372,1,no,0,unknown,no,attr,llava_only
+3715825,0,white,1,gray,gray,attr,keyword_only
+2948978,1,right,0,left,right,attr,llava_only
+15404974,0,right,1,left,left,attr,keyword_only
+6932465,0,right,1,left,left,attr,keyword_only
+9576614,1,green,0,unknown,green,attr,llava_only
+1402230,1,no,0,unknown,no,attr,llava_only
+161013462,1,wood,1,wood,wood,attr,both_correct
+8894745,0,left,0,on right,right,attr,both_wrong
+12826684,1,no,0,yes,no,attr,llava_only
+9994071,1,tall,1,tall,tall,attr,both_correct
+16424574,1,left,0,unknown,left,attr,llava_only
+6190304,0,skating,1,skateboarding,skateboarding,attr,keyword_only
+6656302,1,yes,0,unknown,yes,attr,llava_only
+412986,0,solid,0,unknown,dotted,attr,both_wrong
+1527613,0,right,0,to right,left,attr,both_wrong
+111487,1,white,1,white,white,attr,both_correct
+12361310,1,blue,1,blue,blue,attr,both_correct
+17835312,0,right,0,unknown,left,attr,both_wrong
+16415574,1,yes,1,yes,yes,attr,both_correct
+1682965,0,right,0,car is to left,left,attr,both_wrong
+1132567,1,no,1,no,no,attr,both_correct
+15127141,0,0 seconds,0,unknown,long,attr,both_wrong
+1813870,1,yes,0,unknown,yes,attr,llava_only
+16514620,1,left,0,right,left,attr,llava_only
+84233,0,right,0,roadside,left,attr,both_wrong
+7521787,0,glass,1,metal,metal,attr,keyword_only
+19172502,1,bottom,0,unknown,bottom,attr,llava_only
+3791776,0,yes,1,no,no,attr,keyword_only
+16545710,0,brick,1,wood,wood,attr,keyword_only
+5444952,1,no,0,yes,no,attr,llava_only
+12916817,1,glass,1,glass,glass,attr,both_correct
+9880096,0,no,1,yes,yes,attr,keyword_only
+15133656,0,no,1,yes,yes,attr,keyword_only
+13907563,1,no,0,unknown,no,attr,llava_only
+13522065,0,no,1,yes,yes,attr,keyword_only
+9212327,0,top,0,unknown,bottom,attr,both_wrong
+6869115,1,black,0,unknown,black,attr,llava_only
+4938693,1,dirty,1,dirty,dirty,attr,both_correct
+16319869,0,metal,1,porcelain,porcelain,attr,keyword_only
+16807847,1,blue,1,blue,blue,attr,both_correct
+8296231,1,right,1,right,right,attr,both_correct
+19621196,0,left,1,right,right,attr,keyword_only
+18592720,0,blue,1,green,green,attr,keyword_only
+9807782,0,no,1,yes,yes,attr,keyword_only
+2639439,1,brown,1,brown,brown,attr,both_correct
+4743445,1,yes,1,yes,yes,attr,both_correct
+4374454,1,skiing,1,skiing,skiing,attr,both_correct
+71045267,1,no,0,yes,no,attr,llava_only
+8440610,0,talking,0,unknown,looking down,attr,both_wrong
+7851097,1,white,1,white,white,attr,both_correct
+1217330,0,white,1,blue,blue,attr,keyword_only
+10165920,0,right,0,to right,left,attr,both_wrong
+1847763,1,dark blue,0,unknown,dark blue,attr,llava_only
+13832404,1,yes,1,yes,yes,attr,both_correct
+15871286,1,orange,1,orange,orange,attr,both_correct
+7652112,1,no,1,no,no,attr,both_correct
+19388647,1,bottom,0,unknown,bottom,attr,llava_only
+7825909,0,left,0,to right of pillow,right,attr,both_wrong
+5383162,1,no,0,unknown,no,attr,llava_only
+5735812,0,blue,1,green,green,attr,keyword_only
+2352327,1,yes,1,yes,yes,attr,both_correct
+3478718,0,left,0,on right,right,attr,both_wrong
+1714221,1,green,1,green,green,attr,both_correct
+151030041,0,black,1,white,white,attr,keyword_only
+15700178,1,green,1,green,green,attr,both_correct
+902313,1,square,0,rectangular,square,attr,llava_only
+365872,0,right,0,inside,left,attr,both_wrong
+18394576,0,no,0,no since question asks about appearance of swimsuit and there s no information,yes,attr,both_wrong
+11354121,1,right,1,right,right,attr,both_correct
+11852173,1,yes,1,yes,yes,attr,both_correct
+3799708,1,riding,1,riding,riding,attr,both_correct
+5776223,0,red,1,black,black,attr,keyword_only
+6147697,1,yes,0,unknown,yes,attr,llava_only
+9532073,1,no,0,unknown,no,attr,llava_only
+632671,0,no,0,unknown,yes,attr,both_wrong
+1771363,0,black,0,unknown,gray,attr,both_wrong
+11848872,1,short,0,unknown,short,attr,llava_only
+15381233,1,no,0,unknown,no,attr,llava_only
+9711491,0,no,1,yes,yes,attr,keyword_only
+4416357,1,color,1,color,color,attr,both_correct
+18234702,0,left,0,left,right,attr,both_wrong
+2914423,1,right,0,left,right,attr,llava_only
+4803402,1,brown,1,brown,brown,attr,both_correct
+3350171,0,walking,0,standing walking or posing,posing,attr,both_wrong
+10831847,1,no,0,unknown,no,attr,llava_only
+15741199,0,red,1,white,white,attr,keyword_only
+228654,1,no,0,unknown,no,attr,llava_only
+7801940,1,lady,0,unknown,lady,attr,llava_only
+19388728,1,no,1,no,no,attr,both_correct
+8295264,0,right,1,left,left,attr,keyword_only
+12739785,0,yes,0,unknown,no,attr,both_wrong
+3804493,1,no,1,no,no,attr,both_correct
+17476228,1,brown,1,brown,brown,attr,both_correct
+6889817,1,bottom,0,right,bottom,attr,llava_only
+10816740,1,no,0,unknown,no,attr,llava_only
+19992520,1,left,1,left,left,attr,both_correct
+286487,0,yes,0,unknown,no,attr,both_wrong
+19893884,0,green,1,white,white,attr,keyword_only
+13704563,1,yes,1,yes,yes,attr,both_correct
+10324351,1,yes,1,yes,yes,attr,both_correct
+6273836,0,left,1,right,right,attr,keyword_only
+6937496,0,no,1,yes,yes,attr,keyword_only
+9212591,0,right,1,left,left,attr,keyword_only
+1892238,1,no,1,no,no,attr,both_correct
+111025042,0,right,1,left,left,attr,keyword_only
+4998032,0,no,1,yes,yes,attr,keyword_only
+31057939,1,bottom,0,unknown,bottom,attr,llava_only
+14375451,0,right,1,left,left,attr,keyword_only
+4938638,1,yes,1,yes,yes,attr,both_correct
+2986713,1,left,1,left,left,attr,both_correct
+10444948,1,left,0,unknown,left,attr,llava_only
+14658164,0,wood,0,unknown,plastic,attr,both_wrong
+8928757,1,color,0,unknown,color,attr,llava_only
+6975398,1,white,1,white,white,attr,both_correct
+15174137,1,yes,1,yes,yes,attr,both_correct
+2315808,1,black,1,black,black,attr,both_correct
+10452208,1,bottom,1,bottom,bottom,attr,both_correct
+6534815,1,right,0,kitchen,right,attr,llava_only
+12788776,1,no,1,no,no,attr,both_correct
+3963384,1,yellow,1,yellow,yellow,attr,both_correct
+16320096,0,metal,1,glass,glass,attr,keyword_only
+14522660,1,left,1,left,left,attr,both_correct
+17694403,1,dark,1,dark,dark,attr,both_correct
+6632363,0,white,1,blue,blue,attr,keyword_only
+369064,1,surfing,1,surfing,surfing,attr,both_correct
+6997495,0,tan,1,cream colored,cream colored,attr,keyword_only
+16161096,1,blue,1,blue,blue,attr,both_correct
+18615687,1,black,1,black,black,attr,both_correct
+10939599,0,yes,1,no,no,attr,keyword_only
+5786148,0,black,1,silver,silver,attr,keyword_only
+19486584,1,dark,1,dark,dark,attr,both_correct
+10698780,0,no,0,no,yes,attr,both_wrong
+51042721,0,no,1,yes,yes,attr,keyword_only
+15957882,0,right,0,to left,left,attr,both_wrong
+11211631,1,yes,1,yes,yes,attr,both_correct
+13837682,0,right,0,unknown,left,attr,both_wrong
+13727489,1,no,0,unknown,no,attr,llava_only
+1288630,1,top,0,unknown,top,attr,llava_only
+12710997,1,yes,1,yes,yes,attr,both_correct
+2957621,0,left,1,right,right,attr,keyword_only
+14740357,1,no,0,unknown,no,attr,llava_only
+3854236,1,top,0,bottom,top,attr,llava_only
+5365526,1,color,0,color white,color,attr,llava_only
+14305066,0,left,1,right,right,attr,keyword_only
+1638408,1,no,0,unknown,no,attr,llava_only
+19630283,1,metal,1,metal,metal,attr,both_correct
+11534891,1,yes,1,yes,yes,attr,both_correct
+4324328,1,blue,0,unknown,blue,attr,llava_only
+1642667,0,bottom,0,unknown,top,attr,both_wrong
+6647515,1,blue,0,black,blue,attr,llava_only
+10816685,0,yes,1,no,no,attr,keyword_only
+3350860,0,wood,1,metal,metal,attr,keyword_only
+4803469,1,skateboarding,1,skateboarding,skateboarding,attr,both_correct
+14641375,0,right,0,on left,left,attr,both_wrong
+12409660,1,left,0,unknown,left,attr,llava_only
+141014447,1,right,0,near fish,right,attr,llava_only
+3189870,1,round,0,unknown,round,attr,llava_only
+16148515,1,right,0,unknown,right,attr,llava_only
+17587413,1,right,0,on alarm clock,right,attr,llava_only
+18912355,0,black,1,gray,gray,attr,keyword_only
+1033834,1,metal,1,metal,metal,attr,both_correct
+19321685,0,red and white,1,black,black,attr,keyword_only
+8438053,1,long,0,unknown,long,attr,llava_only
+13766459,1,yes,0,no,yes,attr,llava_only
+926398,0,black,0,unknown,brown,attr,both_wrong
+8243173,0,white,1,blue,blue,attr,keyword_only
+2934910,0,right,0,woman to left of horse,left,attr,both_wrong
+45624,0,black,1,gray,gray,attr,keyword_only
+16644446,1,no,0,unknown,no,attr,llava_only
+15633092,1,black,0,unknown,black,attr,llava_only
+19121798,1,green,1,green,green,attr,both_correct
+2960161,0,hard,1,soft,soft,attr,keyword_only
+3627530,1,right,1,right,right,attr,both_correct
+1813737,0,right,1,left,left,attr,keyword_only
+2587704,0,blue,1,pink,pink,attr,keyword_only
+5678198,1,yes,0,unknown,yes,attr,llava_only
+10628161,1,yes,1,yes,yes,attr,both_correct
+15586558,0,left,1,right,right,attr,keyword_only
+17233936,0,black,1,white,white,attr,keyword_only
+12806963,1,right,0,to right,right,attr,llava_only
+31015467,1,blue,1,blue,blue,attr,both_correct
+1883025,0,no,0,unknown,yes,attr,both_wrong
+10960170,0,standing,0,unknown,taking photo,attr,both_wrong
+13664755,1,no,0,unknown,no,attr,llava_only
+7236610,0,black,1,white,white,attr,keyword_only
+11593583,0,bottom,0,unknown,top,attr,both_wrong
+19111195,0,yes,1,no,no,attr,keyword_only
+5727224,0,left,1,right,right,attr,keyword_only
+14355282,1,short,0,unknown,short,attr,llava_only
+19659532,1,right,0,left,right,attr,llava_only
+16690063,0,plastic,1,metal,metal,attr,keyword_only
+15241843,0,no,1,yes,yes,attr,keyword_only
+15978230,0,white,1,blue,blue,attr,keyword_only
+3301213,0,white,1,gray,gray,attr,keyword_only
+15640813,0,yes,0,yes,no,attr,both_wrong
+21033123,1,white,1,white,white,attr,both_correct
+18946975,0,yes,1,no,no,attr,keyword_only
+986832,0,white,1,gray,gray,attr,keyword_only
+2806496,1,green,1,green,green,attr,both_correct
+1770274,1,right,0,woman is on left side,right,attr,llava_only
+13386758,1,yes,0,no,yes,attr,llava_only
+7664290,1,no,0,unknown,no,attr,llava_only
+9550286,1,short,0,unknown,short,attr,llava_only
+10662245,0,no,1,yes,yes,attr,keyword_only
+5495283,1,brushing teeth,0,woman is reflected in mirror,brushing teeth,attr,llava_only
+353029,0,white,1,gray,gray,attr,keyword_only
+19237150,1,blue,1,blue,blue,attr,both_correct
+2764715,1,right,0,both sides,right,attr,llava_only
+2459872,0,no,0,unknown,yes,attr,both_wrong
+14165422,1,no,0,yes,no,attr,llava_only
+14604143,1,yes,0,no,yes,attr,llava_only
+13523030,0,black,1,silver,silver,attr,keyword_only
+2957211,0,yellow,1,silver,silver,attr,keyword_only
+1735963,0,no,1,yes,yes,attr,keyword_only
+1414253,1,top,0,unknown,top,attr,llava_only
+81030241,1,yes,0,unknown,yes,attr,llava_only
+440261,1,yes,0,unknown,yes,attr,llava_only
+3928390,1,left,1,left,left,attr,both_correct
+19860572,1,orange,1,orange,orange,attr,both_correct
+11192422,0,black,1,orange,orange,attr,keyword_only
+12753263,0,no,0,unknown,yes,attr,both_wrong
+151931,0,khaki,1,brown,brown,attr,keyword_only
+3986799,1,gray,1,gray,gray,attr,both_correct
+11340610,1,no,1,no,no,attr,both_correct
+12800792,1,yes,0,no,yes,attr,llava_only
+14598262,1,no,0,unknown,no,attr,llava_only
+1341294,0,pink,1,red,red,attr,keyword_only
+1844400,1,left,0,unknown,left,attr,llava_only
+2705710,1,plastic,1,plastic,plastic,attr,both_correct
+5451375,0,black,1,brown,brown,attr,keyword_only
