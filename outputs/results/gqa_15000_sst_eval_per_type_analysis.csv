@@ -1,9 +1,8 @@
-method_name,attr,cat,global,obj,rel
-Full SST,0.161,0.0,0.0,0.0,0.0
-Caption-Style SST,0.16,0.0,0.0,0.0,0.0
-Keyword-Aware SST,0.162,0.0,0.0,0.0,0.0
-Compact Keyword SST,0.13,0.0,0.0,0.0,0.0
-No-Relations SST,0.126,0.0,0.0,0.0,0.0
-No-Attributes SST,0.043,0.0,0.0,0.0,0.0
-Objects-Only SST,0.007,0.0,0.0,0.0,0.0
-Question-Only (no scene),0.0,0.0,0.0,0.0,0.0
+method_name,attr
+Full SST,0.565
+Caption-Style SST,0.56
+Keyword-Aware SST,0.57
+Compact Keyword SST,0.455
+No-Relations SST,0.442
+No-Attributes SST,0.15
+Objects-Only SST,0.025
