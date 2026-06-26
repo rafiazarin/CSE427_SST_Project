@@ -1,9 +1,8 @@
 pipeline,method_name,exact_accuracy,lenient_accuracy,avg_tokens,median_tokens,avg_latency_ms,n,token_reduction_pct,accuracy_drop_pts
-full_sst,Full SST,0.036,0.038,27.077,9.0,3260.79,15509,0.0,0.0
-caption_style_sst,Caption-Style SST,0.036,0.038,26.944,9.0,3227.062,15509,0.491,0.032
-keyword_aware_sst,Keyword-Aware SST,0.037,0.039,18.536,9.0,1924.015,15509,31.544,-0.032
-compact_keyword_sst,Compact Keyword SST,0.029,0.033,15.894,9.0,1834.866,15509,41.301,0.709
-no_relations_sst,No-Relations SST,0.028,0.03,18.398,9.0,2309.999,15509,32.052,0.793
-no_attributes_sst,No-Attributes SST,0.01,0.011,24.478,9.0,2696.745,15509,9.6,2.676
-objects_only_sst,Objects-Only SST,0.002,0.002,15.172,9.0,1778.309,15509,43.968,3.482
-question_only,Question-Only (no scene),0.0,0.0,9.0,9.0,,15000,66.762,3.643
+full_sst,Full SST,0.565,0.587,289.359,315.0,3260.79,1000,0.0,0.0
+caption_style_sst,Caption-Style SST,0.56,0.589,287.299,312.0,3227.062,1000,0.712,0.5
+keyword_aware_sst,Keyword-Aware SST,0.57,0.604,156.894,134.0,1924.015,1000,45.779,-0.5
+compact_keyword_sst,Compact Keyword SST,0.455,0.515,115.92,93.0,1834.866,1000,59.939,11.0
+no_relations_sst,No-Relations SST,0.442,0.461,154.759,153.0,2309.999,1000,46.517,12.3
+no_attributes_sst,No-Attributes SST,0.15,0.166,249.046,276.0,2696.745,1000,13.932,41.5
+objects_only_sst,Objects-Only SST,0.025,0.029,104.719,106.0,1778.309,1000,63.81,54.0

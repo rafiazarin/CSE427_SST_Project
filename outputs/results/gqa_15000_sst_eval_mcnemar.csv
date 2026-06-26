@@ -1,8 +1,7 @@
 method,method_acc,full_sst_acc,method_wins,full_sst_wins,discordant,p_value,sig_at_0.05,interpretation
-Caption-Style SST,0.037,0.038,22,27,49,0.568172,False,not significantly different
-Keyword-Aware SST,0.038,0.038,79,74,153,0.746528,False,not significantly different
-Compact Keyword SST,0.03,0.038,50,160,210,0.0,True,significantly different
-No-Relations SST,0.029,0.038,43,166,209,0.0,True,significantly different
-No-Attributes SST,0.01,0.038,7,422,429,0.0,True,significantly different
-Objects-Only SST,0.002,0.038,5,545,550,0.0,True,significantly different
-Question-Only (no scene),0.0,0.038,0,565,565,0.0,True,significantly different
+Caption-Style SST,0.56,0.565,22,27,49,0.568172,False,not significantly different
+Keyword-Aware SST,0.57,0.565,79,74,153,0.746528,False,not significantly different
+Compact Keyword SST,0.455,0.565,50,160,210,0.0,True,significantly different
+No-Relations SST,0.442,0.565,43,166,209,0.0,True,significantly different
+No-Attributes SST,0.15,0.565,7,422,429,0.0,True,significantly different
+Objects-Only SST,0.025,0.565,5,545,550,0.0,True,significantly different

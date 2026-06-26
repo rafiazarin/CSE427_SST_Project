@@ -8,41 +8,41 @@ This project evaluates replacing image inputs to VLMs with compact structured te
 
 ## Key Finding
 
-**Keyword-Aware SST achieves 51% token reduction with only a 4.5 pp accuracy drop versus Full SST — a difference that is not statistically significant (McNemar p = 0.078).**
+**Keyword-Aware SST matches Full SST accuracy (57.0% vs 56.5% exact) while cutting input tokens by ~46% — a difference that is not statistically significant (McNemar p = 0.747).**
 
-More aggressive compression and component ablations cause significant accuracy drops, revealing which parts of a scene representation actually drive visual reasoning.
+More aggressive compression and component ablations cause large, statistically significant accuracy drops, revealing which parts of a scene representation actually drive visual reasoning.
 
 ---
 
 ## Results
 
-Evaluated on 200 balanced GQA validation samples. All SST methods use Mistral 7B; LLaVA 7B serves as the image-based baseline.
+Evaluated on 1,000 balanced GQA validation questions (the same paired set across every variant). All SST methods use Mistral 7B; LLaVA 7B serves as the image-based baseline. Numbers below are reproduced directly from `outputs/results/gqa_15000_sst_eval_summary.csv` (regenerate with `python scripts/recompute_results.py`).
 
 | Method | Exact Acc. | Lenient Acc. | Avg Tokens | vs Full SST |
 |---|---|---|---|---|
-| LLaVA 7B (image) | 59.8% | 64.5% | 576 visual | — |
-| Full SST | 54.5% | 58.5% | 441 | baseline |
-| Caption-Style SST | 53.0% | 58.5% | 444 | −1.5 pp |
-| **Keyword-Aware SST** | **50.0%** | **57.0%** | **216** | **−4.5 pp *** |
-| Compact Keyword SST | 41.0% | 52.0% | 175 | −13.5 pp ✗ |
-| No-Relations SST | 43.0% | 43.0% | 154 | −11.5 pp ✗ |
-| No-Attributes SST | 40.0% | 43.0% | 404 | −14.5 pp ✗ |
-| Objects-Only SST | 22.5% | 24.0% | 106 | −32.0 pp ✗ |
+| LLaVA 7B (image) | 59.8% | 59.9% | 576 visual | — |
+| Full SST | 56.5% | 58.7% | 289 | baseline |
+| Caption-Style SST | 56.0% | 58.9% | 287 | −0.5 pp |
+| **Keyword-Aware SST** | **57.0%** | **60.4%** | **157** | **+0.5 pp *** |
+| Compact Keyword SST | 45.5% | 51.5% | 116 | −11.0 pp ✗ |
+| No-Relations SST | 44.2% | 46.1% | 155 | −12.3 pp ✗ |
+| No-Attributes SST | 15.0% | 16.6% | 249 | −41.5 pp ✗ |
+| Objects-Only SST | 2.5% | 2.9% | 105 | −54.0 pp ✗ |
 
-`*` not statistically significant at p < 0.05 (McNemar paired test)  
-`✗` statistically significant degradation
+`*` not statistically significant vs Full SST at p < 0.05 (McNemar paired test, p = 0.747)  
+`✗` statistically significant degradation (McNemar p < 0.001)
 
-**Compression ratio:** Keyword-Aware SST uses ~2.0× fewer tokens than Full SST and ~2.7× fewer than LLaVA's visual token count.
+**Compression ratio:** Keyword-Aware SST uses ~1.8× fewer tokens than Full SST and **~3.67× fewer** than LLaVA's 576 visual-token reference, while landing within 2.8 pp of LLaVA's accuracy. (Token counts are text subword tokens; see the note in `src/sst_eval/normalize.py` on comparing these to visual tokens.)
 
 ---
 
 ## What the Ablation Reveals
 
-- **Objects alone are not enough** — 22.5% vs 54.5% with full SST
-- **Attributes are the most informative field** — removing them causes the largest single drop
-- **Relations matter** — spatial information contributes significantly to reasoning accuracy
-- **Question-aware filtering** can safely remove ~half the scene tokens with negligible loss
-- **Readable structure** matters — aggressive serialization hurts more than token count alone suggests
+- **Objects alone are not enough** — 2.5% vs 56.5% with full SST
+- **Attributes are the most informative field** — removing them causes the largest single drop (56.5% → 15.0%)
+- **Relations matter** — removing them drops accuracy to 44.2%
+- **Question-aware filtering** can safely remove ~half the scene tokens with no significant loss
+- **Readable structure** matters — aggressive serialization (Compact Keyword SST) hurts more than token count alone suggests
 
 ---
 
@@ -55,7 +55,7 @@ Image → Visual Encoder (576 tokens) → LLM → Answer
 
 ### SST pipeline
 ```
-Image → Scene Graph → Structured Text (~106–444 tokens) → LLM → Answer
+Image → Scene Graph → Structured Text (~105–289 tokens) → LLM → Answer
 ```
 
 An SST representation looks like:
@@ -112,11 +112,21 @@ ollama serve
 │   ├── sst_eval_main.ipynb       # GQA ablation — core results
 │   ├── sst_eval_blip2.ipynb      # BLIP-2 baseline
 │   └── sst_eval_vqav2.ipynb      # VQAv2 generalization
+├── src/sst_eval/                 # Shared package: normalisation, SST builders,
+│                                 #   keyword filter, prompts, Ollama client, stats
+├── scripts/
+│   ├── recompute_results.py      # Rebuild result CSVs from per-row data
+│   └── regenerate_figures.py     # Redraw figures from the corrected CSVs
+├── tests/                        # Unit tests for the shared helpers
 ├── data/processed/               # Preprocessed GQA samples
 ├── outputs/results/              # Result CSVs and figures
-├── paper/                        # Full paper (LaTeX)
-└── src/                          # Shared utilities
+└── paper/                        # Full paper (LaTeX)
 ```
+
+The notebooks import every shared helper from `src/sst_eval` rather than
+re-defining them, so the evaluation logic has a single source of truth. If the
+result CSVs are ever regenerated from raw per-row output, run
+`python scripts/recompute_results.py && python scripts/regenerate_figures.py`.
 
 ---
 
